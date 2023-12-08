@@ -1,0 +1,10 @@
+{
+    "MOTD": {
+        "administrator": "Jangan menyalagunakan command admin!",
+        "player": "Jika menemukan bug silahkan laporkan melalui discord!"
+    },
+    "goverment": {
+        "salaryTax": 2,
+        "vault": 2
+    }
+}
