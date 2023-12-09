@@ -73,7 +73,7 @@ SQL_SaveCharacter(playerid)
         }
     }
 
-    format(query, sizeof(query), "UPDATE `ucp_characters` SET `Created` = '%d', `Gender` = '%d', `Birthdate` = '%s', `Origin` = '%s', `Skin` = '%d', `PosX` = '%.4f', `PosY` = '%.4f', `PosZ` = '%.4f', `PosA` = '%.4f', `Health` = '%.4f', `Interior` = '%d', `World` = '%d', `Money` = '%d', `BankMoney` = '%d', `Played`='%d|%d|%d' WHERE `ID` = '%d'",
+    format(query, sizeof(query), "%sUPDATE `ucp_characters` SET `Created` = '%d', `Gender` = '%d', `Birthdate` = '%s', `Origin` = '%s', `Skin` = '%d', `PosX` = '%.4f', `PosY` = '%.4f', `PosZ` = '%.4f', `PosA` = '%.4f', `Health` = '%.4f', `Interior` = '%d', `World` = '%d', `Money` = '%d', `BankMoney` = '%d', `Played`='%d|%d|%d' WHERE `ID` = '%d'",
         PlayerData[playerid][pCreated],
         PlayerData[playerid][pGender],
         PlayerData[playerid][pBirthdate],
@@ -93,6 +93,9 @@ SQL_SaveCharacter(playerid)
         PlayerData[playerid][pHour],
         PlayerData[playerid][pID]
     );
+    UpdateCharacterInt(playerid, "pPaycheck", PlayerData[playerid][pPaycheck]);
+    UpdateCharacterInt(playerid, "pSalary", PlayerData[playerid][pSalary]);
+    UpdateCharacterInt(playerid, "pExp", PlayerData[playerid][pExp]);
     mysql_tquery(sqlcon, query);
     return 1;
 }

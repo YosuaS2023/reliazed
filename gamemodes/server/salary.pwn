@@ -1,7 +1,7 @@
 stock AddSalary(playerid, name[], amount)
 {
 	new query[512];
-	mysql_format(sqlcon, query, sizeof(query), "INSERT INTO ucp_salary(owner, name, amount, date) VALUES ('%d', '%s', '%d', CURRENT_TIMESTAMP())", PlayerData[playerid][pID], name, amount);
+	mysql_format(sqlcon, query, sizeof(query), "INSERT INTO character_salary(owner, name, amount, date) VALUES ('%d', '%s', '%d', CURRENT_TIMESTAMP())", PlayerData[playerid][pID], name, amount);
 	mysql_tquery(sqlcon, query);
 	PlayerData[playerid][pSalary] += amount;
     UpdateCharacterInt(playerid, "salary", GetPlayerSalary(playerid));
@@ -11,7 +11,7 @@ stock AddSalary(playerid, name[], amount)
 stock ShowPlayerSalary(playerid, targetid)
 {
 	new query[512], list[2056], name[32], date[40], amount;
-	mysql_format(sqlcon, query, sizeof(query), "SELECT * FROM ucp_salary WHERE owner='%d' ORDER BY id ASC", PlayerData[targetid][pID]);
+	mysql_format(sqlcon, query, sizeof(query), "SELECT * FROM character_salary WHERE owner='%d' ORDER BY id ASC", PlayerData[targetid][pID]);
 	mysql_query(sqlcon, query);
 	new rows = cache_num_rows();
 	if(rows)
@@ -42,6 +42,14 @@ CMD:salary(playerid, params[])
 	return 1;
 }
 
+CMD:setsalary(playerid, params[])
+{
+	if(CheckAdmin(playerid, 3)) return PermissionError(playerid);
+	if(sscanf(params, "iis[20]", params[0], params[1], params[2])) return SendSyntaxMessage(playerid, "/setsalary [playerid] [amount] [name]");
+
+	AddSalary(params[0], params[2], params[1]);
+	return 1;
+}
 CMD:paycheck(playerid, params[])
 {
     if(!IsPlayerNearBanker(playerid)) return SendErrorMessage(playerid, "You're not near a banker.");
@@ -69,7 +77,7 @@ Dialog:salary_paycheck(playerid, response, listitem, inputtext[])
         PlayerData[playerid][pPaycheck] = 3600;
         PlayerData[playerid][pSalary] = 0;
         new string[256];
-        mysql_format(sqlcon,string, sizeof(string), "DELETE FROM `ucp_salary` WHERE `owner` = '%d'", PlayerData[playerid][pID]);
+        mysql_format(sqlcon,string, sizeof(string), "DELETE FROM `character_salary` WHERE `owner` = '%d'", PlayerData[playerid][pID]);
         mysql_tquery(sqlcon, string);
 
         if (PlayerData[playerid][pExp] < expamount)
@@ -83,7 +91,6 @@ Dialog:salary_paycheck(playerid, response, listitem, inputtext[])
             PlayerData[playerid][pExp] = PlayerData[playerid][pExp]-expamount;
 
             SetPlayerScore(playerid, PlayerData[playerid][pScore]);
-            UpdateCharacterInt(playerid, "pExp", PlayerData[playerid][pScore]);
         
             SendServerMessage(playerid, "Level UP! Sekarang kamu level %d", PlayerData[playerid][pScore]);
             //PlayAudioStreamForPlayer(playerid, "https://www.mboxdrive.com/GTA San Andreas - Mission passed sound.mp3");
@@ -92,5 +99,31 @@ Dialog:salary_paycheck(playerid, response, listitem, inputtext[])
         {
             PlayerData[playerid][pQuitjob]--;
         }
+		UpdateCharacterInt(playerid, "pExp", PlayerData[playerid][pExp]);
+		UpdateCharacterInt(playerid, "pScore", PlayerData[playerid][pScore]);
+		UpdateCharacterInt(playerid, "pPaycheck", PlayerData[playerid][pPaycheck]);
     }
+}
+
+task Salary[1000]()
+{
+	foreach(new playerid : Player)
+	{
+	if(PlayerData[playerid][pLogged] == 1)
+	{
+		if(PlayerData[playerid][pPaycheck] > 3600)
+		{
+			PlayerData[playerid][pPaycheck] = 0;
+		}
+		if(PlayerData[playerid][pPaycheck] > 0)
+		{
+			PlayerData[playerid][pPaycheck]--;
+			if(PlayerData[playerid][pPaycheck] <= 0)
+			{
+				SendServerMessage(playerid, "Kamu sudah bisa mengambil Paycheck sekarang!");
+				PlayerData[playerid][pPaycheck] = 0;
+			}
+		}
+	}
+	}
 }

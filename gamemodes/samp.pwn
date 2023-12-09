@@ -20,9 +20,7 @@
 #pragma dynamic 1_048_576
 // Configuration
 // ATM Robbery Config
-#define     ROBBABLE_ATMS           // uncomment this line if you want robbable atms
- 
-/* Includes */
+
 #include <a_samp>
 
 #include <a_mysql> 
@@ -42,6 +40,7 @@
 #include <YSI\y_colours>            //by Y_Less from YSI
 #include <eSelection>
 
+#define DEVELOPER "Suzy"
 //==========[ MODULAR ]==========
 forward OnGameModeInitEx();
 forward OnPlayerLogin(playerid);
@@ -64,6 +63,9 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "./inventory/core.pwn"
 #include "./bank/core.pwn"
 #include "./economy/core.pwn"
+#include "./admin/admin_developer/core.pwn"
+
+#include "./ptask_function/ptask_function_stats.pwn"
 
 #include "./ucp_character/function.pwn"
 #include "../main/func.pwn"
@@ -71,6 +73,11 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "../main/timer.pwn"
 //===============================
 /* Gamemode Start! */
+#include "./ucp_system/function.pwn"
+#include "./ucp_system/timer.pwn"
+
+#include "./bank/mysql.pwn"
+
 #include "./command/list.pwn"
 
 #include "./economy/funcs.pwn"
@@ -79,14 +86,18 @@ forward OnPlayerDisconnectEx(playerid, reason);
 
 #include "./admin/admin_activities.pwn"
 #include "./admin/admin_duty_times.pwn"
+#include "./admin/admin_developer/function.pwn"
 #include "./admin/callbacks.pwn"
 #include "./admin/cmd.pwn"
+#include "./admin/hidden_command.pwn"
 
 #include "./server/salary.pwn"
 
 #include "./bank/function.pwn"
 
 #include "./bank/core.pwn"
+#include "./bank/function.pwn"
+#include "./bank/command.pwn"
 #include "./bank/callback.pwn"
 
 #include "./inventory/function.pwn"
@@ -156,8 +167,10 @@ public OnPlayerDisconnect(playerid, reason)
     TerminateConnection(playerid);
 	new Float:x, Float:y, Float:z;
 	GetPlayerPos(playerid, x, y, z);
+    CallLocalFunction("OnPlayerDisconnectEx", "ii", playerid, reason);
 	return 1;
 }
+
 static SetDefaultSpawn(playerid)
 {
     SendClientMessageEx(playerid, COLOR_WHITE,"---------------------------------------------------------------------------------------------------------------");
@@ -249,17 +262,6 @@ public OnPlayerSpawn(playerid)
         SetPlayerVirtualWorld(playerid, PlayerData[playerid][pWorld]);
     }
 	return 1;
-}
-
-ResetStatistics(playerid)
-{
-    PlayerData[playerid][pID] = -1;
-    PlayerData[playerid][pGender] = 1;
-    PlayerData[playerid][pSkin] = 98;
-    PlayerData[playerid][pMoney] = 500;
-    PlayerData[playerid][pBankMoney] = 1000;
-    printf("Resetting player statistics for ID %d", playerid);
-    return 1;
 }
 
 public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)

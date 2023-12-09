@@ -22,7 +22,7 @@ CMD:atm(playerid, params[])
 // Admin Commands
 CMD:asetowner(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id, owner[MAX_PLAYER_NAME];
     if(sscanf(params, "is[24]", id, owner)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/asetowner [account id] [new owner]");
     new query[128];
@@ -33,7 +33,7 @@ CMD:asetowner(playerid, params[])
  
 CMD:asetpassword(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id, password[16];
     if(sscanf(params, "is[16]", id, password)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/asetpassword [account id] [new password]");
     new query[128];
@@ -44,7 +44,7 @@ CMD:asetpassword(playerid, params[])
  
 CMD:asetbalance(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id, balance;
     if(sscanf(params, "ii", id, balance)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/asetbalance [account id] [balance]");
     if(balance > ACCOUNT_LIMIT) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Balance you specified exceeds account money limit.");
@@ -56,7 +56,7 @@ CMD:asetbalance(playerid, params[])
  
 CMD:aclearlogs(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id, type;
     if(sscanf(params, "iI(0)", id, type))
     {
@@ -78,7 +78,7 @@ CMD:aclearlogs(playerid, params[])
  
 CMD:aremoveaccount(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id;
     if(sscanf(params, "i", id)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/aremoveaccount [account id]");
     foreach(new i : Player)
@@ -94,7 +94,7 @@ CMD:aremoveaccount(playerid, params[])
  
 CMD:areturnaccount(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id;
     if(sscanf(params, "i", id)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/areturnaccount [account id]");
     new query[128];
@@ -106,7 +106,7 @@ CMD:areturnaccount(playerid, params[])
 // Admin Commands for Bankers
 CMD:createbanker(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id = Iter_Free(Bankers);
     if(id == -1) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Can't create any more bankers.");
     new skin;
@@ -138,7 +138,7 @@ CMD:createbanker(playerid, params[])
  
 CMD:setbankerpos(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id;
     if(sscanf(params, "i", id)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/setbankerpos [banker id]");
     if(!Iter_Contains(Bankers, id)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Invalid banker ID.");
@@ -169,7 +169,7 @@ CMD:setbankerpos(playerid, params[])
  
 CMD:setbankerskin(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id, skin;
     if(sscanf(params, "ii", id, skin)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/setbankerskin [banker id] [skin id]");
     if(!Iter_Contains(Bankers, id)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Invalid banker ID.");
@@ -188,7 +188,7 @@ CMD:setbankerskin(playerid, params[])
  
 CMD:removebanker(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id;
     if(sscanf(params, "i", id)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/removebanker [banker id]");
     if(!Iter_Contains(Bankers, id)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Invalid banker ID.");
@@ -214,7 +214,7 @@ CMD:removebanker(playerid, params[])
 // Admin Commands for ATMs
 CMD:createatm(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id = Iter_Free(ATMs);
     if(id == -1) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Can't create any more ATMs.");
     ATMData[id][atmRX] = ATMData[id][atmRY] = 0.0;
@@ -258,7 +258,7 @@ CMD:createatm(playerid, params[])
  
 CMD:editatm(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id;
     if(sscanf(params, "i", id)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/editatm [ATM id]");
     if(!Iter_Contains(ATMs, id)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Invalid ATM ID.");
@@ -271,7 +271,7 @@ CMD:editatm(playerid, params[])
  
 CMD:removeatm(playerid, params[])
 {
-    if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
+    if(CheckAdmin(playerid, 4)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Only RCON admins can use this command.");
     new id;
     if(sscanf(params, "i", id)) return SendClientMessage(playerid, 0xE88732FF, "SYNTAX: {FFFFFF}/removeatm [ATM id]");
     if(!Iter_Contains(ATMs, id)) return SendClientMessage(playerid, 0xE74C3CFF, "ERROR: {FFFFFF}Invalid ATM ID.");

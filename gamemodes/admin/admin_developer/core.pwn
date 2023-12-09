@@ -1,0 +1,2 @@
+#define    DEVELOPER_GAMEMODE 1
+#define    DEVELOPER_CLIENT 2

@@ -15,3 +15,21 @@ UpdateCharacterString(playerid, const column_name[], value[])
 	mysql_tquery(sqlcon, sprintf("UPDATE `ucp_characters` SET `%s` = '%s' WHERE `ID`='%d';", column_name, SQL_ReturnEscaped(value), GetPlayerSQLID(playerid)));
 	return 1;
 }
+
+ResetStatistics(playerid)
+{
+    PlayerData[playerid][pID] = -1;
+    PlayerData[playerid][pGender] = 1;
+    PlayerData[playerid][pSkin] = 98;
+    PlayerData[playerid][pMoney] = 500;
+	PlayerData[playerid][pLogged] = 0;
+	PlayerData[playerid][pScore] = 0;
+	PlayerData[playerid][pExp] = 0;
+    PlayerData[playerid][pBankMoney] = 1000;
+	
+	PlayerData[playerid][pSalary] = 0;
+	PlayerData[playerid][pLogged] = 0;
+	PlayerData[playerid][pPaycheck] = 0;
+    printf("Resetting player statistics for ID %d", playerid);
+    return 1;
+}

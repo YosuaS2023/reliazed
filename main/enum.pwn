@@ -27,6 +27,7 @@ enum UserData {
 
     //admin
     uAdmin,
+	uDeveloper,
     uAdminHide,
     uAdminDuty,
     uReportPoint,
@@ -56,7 +57,7 @@ enum e_player_data
 	pSalary,
 	pOrigin[32],
 	pExp,
-	pQuitJob,
+	pQuitjob,
 	pGender,
 	pSkin,
 	pBirthdate[24],
@@ -81,7 +82,8 @@ enum e_player_data
 	pMinute,
 	pHour,
 	pSecond,
-	pStorageSelect
+	pStorageSelect,
+	Timer:pPtask_Stats
 };
 new CharacterList[MAX_PLAYERS][MAX_CHARACTERS][MAX_PLAYER_NAME + 1];
 new PlayerData[MAX_PLAYERS][e_player_data];

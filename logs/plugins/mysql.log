@@ -29896,3 +29896,2534 @@
 [00:19:58] [ERROR] mysql_format: destination size '512' is too small
 [00:19:58] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
 [00:19:58] [ERROR] orm_insert: invalid orm id '0'
+[09:41:58] [WARNING] mysql_connect_file: no password specified
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:41:58] [WARNING] mysql_connect: no password specified
+[09:41:58] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'realized_tes'
+[09:42:22] [WARNING] mysql_connect_file: no password specified
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:22] [WARNING] mysql_connect: no password specified
+[09:42:54] [WARNING] mysql_connect_file: no password specified
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1049 'Unknown database 'realized_tes''
+[09:42:54] [WARNING] mysql_connect: no password specified
+[09:43:43] [WARNING] mysql_connect_file: no password specified
+[09:43:43] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[09:43:43] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[09:43:43] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[09:43:43] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[09:43:43] [WARNING] mysql_connect: no password specified
+[09:43:43] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:43:43] [ERROR] mysql_format: destination size '512' is too small
+[09:43:43] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:43:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:43:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:44:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:44:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:44:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:44:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:44:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:44:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:44:34] [WARNING] mysql_connect_file: no password specified
+[09:44:34] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[09:44:34] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[09:44:34] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[09:44:34] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[09:44:34] [WARNING] mysql_connect: no password specified
+[09:44:34] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:44:34] [ERROR] mysql_format: destination size '512' is too small
+[09:44:34] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:44:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:44:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:44:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:44:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:44:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:44:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:50
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:45:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:45:57
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:04
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:10
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:17
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:23
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:30
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:36
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:43
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:49
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:46:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:46:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:47:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:47:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:51:23] [WARNING] mysql_connect_file: no password specified
+[09:51:23] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[09:51:23] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[09:51:23] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[09:51:23] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[09:51:23] [WARNING] mysql_connect: no password specified
+[09:51:23] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:51:23] [ERROR] mysql_format: destination size '512' is too small
+[09:51:23] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:51:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:51:33
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:51:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:51:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:51:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:51:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:51:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:51:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:33
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:52:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:52:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:05] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:05
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:12
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:25
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:31
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:38
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:53:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:53:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:02] [WARNING] mysql_connect_file: no password specified
+[09:54:02] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[09:54:02] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[09:54:02] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[09:54:02] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[09:54:02] [WARNING] mysql_connect: no password specified
+[09:54:02] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:54:02] [ERROR] mysql_format: destination size '512' is too small
+[09:54:02] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:54:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:12
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:25
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:32
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:38
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:45
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:52
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:54:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:54:58
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:05] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:05
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:11
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:18
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:24
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:31
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:37
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:44
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:50
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:55:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:55:57
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:03
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:10] [ERROR] error #1146 while executing query "INSERT INTO `admin_duty_times` (`account`) VALUES ('1')": Table 'reliazed.admin_duty_times' doesn't exist
+[09:56:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:10
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:17
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:23
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:29
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:36
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:42
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:49
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:56:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:56:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:08
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:21
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:27
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:34
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:40
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:47
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:57:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:57:53
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:00
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:06
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:13
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:19
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:26
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:32
+
+* (Founder) Suzy (ID: 0), ON-DUTY: Yes *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:37] [WARNING] mysql_connect_file: no password specified
+[09:58:37] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[09:58:37] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[09:58:37] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[09:58:37] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[09:58:37] [WARNING] mysql_connect: no password specified
+[09:58:37] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:58:37] [ERROR] mysql_format: destination size '512' is too small
+[09:58:37] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:58:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:58:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:58:53
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:00
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:07
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:14
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:20
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:27
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:33
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:40
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:47
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[09:59:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 00:59:53
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:00
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:06
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:12
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:18
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:24
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:31
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:37
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:44
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:50
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:00:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:00:56
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:03
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:09
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:21
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:28
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:34
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:40
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:47
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:01:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:01:53
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:02:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:02:00
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:02:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:02:06
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:02:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:02:12
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:02:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:02:18
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:02:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:02:25
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[10:02:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 01:02:32
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:32:59] [WARNING] mysql_connect_file: no password specified
+[20:32:59] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[20:32:59] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[20:32:59] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[20:32:59] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[20:32:59] [WARNING] mysql_connect: no password specified
+[20:32:59] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[20:32:59] [ERROR] mysql_format: destination size '512' is too small
+[20:32:59] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[20:33:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:09
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:33:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:33:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:33:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:33:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:35
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:33:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:42
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:33:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:48
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:33:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:33:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:08
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:22
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:28
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:35
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:42
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:48
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:34:55] [ERROR] error #1146 while executing query "INSERT INTO bank_logs SET AccountID=1, Type=1, Player='Suzy_Kyori', Date=UNIX_TIMESTAMP()": Table 'reliazed.bank_logs' doesn't exist
+[20:34:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:34:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:08
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:22
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:28
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:35
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:41
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:47
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:35:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:35:54
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:00
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:07
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:13
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:20
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:26
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:32
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:39
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:45
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:52
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:36:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:36:58
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:04
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:11
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:17
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:23
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:30
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:36
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:43
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:49
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:37:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:37:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:07] [WARNING] mysql_connect_file: no password specified
+[20:38:07] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[20:38:07] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[20:38:07] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[20:38:07] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[20:38:07] [WARNING] mysql_connect: no password specified
+[20:38:07] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[20:38:07] [ERROR] mysql_format: destination size '512' is too small
+[20:38:07] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[20:38:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:23
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:30
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:36
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:43
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:46] [ERROR] error #1146 while executing query "INSERT INTO bank_logs SET AccountID=1, Type=1, Player='Suzy_Kyori', Date=UNIX_TIMESTAMP()": Table 'reliazed.bank_logs' doesn't exist
+[20:38:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:50
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:38:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:38:56
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:03
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:09
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:16
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:22
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:29
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:35
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:41] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `salary` = '1000' WHERE `ID` = '1';": Unknown column 'salary' in 'field list'
+[20:39:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:42
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:49
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:39:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:39:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:09
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:19] [ERROR] error #1146 while executing query "INSERT INTO bank_logs SET AccountID=1, Type=2, Player='Suzy_Kyori', Amount=1000, Date=UNIX_TIMESTAMP()": Table 'reliazed.bank_logs' doesn't exist
+[20:40:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:22
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:28
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:35
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:41
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:48
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:40:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:40:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:01
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:07
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:13
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:19
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:26
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:32
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:38
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:45
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:51
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:41:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:41:57
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:04
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:10
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:16
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:23
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:25] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `salary` = '10000' WHERE `ID` = '1';": Unknown column 'salary' in 'field list'
+[20:42:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:30
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:36
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:42] [ERROR] error #1146 while executing query "INSERT INTO bank_logs SET AccountID=1, Type=2, Player='Suzy_Kyori', Amount=10000, Date=UNIX_TIMESTAMP()": Table 'reliazed.bank_logs' doesn't exist
+[20:42:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:43
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:50
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:42:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:42:56
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:09
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:21
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:28
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:35
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:41
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:48
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:43:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:43:54
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:01
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:08
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:21
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:27
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:33
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:40
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:46
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:44:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:44:53
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:45:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:45:00
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:45:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:45:06
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:45:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:45:12
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:45:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:45:19
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:45:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:45:25
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:45:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:45:31
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:58:47] [WARNING] mysql_connect_file: no password specified
+[20:58:47] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[20:58:47] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[20:58:47] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[20:58:47] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[20:58:47] [WARNING] mysql_connect: no password specified
+[20:58:47] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[20:58:47] [ERROR] mysql_format: destination size '512' is too small
+[20:58:47] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[20:58:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:58:56
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:03
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:09] [ERROR] cache_get_value_name_int: field 'Paycheck' not found
+[20:59:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:10
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:16
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:23
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:29
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:33] [ERROR] error #1146 while executing query "INSERT INTO bank_logs SET AccountID=1, Type=1, Player='Suzy_Kyori', Date=UNIX_TIMESTAMP()": Table 'reliazed.bank_logs' doesn't exist
+[20:59:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:36
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:43
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:49
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[20:59:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 11:59:56
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:03
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:09
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:12] [ERROR] error #1146 while executing query "SELECT *, FROM_UNIXTIME(Date, '%d/%m/%Y %H:%i:%s') as ActionDate FROM bank_logs WHERE AccountID=1 && Type=2 ORDER BY Date DESC LIMIT 0, 15": Table 'reliazed.bank_logs' doesn't exist
+[21:00:12] [ERROR] cache_get_row_count: no active cache
+[21:00:12] [ERROR] cache_delete: invalid cache id '0'
+[21:00:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:16
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:20] [ERROR] error #1146 while executing query "SELECT *, FROM_UNIXTIME(Date, '%d/%m/%Y %H:%i:%s') as ActionDate FROM bank_logs WHERE AccountID=1 && Type=3 ORDER BY Date DESC LIMIT 0, 15": Table 'reliazed.bank_logs' doesn't exist
+[21:00:20] [ERROR] cache_get_row_count: no active cache
+[21:00:20] [ERROR] cache_delete: invalid cache id '0'
+[21:00:20] [ERROR] error #1146 while executing query "SELECT *, FROM_UNIXTIME(Date, '%d/%m/%Y %H:%i:%s') as ActionDate FROM bank_logs WHERE AccountID=1 && Type=4 ORDER BY Date DESC LIMIT 0, 15": Table 'reliazed.bank_logs' doesn't exist
+[21:00:20] [ERROR] cache_get_row_count: no active cache
+[21:00:20] [ERROR] cache_delete: invalid cache id '0'
+[21:00:21] [ERROR] error #1146 while executing query "SELECT *, FROM_UNIXTIME(Date, '%d/%m/%Y %H:%i:%s') as ActionDate FROM bank_logs WHERE AccountID=1 && Type=1 ORDER BY Date DESC LIMIT 0, 15": Table 'reliazed.bank_logs' doesn't exist
+[21:00:21] [ERROR] cache_get_row_count: no active cache
+[21:00:21] [ERROR] cache_delete: invalid cache id '0'
+[21:00:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:23
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:29
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:36
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:42
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:49
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:00:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:00:55
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:01:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:01:02
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:01:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:01:08
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:01:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:01:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:01:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:01:21
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:06:36] [WARNING] mysql_connect_file: no password specified
+[21:06:36] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[21:06:36] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[21:06:36] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[21:06:36] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[21:06:36] [WARNING] mysql_connect: no password specified
+[21:06:36] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[21:06:36] [ERROR] mysql_format: destination size '512' is too small
+[21:06:36] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[21:06:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:06:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:06:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:06:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:13
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:19
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:26
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:33
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:39
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:46
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:53
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:07:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:07:59
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:08:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:08:06
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:08:06] [ERROR] error #1064 while executing query "˜UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` = 'American', `Origin` = '…28/09/2000', `Skin` = '1154659081', `PosX` = '-2322.5412', `PosY` = '13.3828', `PosZ` = '109.0745', `PosA` = '100.0000', `Health` = '0.0000', `Interior` = '0', `World` = '-10600', `Money` = '1000', `BankMoney` = '101', `Played`='97|121|1' WHERE `ID` = ''": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` =...' at line 1
+[21:08:06] [ERROR] error #1064 while executing query "˜UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` = 'American', `Origin` = '…28/09/2000', `Skin` = '1154659081', `PosX` = '-2322.5412', `PosY` = '13.3828', `PosZ` = '109.0745', `PosA` = '100.0000', `Health` = '0.0000', `Interior` = '0', `World` = '-10600', `Money` = '1000', `BankMoney` = '101', `Played`='97|121|1' WHERE `ID` = ''": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` =...' at line 1
+[21:09:27] [WARNING] mysql_connect_file: no password specified
+[21:09:27] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[21:09:27] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[21:09:27] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[21:09:27] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[21:09:27] [WARNING] mysql_connect: no password specified
+[21:09:27] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[21:09:27] [ERROR] mysql_format: destination size '512' is too small
+[21:09:27] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[21:09:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:09:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:09:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:09:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:09:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:09:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:09:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:09:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:11
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:17
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:24
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:31
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:37] [ERROR] error #1064 while executing query "˜UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` = 'American', `Origin` = '…28/09/2000', `Skin` = '1154643562', `PosX` = '-2321.6437', `PosY` = '13.3828', `PosZ` = '26.4807', `PosA` = '100.0000', `Health` = '0.0000', `Interior` = '0', `World` = '-10600', `Money` = '1000', `BankMoney` = '101', `Played`='97|121|1' WHERE `ID` = ''": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` =...' at line 1
+[21:10:37] [ERROR] error #1064 while executing query "˜UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` = 'American', `Origin` = '…28/09/2000', `Skin` = '1154643562', `PosX` = '-2321.6437', `PosY` = '13.3828', `PosZ` = '26.4807', `PosA` = '100.0000', `Health` = '0.0000', `Interior` = '0', `World` = '-10600', `Money` = '1000', `BankMoney` = '101', `Played`='97|121|1' WHERE `ID` = ''": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` =...' at line 1
+[21:10:37] [ERROR] error #1064 while executing query "˜UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` = 'American', `Origin` = '…28/09/2000', `Skin` = '1154643562', `PosX` = '-2321.6437', `PosY` = '13.3828', `PosZ` = '26.4807', `PosA` = '100.0000', `Health` = '0.0000', `Interior` = '0', `World` = '-10600', `Money` = '1000', `BankMoney` = '101', `Played`='97|121|1' WHERE `ID` = ''": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?UPDATE `ucp_characters` SET `Created` = '1', `Gender` = '50', `Birthdate` =...' at line 1
+[21:10:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:10:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:10:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:11
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:31
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:11:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:11:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:23
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:12:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:12:56
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:09
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:16
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:29
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:42
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:13:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:13:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:09
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:29
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:42
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:48
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:14:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:14:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:48
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:15:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:15:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:27
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:16:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:16:54
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:07
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:20
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:27
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:33
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:40
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:17:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:17:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:32
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:45
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:52
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:18:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:18:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:05] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:05
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:12
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:18
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:25
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:32
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:38
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:45
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:52
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:19:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:19:58
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:05] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:05
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:11
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:18
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:25
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:31
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:38
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:20:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:20:58
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:11
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:31
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:21:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:21:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:50
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:22:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:22:56
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:03
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:16
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:23
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:23:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:23:56
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:09
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:16
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:29
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:42
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:48
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:24:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:24:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:48
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:25:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:25:54
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:07
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:27
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:26:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:26:54
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:07
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:20
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:27
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:40
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:27:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:27:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:07
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:20
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:33
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:40
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:28:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:28:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:32
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:45
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:52
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:29:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:29:58
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:05] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:05
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:11
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:18
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:30:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:30:56
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:31:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:31:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:25
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:32
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:38
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:45
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:32:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:32:58
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:23
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:42
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:33:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:33:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:27
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:40
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:34:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:34:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:12
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:18
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:31
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:50
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:35:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:35:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:03
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:16
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:29
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:48
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:36:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:36:54
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:07
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:20
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:33
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:52
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:37:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:37:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:05] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:05
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:11
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:18
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:37] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:37
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:50] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:50
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:38:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:38:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:03
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:16
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:23
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:39:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:39:56
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:03] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:03
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:09
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:16
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:29
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:42
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:40:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:40:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:48
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:41:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:41:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:42:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:42:54
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:07
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:20
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:27
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:40
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:43:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:43:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:20
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:33
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:44:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:44:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:12
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:32
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:45
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:52
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:45:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:45:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:05] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:05
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:12
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:18] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:18
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:25] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:25
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:31] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:31
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:38
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:45
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:46:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:46:58
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:11
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:47:56] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:47:56
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:09] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:09
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:22] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:22
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:34] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:34
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:47] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:47
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:48:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:48:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:00] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:00
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:06
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:13] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:13
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:32
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:39] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:39
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:45] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:45
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:52] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:52
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:49:58] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:49:58
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:11] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:11
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:17] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:17
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:24] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:24
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:30] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:30
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:43] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:43
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:50:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:50:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:02] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:02
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:27] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:27
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:33] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:33
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:40] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:40
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:46] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:46
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:53] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:53
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:51:59] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:51:59
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:06] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:05
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:12] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:12
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:19] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:19
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:32] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:32
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:38] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:38
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:44] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:44
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:51] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:51
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:52:57] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:52:57
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:04] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:04
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:10] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:10
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:16] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:16
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:23] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:23
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:29] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:29
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:36] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:36
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:42] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:42
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:49] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:49
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:53:55] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:53:55
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:15
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:21
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:28
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:35
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:41
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:48
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:54:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:54:54
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:55:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:55:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:55:07] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:55:07
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:55:14] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:55:14
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:55:20] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:55:20
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[21:55:26] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 12:55:26
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:13:51] [WARNING] mysql_connect_file: no password specified
+[23:13:51] [ERROR] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
+[23:13:51] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
+[23:13:51] [ERROR] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
+[23:13:51] [ERROR] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
+[23:13:51] [WARNING] mysql_connect: no password specified
+[23:13:51] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[23:13:51] [ERROR] mysql_format: destination size '512' is too small
+[23:13:51] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[23:14:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:01
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:08] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:08
+
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:12] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[23:14:15] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:15
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:21] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:21
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:28] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:28
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:35] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:35
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:41] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:41
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:48] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:48
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:14:54] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:54
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[23:15:01] [ERROR] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:15:01
+
+* (Founder) Suzy (ID: 0), ON-DUTY: No *
+' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist

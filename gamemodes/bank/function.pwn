@@ -55,7 +55,7 @@ Bank_ShowMenu(playerid)
         format(
             string,
             sizeof(string),
-            "{%06x}Create Account\t{2ECC71}%s\nMy Accounts\t{F1C40F}%d\nDeposit\t{2ECC71}%s\nWithdraw\t{2ECC71}%s\nTransfer\t{2ECC71}%s\nPaycheck\t{2ECC71}%d\n{%06x}Account Logs\n{%06x}Change Password\n{%06x}Remove Account\nLogout",
+            "{%06x}Create Account\t{2ECC71}%s\nMy Accounts\t{F1C40F}%d\nDeposit\t{2ECC71}%s\nWithdraw\t{2ECC71}%s\nTransfer\t{2ECC71}%s\nPaycheck\t{2ECC71}%s\n{%06x}Account Logs\n{%06x}Change Password\n{%06x}Remove Account\nLogout",
             (using_atm ? 0xE74C3CFF >>> 8 : 0xFFFFFFFF >>> 8),
             (using_atm ? ("") : FormatMoney(ACCOUNT_PRICE)),
             Bank_AccountCount(playerid),

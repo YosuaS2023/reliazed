@@ -17995,3 +17995,2633 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [01:15:47] [part] Suzyy has left the server (0:0)
 [01:15:52] [connection] incoming connection: 182.3.52.82:41203 id: 0
 [01:15:52] [join] Suzy has joined the server (0:182.3.52.82)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:41:57] password = ""  (string)
+[09:41:57] filterscripts = ""  (string)
+[09:41:57] 
+[09:41:57] Server Plugins
+[09:41:57] --------------
+[09:41:57]  Loading plugin: crashdetect
+[09:41:57]   CrashDetect plugin 4.19.4
+[09:41:57]   Loaded.
+[09:41:57]  Loading plugin: sscanf
+[09:41:57] 
+
+[09:41:57]  ===============================
+
+[09:41:57]       sscanf plugin loaded.     
+
+[09:41:57]          Version:  2.8.3        
+
+[09:41:57]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:41:57]  ===============================
+
+[09:41:57]   Loaded.
+[09:41:57]  Loading plugin: pawnraknet
+[09:41:57] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:41:57] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:41:57]   Loaded.
+[09:41:57]  Loading plugin: pawnplus
+[09:41:57]  PawnPlus v1.4.2 loaded
+[09:41:57]  Created by IllidanS4
+[09:41:57]   Loaded.
+[09:41:57]  Loading plugin: GPS
+[09:41:57] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:41:57]   Loaded.
+[09:41:58]  Loading plugin: streamer
+[09:41:58] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:41:58]   Loaded.
+[09:41:58]  Loading plugin: mysql
+[09:41:58]  >> plugin.mysql: R41-4 successfully loaded.
+[09:41:58]   Loaded.
+[09:41:58]  Loading plugin: pawncmd
+[09:41:58] [Pawn.CMD] plugin v3.4.0 loading...
+[09:41:58] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:41:58]   Loaded.
+[09:41:58]  Loading plugin: chrono
+[09:41:58]   Loaded.
+[09:41:58]  Loading plugin: json
+[09:41:58]   Loaded.
+[09:41:58]  Loading plugin: sky
+[09:41:58] 
+[09:41:58]  ===============================
+[09:41:58]    
+[09:41:58]    < SKY - 2.3.0 >
+[09:41:58]    
+[09:41:58]    (c) 2008 - Present | YSF Maintainers
+[09:41:58]    (c) 2015 | Oscar "Slice" Broman
+[09:41:58]    
+[09:41:58]    Server Version: 0.3.7 R2
+[09:41:58]    Operating System: Windows
+[09:41:58]    Built on: Sep 27 2021 at 23:19:52
+[09:41:58]    
+[09:41:58]  ===============================
+[09:41:58] 
+[09:41:58]   Loaded.
+[09:41:58]  Loading plugin: ysf
+[09:41:58] 
+[09:41:58]  ==============================================
+[09:41:58]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:41:58]   (c) 2008 Alex "Y_Less" Cole
+[09:41:58]   (c) 2010 - 2018 kurta999
+[09:41:58]   (c) 2018 - 2020 IllidanS4
+[09:41:58]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:41:58]  ==============================================
+[09:41:58] 
+[09:41:58]   Loaded.
+[09:41:58]  Loaded 12 plugins.
+
+[09:41:58] 
+[09:41:58] Filterscripts
+[09:41:58] ---------------
+[09:41:58]   Loaded 0 filterscripts.
+
+[09:41:58]  
+[09:41:58]  
+[09:41:58]  
+[09:41:58]  ======================================= 
+[09:41:58]  |                                     | 
+[09:41:58]  |        YSI version 4.00.0001        | 
+[09:41:58]  |        By Alex "Y_Less" Cole        | 
+[09:41:58]  |                                     | 
+[09:41:58]  ======================================= 
+[09:41:58]  
+[09:41:58] [OnGameModeInit] Initialising 'Main'...
+[09:41:58] [Database] Failed! Error: [1049] Unknown database 'realized_tes'
+[09:41:58]   [Bank System] Initializing...
+[09:41:58]   [Bank System] Can't connect to MySQL. (Error #1049)
+[09:41:58] 
+----------------------------------------
+[09:41:58]  Gamemode Ucp versi 0.1 register dan login
+[09:41:58] ----------------------------------------
+
+[09:41:58] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:42:21] password = ""  (string)
+[09:42:21] filterscripts = ""  (string)
+[09:42:21] 
+[09:42:21] Server Plugins
+[09:42:21] --------------
+[09:42:21]  Loading plugin: crashdetect
+[09:42:21]   CrashDetect plugin 4.19.4
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: sscanf
+[09:42:21] 
+
+[09:42:21]  ===============================
+
+[09:42:21]       sscanf plugin loaded.     
+
+[09:42:21]          Version:  2.8.3        
+
+[09:42:21]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:42:21]  ===============================
+
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: pawnraknet
+[09:42:21] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:42:21] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: pawnplus
+[09:42:21]  PawnPlus v1.4.2 loaded
+[09:42:21]  Created by IllidanS4
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: GPS
+[09:42:21] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: streamer
+[09:42:21] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: mysql
+[09:42:21]  >> plugin.mysql: R41-4 successfully loaded.
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: pawncmd
+[09:42:21] [Pawn.CMD] plugin v3.4.0 loading...
+[09:42:21] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: chrono
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: json
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: sky
+[09:42:21] 
+[09:42:21]  ===============================
+[09:42:21]    
+[09:42:21]    < SKY - 2.3.0 >
+[09:42:21]    
+[09:42:21]    (c) 2008 - Present | YSF Maintainers
+[09:42:21]    (c) 2015 | Oscar "Slice" Broman
+[09:42:21]    
+[09:42:21]    Server Version: 0.3.7 R2
+[09:42:21]    Operating System: Windows
+[09:42:21]    Built on: Sep 27 2021 at 23:19:52
+[09:42:21]    
+[09:42:21]  ===============================
+[09:42:21] 
+[09:42:21]   Loaded.
+[09:42:21]  Loading plugin: ysf
+[09:42:21] 
+[09:42:21]  ==============================================
+[09:42:21]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:42:21]   (c) 2008 Alex "Y_Less" Cole
+[09:42:21]   (c) 2010 - 2018 kurta999
+[09:42:21]   (c) 2018 - 2020 IllidanS4
+[09:42:21]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:42:21]  ==============================================
+[09:42:21] 
+[09:42:21]   Loaded.
+[09:42:21]  Loaded 12 plugins.
+
+[09:42:21] 
+[09:42:21] Filterscripts
+[09:42:21] ---------------
+[09:42:21]   Loaded 0 filterscripts.
+
+[09:42:21]  
+[09:42:21]  
+[09:42:21]  
+[09:42:21]  ======================================= 
+[09:42:21]  |                                     | 
+[09:42:21]  |        YSI version 4.00.0001        | 
+[09:42:21]  |        By Alex "Y_Less" Cole        | 
+[09:42:21]  |                                     | 
+[09:42:21]  ======================================= 
+[09:42:21]  
+[09:42:22] [OnGameModeInit] Initialising 'Main'...
+[09:42:22] [Database] Failed! Error: [1049] Unknown database 'realized_tes'
+[09:42:22]   [Bank System] Initializing...
+[09:42:22]   [Bank System] Can't connect to MySQL. (Error #1049)
+[09:42:22] 
+----------------------------------------
+[09:42:22]  Gamemode Ucp versi 0.1 register dan login
+[09:42:22] ----------------------------------------
+
+[09:42:22] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:42:53] password = ""  (string)
+[09:42:53] filterscripts = ""  (string)
+[09:42:53] 
+[09:42:53] Server Plugins
+[09:42:53] --------------
+[09:42:53]  Loading plugin: crashdetect
+[09:42:53]   CrashDetect plugin 4.19.4
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: sscanf
+[09:42:53] 
+
+[09:42:53]  ===============================
+
+[09:42:53]       sscanf plugin loaded.     
+
+[09:42:53]          Version:  2.8.3        
+
+[09:42:53]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:42:53]  ===============================
+
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: pawnraknet
+[09:42:53] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:42:53] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: pawnplus
+[09:42:53]  PawnPlus v1.4.2 loaded
+[09:42:53]  Created by IllidanS4
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: GPS
+[09:42:53] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: streamer
+[09:42:53] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: mysql
+[09:42:53]  >> plugin.mysql: R41-4 successfully loaded.
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: pawncmd
+[09:42:53] [Pawn.CMD] plugin v3.4.0 loading...
+[09:42:53] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: chrono
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: json
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: sky
+[09:42:53] 
+[09:42:53]  ===============================
+[09:42:53]    
+[09:42:53]    < SKY - 2.3.0 >
+[09:42:53]    
+[09:42:53]    (c) 2008 - Present | YSF Maintainers
+[09:42:53]    (c) 2015 | Oscar "Slice" Broman
+[09:42:53]    
+[09:42:53]    Server Version: 0.3.7 R2
+[09:42:53]    Operating System: Windows
+[09:42:53]    Built on: Sep 27 2021 at 23:19:52
+[09:42:53]    
+[09:42:53]  ===============================
+[09:42:53] 
+[09:42:53]   Loaded.
+[09:42:53]  Loading plugin: ysf
+[09:42:53] 
+[09:42:53]  ==============================================
+[09:42:53]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:42:53]   (c) 2008 Alex "Y_Less" Cole
+[09:42:53]   (c) 2010 - 2018 kurta999
+[09:42:53]   (c) 2018 - 2020 IllidanS4
+[09:42:53]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:42:53]  ==============================================
+[09:42:53] 
+[09:42:53]   Loaded.
+[09:42:53]  Loaded 12 plugins.
+
+[09:42:53] 
+[09:42:53] Filterscripts
+[09:42:53] ---------------
+[09:42:53]   Loaded 0 filterscripts.
+
+[09:42:53]  
+[09:42:53]  
+[09:42:53]  
+[09:42:53]  ======================================= 
+[09:42:53]  |                                     | 
+[09:42:53]  |        YSI version 4.00.0001        | 
+[09:42:53]  |        By Alex "Y_Less" Cole        | 
+[09:42:53]  |                                     | 
+[09:42:53]  ======================================= 
+[09:42:53]  
+[09:42:54] [OnGameModeInit] Initialising 'Main'...
+[09:42:54] [Database] Failed! Error: [1049] Unknown database 'realized_tes'
+[09:42:54]   [Bank System] Initializing...
+[09:42:54]   [Bank System] Can't connect to MySQL. (Error #1049)
+[09:42:54] 
+----------------------------------------
+[09:42:54]  Gamemode Ucp versi 0.1 register dan login
+[09:42:54] ----------------------------------------
+
+[09:42:54] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:43:43] password = ""  (string)
+[09:43:43] filterscripts = ""  (string)
+[09:43:43] 
+[09:43:43] Server Plugins
+[09:43:43] --------------
+[09:43:43]  Loading plugin: crashdetect
+[09:43:43]   CrashDetect plugin 4.19.4
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: sscanf
+[09:43:43] 
+
+[09:43:43]  ===============================
+
+[09:43:43]       sscanf plugin loaded.     
+
+[09:43:43]          Version:  2.8.3        
+
+[09:43:43]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:43:43]  ===============================
+
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: pawnraknet
+[09:43:43] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:43:43] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: pawnplus
+[09:43:43]  PawnPlus v1.4.2 loaded
+[09:43:43]  Created by IllidanS4
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: GPS
+[09:43:43] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: streamer
+[09:43:43] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: mysql
+[09:43:43]  >> plugin.mysql: R41-4 successfully loaded.
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: pawncmd
+[09:43:43] [Pawn.CMD] plugin v3.4.0 loading...
+[09:43:43] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: chrono
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: json
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: sky
+[09:43:43] 
+[09:43:43]  ===============================
+[09:43:43]    
+[09:43:43]    < SKY - 2.3.0 >
+[09:43:43]    
+[09:43:43]    (c) 2008 - Present | YSF Maintainers
+[09:43:43]    (c) 2015 | Oscar "Slice" Broman
+[09:43:43]    
+[09:43:43]    Server Version: 0.3.7 R2
+[09:43:43]    Operating System: Windows
+[09:43:43]    Built on: Sep 27 2021 at 23:19:52
+[09:43:43]    
+[09:43:43]  ===============================
+[09:43:43] 
+[09:43:43]   Loaded.
+[09:43:43]  Loading plugin: ysf
+[09:43:43] 
+[09:43:43]  ==============================================
+[09:43:43]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:43:43]   (c) 2008 Alex "Y_Less" Cole
+[09:43:43]   (c) 2010 - 2018 kurta999
+[09:43:43]   (c) 2018 - 2020 IllidanS4
+[09:43:43]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:43:43]  ==============================================
+[09:43:43] 
+[09:43:43]   Loaded.
+[09:43:43]  Loaded 12 plugins.
+
+[09:43:43] 
+[09:43:43] Filterscripts
+[09:43:43] ---------------
+[09:43:43]   Loaded 0 filterscripts.
+
+[09:43:43]  
+[09:43:43]  
+[09:43:43]  
+[09:43:43]  ======================================= 
+[09:43:43]  |                                     | 
+[09:43:43]  |        YSI version 4.00.0001        | 
+[09:43:43]  |        By Alex "Y_Less" Cole        | 
+[09:43:43]  |                                     | 
+[09:43:43]  ======================================= 
+[09:43:43]  
+[09:43:43] [OnGameModeInit] Initialising 'Main'...
+[09:43:43] [Database] Connected!
+[09:43:43] [SERVER ECONOMY] Initialization called.
+[09:43:43] [ADMIN ACTIVITY] Initialization called.
+[09:43:43] [ADMIN DUTY TIMES] Initialization called.
+[09:43:43]   [Bank System] Initializing...
+[09:43:43]   [Bank System] Connected to MySQL, loading data...
+[09:43:43] 
+----------------------------------------
+[09:43:43]  Gamemode Ucp versi 0.1 register dan login
+[09:43:43] ----------------------------------------
+
+[09:43:43] Number of vehicle models: 0
+[09:43:43]   [Bank System] Loaded 0 bankers.
+[09:43:43]   [Bank System] Loaded 0 ATMs.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:44:33] password = ""  (string)
+[09:44:33] filterscripts = ""  (string)
+[09:44:33] 
+[09:44:33] Server Plugins
+[09:44:33] --------------
+[09:44:33]  Loading plugin: crashdetect
+[09:44:33]   CrashDetect plugin 4.19.4
+[09:44:33]   Loaded.
+[09:44:33]  Loading plugin: sscanf
+[09:44:33] 
+
+[09:44:33]  ===============================
+
+[09:44:33]       sscanf plugin loaded.     
+
+[09:44:33]          Version:  2.8.3        
+
+[09:44:33]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:44:33]  ===============================
+
+[09:44:33]   Loaded.
+[09:44:33]  Loading plugin: pawnraknet
+[09:44:33] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:44:33] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:44:33]   Loaded.
+[09:44:33]  Loading plugin: pawnplus
+[09:44:33]  PawnPlus v1.4.2 loaded
+[09:44:33]  Created by IllidanS4
+[09:44:33]   Loaded.
+[09:44:33]  Loading plugin: GPS
+[09:44:34] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:44:34]   Loaded.
+[09:44:34]  Loading plugin: streamer
+[09:44:34] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:44:34]   Loaded.
+[09:44:34]  Loading plugin: mysql
+[09:44:34]  >> plugin.mysql: R41-4 successfully loaded.
+[09:44:34]   Loaded.
+[09:44:34]  Loading plugin: pawncmd
+[09:44:34] [Pawn.CMD] plugin v3.4.0 loading...
+[09:44:34] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:44:34]   Loaded.
+[09:44:34]  Loading plugin: chrono
+[09:44:34]   Loaded.
+[09:44:34]  Loading plugin: json
+[09:44:34]   Loaded.
+[09:44:34]  Loading plugin: sky
+[09:44:34] 
+[09:44:34]  ===============================
+[09:44:34]    
+[09:44:34]    < SKY - 2.3.0 >
+[09:44:34]    
+[09:44:34]    (c) 2008 - Present | YSF Maintainers
+[09:44:34]    (c) 2015 | Oscar "Slice" Broman
+[09:44:34]    
+[09:44:34]    Server Version: 0.3.7 R2
+[09:44:34]    Operating System: Windows
+[09:44:34]    Built on: Sep 27 2021 at 23:19:52
+[09:44:34]    
+[09:44:34]  ===============================
+[09:44:34] 
+[09:44:34]   Loaded.
+[09:44:34]  Loading plugin: ysf
+[09:44:34] 
+[09:44:34]  ==============================================
+[09:44:34]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:44:34]   (c) 2008 Alex "Y_Less" Cole
+[09:44:34]   (c) 2010 - 2018 kurta999
+[09:44:34]   (c) 2018 - 2020 IllidanS4
+[09:44:34]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:44:34]  ==============================================
+[09:44:34] 
+[09:44:34]   Loaded.
+[09:44:34]  Loaded 12 plugins.
+
+[09:44:34] 
+[09:44:34] Filterscripts
+[09:44:34] ---------------
+[09:44:34]   Loaded 0 filterscripts.
+
+[09:44:34]  
+[09:44:34]  
+[09:44:34]  
+[09:44:34]  ======================================= 
+[09:44:34]  |                                     | 
+[09:44:34]  |        YSI version 4.00.0001        | 
+[09:44:34]  |        By Alex "Y_Less" Cole        | 
+[09:44:34]  |                                     | 
+[09:44:34]  ======================================= 
+[09:44:34]  
+[09:44:34] [OnGameModeInit] Initialising 'Main'...
+[09:44:34] [Database] Connected!
+[09:44:34] [SERVER ECONOMY] Initialization called.
+[09:44:34] [ADMIN ACTIVITY] Initialization called.
+[09:44:34] [ADMIN DUTY TIMES] Initialization called.
+[09:44:34]   [Bank System] Initializing...
+[09:44:34]   [Bank System] Connected to MySQL, loading data...
+[09:44:34] 
+----------------------------------------
+[09:44:34]  Gamemode Ucp versi 0.1 register dan login
+[09:44:34] ----------------------------------------
+
+[09:44:34] Number of vehicle models: 0
+[09:44:34]   [Bank System] Loaded 0 bankers.
+[09:44:34]   [Bank System] Loaded 0 ATMs.
+[09:45:05] [connection] incoming connection: 111.94.57.31:43172 id: 0
+[09:45:05] [join] Suzy has joined the server (0:111.94.57.31)
+[09:45:05] Resetting player statistics for ID 0
+[09:45:25] [nick] Suzy nick changed to Suzy_Kyori
+[09:47:04] Resetting player statistics for ID 0
+[09:47:04] [debug] Server crashed while executing samp.amx
+[09:47:04] [debug] AMX backtrace:
+[09:47:04] [debug] #0 native CallLocalFunction () in samp-server.exe
+[09:47:04] [debug] #1 00075bd8 in public _y_utils_OnPlayerDisconnect (0, 0) in samp.amx
+[09:47:04] [debug] #2 0001232c in public SSCANF_OnPlayerDisconnect (0, 0) in samp.amx
+[09:47:04] [debug] #3 00001d28 in public pGZ_OnPlayerDisconnect (0, 0) in samp.amx
+[09:47:04] [debug] #4 native CallLocalFunction () in samp-server.exe
+[09:47:04] [debug] #5 00001828 in ?? (0, 0) in samp.amx
+[09:47:04] [debug] #6 00017e44 in public OnPlayerDisconnect (0, 0) in samp.amx
+[09:47:04] [debug] Native backtrace:
+[09:47:04] [debug] #0 0047467c in ?? () in samp-server.exe
+[09:47:04] [debug] #1 004010b6 in ?? () in samp-server.exe
+[09:47:04] [debug] #2 7330dc92 in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #3 73315318 in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #4 733097cc in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #5 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #6 02778175 in ?? () in plugins\pawnplus.DLL
+[09:47:04] [debug] #7 027793d2 in ?? () in plugins\pawnplus.DLL
+[09:47:04] [debug] #8 73123484 in ?? () in plugins\streamer.DLL
+[09:47:04] [debug] #9 004746be in ?? () in samp-server.exe
+[09:47:04] [debug] #10 004010b6 in ?? () in samp-server.exe
+[09:47:04] [debug] #11 7330dc92 in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #12 73315318 in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #13 733097cc in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #14 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[09:47:04] [debug] #15 02778175 in ?? () in plugins\pawnplus.DLL
+[09:47:04] [debug] #16 027793d2 in ?? () in plugins\pawnplus.DLL
+[09:47:04] [debug] #17 73123484 in ?? () in plugins\streamer.DLL
+[09:47:04] [debug] #18 0046d9bb in ?? () in samp-server.exe
+[09:47:04] [debug] #19 032e0e15 in ?? () in plugins\ysf.DLL
+[09:47:04] [debug] Registers:
+[09:47:04] [debug] EAX: 00000000 EBX: 03400998 ECX: 0019eafc EDX: 00000000
+[09:47:04] [debug] ESI: 00000000 EDI: 0625a670 EBP: 00000000 ESP: 0019fc80
+[09:47:04] [debug] EIP: 032e0e15 EFLAGS: 00010246
+[09:47:04] [debug] Stack:
+[09:47:04] [debug] ESP+00000000: 0019fc90 0019fcb0 0019fcb4 00000000
+[09:47:04] [debug] ESP+00000020: 00000000 00000000 00000000 004665ee
+[09:47:04] [debug] ESP+00000040: 03395b28 00000000 02311410 00000000
+[09:47:04] [debug] ESP+00000060: 65636e75 0019fc00 77343eec 7732e694
+[09:47:04] [debug] ESP+00000080: 7ffe0348 00000000 00000000 00000000
+[09:47:04] [debug] ESP+000000a0: 00000000 00000000 00000000 00000000
+[09:47:04] [debug] ESP+000000c0: fce8d4d9 00006396 0019fd94 7732e3f7
+[09:47:04] [debug] ESP+000000e0: 77343eec 7732e694 0019fdb8 963e5c2e
+[09:47:04] [debug] ESP+00000100: 72c7170e 0231dc88 7b879a00 02319f80
+[09:47:04] [debug] ESP+00000120: 00000000 21319f80 00000000 03395b28
+[09:47:04] [debug] ESP+00000140: 0231dc88 0019fe00 032dfce0 00000000
+[09:47:04] [debug] ESP+00000160: 0758cf70 00000000 0019fe90 004aac5b
+[09:47:04] [debug] ESP+00000180: 004910a0 03395b28 76b23920 02319f80
+[09:47:04] [debug] ESP+000001a0: 0048d4db 00000000 000023f0 0019ff74
+[09:47:04] [debug] ESP+000001c0: 00001e62 00000194 00002228 02319f80
+[09:47:04] [debug] ESP+000001e0: 004c401c 0023d000 004ab530 0019fe5c
+[09:47:04] [debug] ESP+00000200: ffffffff 0049b531 0049b541 004ab530
+[09:47:04] [debug] ESP+00000220: 00000001 023116a0 023116d0 00000094
+[09:47:04] [debug] ESP+00000240: 00000000 00000000 00000000 00000000
+[09:47:04] [debug] ESP+00000260: 00000000 00000000 00000000 00000000
+[09:47:04] [debug] ESP+00000280: 00000000 00000000 00000000 00000000
+[09:47:04] [debug] ESP+000002a0: 00000000 00000000 00000000 00000000
+[09:47:04] [debug] ESP+000002c0: 0049cbca 0049cbca 0023d000 00000000
+[09:47:04] [debug] ESP+000002e0: 0019e4f4 0019ffcc 0049d298 004ba530
+[09:47:04] [debug] ESP+00000300: 76b166f0 0019ffdc 77337ccd 0023d000
+[09:47:04] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[09:47:04] [debug] ESP+00000340: 00000000 0019ff90 00000000 0019ffe4
+[09:47:04] [debug] ESP+00000360: 77337c9b ffffffff 773668f2 00000000
+[09:47:04] [debug] ESP+00000380: 78746341 00000020 00000001 000032e4
+[09:47:04] [debug] ESP+000003a0: 00000014 00000001 00000007 00000034
+[09:47:04] [debug] ESP+000003c0: 00000000 00000000 00000000 00000002
+[09:47:04] [debug] ESP+000003e0: 00000254 00000000 f33271ba 00000534
+[09:47:04] [debug] Loaded modules:
+[09:47:04] [debug] 00400000 - 00519000 samp-server.exe
+[09:47:04] [debug] 772d0000 - 77478000 ntdll.dll
+[09:47:04] [debug] 76b00000 - 76bf0000 KERNEL32.DLL
+[09:47:04] [debug] 766d0000 - 76913000 KERNELBASE.dll
+[09:47:04] [debug] 75500000 - 75ad8000 SHELL32.dll
+[09:47:04] [debug] 77120000 - 7719e000 msvcp_win.dll
+[09:47:04] [debug] 771a0000 - 772b3000 ucrtbase.dll
+[09:47:04] [debug] 75b80000 - 75d29000 USER32.dll
+[09:47:04] [debug] 765c0000 - 765da000 win32u.dll
+[09:47:04] [debug] 76f90000 - 76fb3000 GDI32.dll
+[09:47:04] [debug] 76bf0000 - 76ccf000 gdi32full.dll
+[09:47:04] [debug] 72080000 - 720a8000 WINMM.dll
+[09:47:04] [debug] 76d60000 - 76e22000 msvcrt.dll
+[09:47:04] [debug] 720b0000 - 720b8000 WSOCK32.dll
+[09:47:04] [debug] 765e0000 - 76645000 ws2_32.DLL
+[09:47:04] [debug] 76e30000 - 76eeb000 RPCRT4.dll
+[09:47:04] [debug] 76d30000 - 76d55000 IMM32.DLL
+[09:47:04] [debug] 732f0000 - 73341000 crashdetect.DLL
+[09:47:04] [debug] 716e0000 - 71749000 MSVCP100.dll
+[09:47:04] [debug] 73230000 - 732ef000 MSVCR100.dll
+[09:47:04] [debug] 10000000 - 1000e000 sscanf.DLL
+[09:47:04] [debug] 72000000 - 72015000 VCRUNTIME140.dll
+[09:47:04] [debug] 731b0000 - 73226000 pawnraknet.DLL
+[09:47:04] [debug] 02760000 - 029cb000 pawnplus.DLL
+[09:47:04] [debug] 71f10000 - 71f7d000 MSVCP140.dll
+[09:47:04] [debug] 76650000 - 766cc000 advapi32.dll
+[09:47:04] [debug] 77080000 - 770fb000 sechost.dll
+[09:47:04] [debug] 71fc0000 - 71fcb000 CRYPTBASE.DLL
+[09:47:04] [debug] 76920000 - 76982000 bcryptPrimitives.dll
+[09:47:04] [debug] 73190000 - 731a6000 GPS.DLL
+[09:47:04] [debug] 73120000 - 73187000 streamer.DLL
+[09:47:04] [debug] 730d0000 - 7311e000 mysql.DLL
+[09:47:04] [debug] 730b0000 - 730ca000 log-core.dll
+[09:47:04] [debug] 72fe0000 - 730ad000 libmariadb.dll
+[09:47:04] [debug] 76fc0000 - 7700c000 SHLWAPI.dll
+[09:47:04] [debug] 751c0000 - 752c3000 CRYPT32.dll
+[09:47:04] [debug] 72b20000 - 72b2a000 Secur32.dll
+[09:47:04] [debug] 72af0000 - 72b15000 SSPICLI.DLL
+[09:47:04] [debug] 74ca0000 - 74cb2000 kernel.appcore.dll
+[09:47:04] [debug] 71ef0000 - 71f02000 napinsp.dll
+[09:47:04] [debug] 71460000 - 714b1000 mswsock.dll
+[09:47:04] [debug] 713b0000 - 71454000 DNSAPI.dll
+[09:47:04] [debug] 74c10000 - 74c34000 IPHLPAPI.DLL
+[09:47:04] [debug] 76f80000 - 76f87000 NSI.dll
+[09:47:04] [debug] 713a0000 - 713ae000 winrnr.dll
+[09:47:04] [debug] 71380000 - 71399000 nlansp_c.dll
+[09:47:04] [debug] 71360000 - 71371000 wshbth.dll
+[09:47:04] [debug] 71350000 - 71358000 rasadhlp.dll
+[09:47:04] [debug] 72f50000 - 72fd9000 pawncmd.DLL
+[09:47:04] [debug] 72f20000 - 72f49000 chrono.DLL
+[09:47:04] [debug] 72d40000 - 72f15000 json.DLL
+[09:47:04] [debug] 72d10000 - 72d37000 USERENV.dll
+[09:47:04] [debug] 72cf0000 - 72d09000 bcrypt.dll
+[09:47:04] [debug] 72c70000 - 72ced000 sky.DLL
+[09:47:04] [debug] 032d0000 - 0337b000 ysf.DLL
+[09:47:04] [debug] 752d0000 - 753b9000 ole32.dll
+[09:47:04] [debug] 75e50000 - 760d8000 combase.dll
+[09:47:04] [debug] 760e0000 - 7617c000 OLEAUT32.dll
+[09:47:04] [debug] 70ae0000 - 70b3b000 fwpuclnt.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:51:22] password = ""  (string)
+[09:51:22] filterscripts = ""  (string)
+[09:51:22] 
+[09:51:22] Server Plugins
+[09:51:22] --------------
+[09:51:22]  Loading plugin: crashdetect
+[09:51:22]   CrashDetect plugin 4.19.4
+[09:51:22]   Loaded.
+[09:51:22]  Loading plugin: sscanf
+[09:51:22] 
+
+[09:51:22]  ===============================
+
+[09:51:22]       sscanf plugin loaded.     
+
+[09:51:22]          Version:  2.8.3        
+
+[09:51:22]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:51:22]  ===============================
+
+[09:51:22]   Loaded.
+[09:51:22]  Loading plugin: pawnraknet
+[09:51:22] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:51:22] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:51:22]   Loaded.
+[09:51:22]  Loading plugin: pawnplus
+[09:51:22]  PawnPlus v1.4.2 loaded
+[09:51:22]  Created by IllidanS4
+[09:51:22]   Loaded.
+[09:51:22]  Loading plugin: GPS
+[09:51:22] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:51:22]   Loaded.
+[09:51:22]  Loading plugin: streamer
+[09:51:23] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:51:23]   Loaded.
+[09:51:23]  Loading plugin: mysql
+[09:51:23]  >> plugin.mysql: R41-4 successfully loaded.
+[09:51:23]   Loaded.
+[09:51:23]  Loading plugin: pawncmd
+[09:51:23] [Pawn.CMD] plugin v3.4.0 loading...
+[09:51:23] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:51:23]   Loaded.
+[09:51:23]  Loading plugin: chrono
+[09:51:23]   Loaded.
+[09:51:23]  Loading plugin: json
+[09:51:23]   Loaded.
+[09:51:23]  Loading plugin: sky
+[09:51:23] 
+[09:51:23]  ===============================
+[09:51:23]    
+[09:51:23]    < SKY - 2.3.0 >
+[09:51:23]    
+[09:51:23]    (c) 2008 - Present | YSF Maintainers
+[09:51:23]    (c) 2015 | Oscar "Slice" Broman
+[09:51:23]    
+[09:51:23]    Server Version: 0.3.7 R2
+[09:51:23]    Operating System: Windows
+[09:51:23]    Built on: Sep 27 2021 at 23:19:52
+[09:51:23]    
+[09:51:23]  ===============================
+[09:51:23] 
+[09:51:23]   Loaded.
+[09:51:23]  Loading plugin: ysf
+[09:51:23] 
+[09:51:23]  ==============================================
+[09:51:23]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:51:23]   (c) 2008 Alex "Y_Less" Cole
+[09:51:23]   (c) 2010 - 2018 kurta999
+[09:51:23]   (c) 2018 - 2020 IllidanS4
+[09:51:23]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:51:23]  ==============================================
+[09:51:23] 
+[09:51:23]   Loaded.
+[09:51:23]  Loaded 12 plugins.
+
+[09:51:23] 
+[09:51:23] Filterscripts
+[09:51:23] ---------------
+[09:51:23]   Loaded 0 filterscripts.
+
+[09:51:23]  
+[09:51:23]  
+[09:51:23]  
+[09:51:23]  ======================================= 
+[09:51:23]  |                                     | 
+[09:51:23]  |        YSI version 4.00.0001        | 
+[09:51:23]  |        By Alex "Y_Less" Cole        | 
+[09:51:23]  |                                     | 
+[09:51:23]  ======================================= 
+[09:51:23]  
+[09:51:23] [OnGameModeInit] Initialising 'Main'...
+[09:51:23] [Database] Connected!
+[09:51:23] [SERVER ECONOMY] Initialization called.
+[09:51:23] [ADMIN ACTIVITY] Initialization called.
+[09:51:23] [ADMIN DUTY TIMES] Initialization called.
+[09:51:23]   [Bank System] Initializing...
+[09:51:23]   [Bank System] Connected to MySQL, loading data...
+[09:51:23] 
+----------------------------------------
+[09:51:23]  Gamemode Ucp versi 0.1 register dan login
+[09:51:23] ----------------------------------------
+
+[09:51:23] Number of vehicle models: 0
+[09:51:23]   [Bank System] Loaded 0 bankers.
+[09:51:23]   [Bank System] Loaded 0 ATMs.
+[09:51:43] [connection] incoming connection: 111.94.57.31:47074 id: 0
+[09:51:44] [join] Suzy has joined the server (0:111.94.57.31)
+[09:51:44] Resetting player statistics for ID 0
+[09:51:52] [nick] Suzy nick changed to Suzy_Kyori
+[09:52:48] [chat] [Suzy_Kyori]: k
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:54:02] password = ""  (string)
+[09:54:02] filterscripts = ""  (string)
+[09:54:02] 
+[09:54:02] Server Plugins
+[09:54:02] --------------
+[09:54:02]  Loading plugin: crashdetect
+[09:54:02]   CrashDetect plugin 4.19.4
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: sscanf
+[09:54:02] 
+
+[09:54:02]  ===============================
+
+[09:54:02]       sscanf plugin loaded.     
+
+[09:54:02]          Version:  2.8.3        
+
+[09:54:02]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:54:02]  ===============================
+
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: pawnraknet
+[09:54:02] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:54:02] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: pawnplus
+[09:54:02]  PawnPlus v1.4.2 loaded
+[09:54:02]  Created by IllidanS4
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: GPS
+[09:54:02] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: streamer
+[09:54:02] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: mysql
+[09:54:02]  >> plugin.mysql: R41-4 successfully loaded.
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: pawncmd
+[09:54:02] [Pawn.CMD] plugin v3.4.0 loading...
+[09:54:02] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: chrono
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: json
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: sky
+[09:54:02] 
+[09:54:02]  ===============================
+[09:54:02]    
+[09:54:02]    < SKY - 2.3.0 >
+[09:54:02]    
+[09:54:02]    (c) 2008 - Present | YSF Maintainers
+[09:54:02]    (c) 2015 | Oscar "Slice" Broman
+[09:54:02]    
+[09:54:02]    Server Version: 0.3.7 R2
+[09:54:02]    Operating System: Windows
+[09:54:02]    Built on: Sep 27 2021 at 23:19:52
+[09:54:02]    
+[09:54:02]  ===============================
+[09:54:02] 
+[09:54:02]   Loaded.
+[09:54:02]  Loading plugin: ysf
+[09:54:02] 
+[09:54:02]  ==============================================
+[09:54:02]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:54:02]   (c) 2008 Alex "Y_Less" Cole
+[09:54:02]   (c) 2010 - 2018 kurta999
+[09:54:02]   (c) 2018 - 2020 IllidanS4
+[09:54:02]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:54:02]  ==============================================
+[09:54:02] 
+[09:54:02]   Loaded.
+[09:54:02]  Loaded 12 plugins.
+
+[09:54:02] 
+[09:54:02] Filterscripts
+[09:54:02] ---------------
+[09:54:02]   Loaded 0 filterscripts.
+
+[09:54:02]  
+[09:54:02]  
+[09:54:02]  
+[09:54:02]  ======================================= 
+[09:54:02]  |                                     | 
+[09:54:02]  |        YSI version 4.00.0001        | 
+[09:54:02]  |        By Alex "Y_Less" Cole        | 
+[09:54:02]  |                                     | 
+[09:54:02]  ======================================= 
+[09:54:02]  
+[09:54:02] [OnGameModeInit] Initialising 'Main'...
+[09:54:02] [Database] Connected!
+[09:54:02] [SERVER ECONOMY] Initialization called.
+[09:54:02] [ADMIN ACTIVITY] Initialization called.
+[09:54:02] [ADMIN DUTY TIMES] Initialization called.
+[09:54:02]   [Bank System] Initializing...
+[09:54:02]   [Bank System] Connected to MySQL, loading data...
+[09:54:02] 
+----------------------------------------
+[09:54:02]  Gamemode Ucp versi 0.1 register dan login
+[09:54:02] ----------------------------------------
+
+[09:54:02] Number of vehicle models: 0
+[09:54:02]   [Bank System] Loaded 0 bankers.
+[09:54:02]   [Bank System] Loaded 0 ATMs.
+[09:54:19] [connection] incoming connection: 111.94.57.31:44958 id: 0
+[09:54:19] [join] Suzy has joined the server (0:111.94.57.31)
+[09:54:19] Resetting player statistics for ID 0
+[09:54:30] [nick] Suzy nick changed to Suzy_Kyori
+[09:56:10] [nick] Suzy_Kyori nick changed to Suzy
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:58:36] password = ""  (string)
+[09:58:36] filterscripts = ""  (string)
+[09:58:36] 
+[09:58:36] Server Plugins
+[09:58:36] --------------
+[09:58:36]  Loading plugin: crashdetect
+[09:58:36]   CrashDetect plugin 4.19.4
+[09:58:36]   Loaded.
+[09:58:36]  Loading plugin: sscanf
+[09:58:36] 
+
+[09:58:36]  ===============================
+
+[09:58:36]       sscanf plugin loaded.     
+
+[09:58:36]          Version:  2.8.3        
+
+[09:58:36]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:58:36]  ===============================
+
+[09:58:36]   Loaded.
+[09:58:36]  Loading plugin: pawnraknet
+[09:58:36] [Pawn.RakNet] plugin v1.6.0 loading...
+[09:58:36] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[09:58:36]   Loaded.
+[09:58:36]  Loading plugin: pawnplus
+[09:58:36]  PawnPlus v1.4.2 loaded
+[09:58:36]  Created by IllidanS4
+[09:58:36]   Loaded.
+[09:58:36]  Loading plugin: GPS
+[09:58:37] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[09:58:37]   Loaded.
+[09:58:37]  Loading plugin: streamer
+[09:58:37] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[09:58:37]   Loaded.
+[09:58:37]  Loading plugin: mysql
+[09:58:37]  >> plugin.mysql: R41-4 successfully loaded.
+[09:58:37]   Loaded.
+[09:58:37]  Loading plugin: pawncmd
+[09:58:37] [Pawn.CMD] plugin v3.4.0 loading...
+[09:58:37] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:58:37]   Loaded.
+[09:58:37]  Loading plugin: chrono
+[09:58:37]   Loaded.
+[09:58:37]  Loading plugin: json
+[09:58:37]   Loaded.
+[09:58:37]  Loading plugin: sky
+[09:58:37] 
+[09:58:37]  ===============================
+[09:58:37]    
+[09:58:37]    < SKY - 2.3.0 >
+[09:58:37]    
+[09:58:37]    (c) 2008 - Present | YSF Maintainers
+[09:58:37]    (c) 2015 | Oscar "Slice" Broman
+[09:58:37]    
+[09:58:37]    Server Version: 0.3.7 R2
+[09:58:37]    Operating System: Windows
+[09:58:37]    Built on: Sep 27 2021 at 23:19:52
+[09:58:37]    
+[09:58:37]  ===============================
+[09:58:37] 
+[09:58:37]   Loaded.
+[09:58:37]  Loading plugin: ysf
+[09:58:37] 
+[09:58:37]  ==============================================
+[09:58:37]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[09:58:37]   (c) 2008 Alex "Y_Less" Cole
+[09:58:37]   (c) 2010 - 2018 kurta999
+[09:58:37]   (c) 2018 - 2020 IllidanS4
+[09:58:37]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[09:58:37]  ==============================================
+[09:58:37] 
+[09:58:37]   Loaded.
+[09:58:37]  Loaded 12 plugins.
+
+[09:58:37] 
+[09:58:37] Filterscripts
+[09:58:37] ---------------
+[09:58:37]   Loaded 0 filterscripts.
+
+[09:58:37]  
+[09:58:37]  
+[09:58:37]  
+[09:58:37]  ======================================= 
+[09:58:37]  |                                     | 
+[09:58:37]  |        YSI version 4.00.0001        | 
+[09:58:37]  |        By Alex "Y_Less" Cole        | 
+[09:58:37]  |                                     | 
+[09:58:37]  ======================================= 
+[09:58:37]  
+[09:58:37] [OnGameModeInit] Initialising 'Main'...
+[09:58:37] [Database] Connected!
+[09:58:37] [SERVER ECONOMY] Initialization called.
+[09:58:37] [ADMIN ACTIVITY] Initialization called.
+[09:58:37] [ADMIN DUTY TIMES] Initialization called.
+[09:58:37]   [Bank System] Initializing...
+[09:58:37]   [Bank System] Connected to MySQL, loading data...
+[09:58:37] 
+----------------------------------------
+[09:58:37]  Gamemode Ucp versi 0.1 register dan login
+[09:58:37] ----------------------------------------
+
+[09:58:37] Number of vehicle models: 0
+[09:58:37]   [Bank System] Loaded 0 bankers.
+[09:58:37]   [Bank System] Loaded 0 ATMs.
+[09:58:53] [connection] incoming connection: 111.94.57.31:48531 id: 0
+[09:58:53] [join] Suzy has joined the server (0:111.94.57.31)
+[09:58:53] Resetting player statistics for ID 0
+[09:59:29] [nick] Suzy nick changed to Suzy_Kyori
+[10:02:37] Resetting player statistics for ID 0
+[10:02:37] [debug] Server crashed while executing samp.amx
+[10:02:37] [debug] AMX backtrace:
+[10:02:37] [debug] #0 native CallLocalFunction () in samp-server.exe
+[10:02:37] [debug] #1 000741f8 in public _y_utils_OnPlayerDisconnect (0, 0) in samp.amx
+[10:02:37] [debug] #2 00011f78 in public SSCANF_OnPlayerDisconnect (0, 0) in samp.amx
+[10:02:37] [debug] #3 00001d08 in public pGZ_OnPlayerDisconnect (0, 0) in samp.amx
+[10:02:37] [debug] #4 native CallLocalFunction () in samp-server.exe
+[10:02:37] [debug] #5 00001808 in ?? (0, 0) in samp.amx
+[10:02:37] [debug] #6 00017a90 in public OnPlayerDisconnect (0, 0) in samp.amx
+[10:02:37] [debug] Native backtrace:
+[10:02:37] [debug] #0 0047467c in ?? () in samp-server.exe
+[10:02:37] [debug] #1 004010b6 in ?? () in samp-server.exe
+[10:02:37] [debug] #2 7330dc92 in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #3 73315318 in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #4 733097cc in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #5 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #6 02a78175 in ?? () in plugins\pawnplus.DLL
+[10:02:37] [debug] #7 02a793d2 in ?? () in plugins\pawnplus.DLL
+[10:02:37] [debug] #8 73123484 in ?? () in plugins\streamer.DLL
+[10:02:37] [debug] #9 004746be in ?? () in samp-server.exe
+[10:02:37] [debug] #10 004010b6 in ?? () in samp-server.exe
+[10:02:37] [debug] #11 7330dc92 in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #12 73315318 in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #13 733097cc in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #14 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[10:02:37] [debug] #15 02a78175 in ?? () in plugins\pawnplus.DLL
+[10:02:37] [debug] #16 02a793d2 in ?? () in plugins\pawnplus.DLL
+[10:02:37] [debug] #17 73123484 in ?? () in plugins\streamer.DLL
+[10:02:37] [debug] #18 0046d9bb in ?? () in samp-server.exe
+[10:02:37] [debug] #19 02970e15 in ?? () in plugins\ysf.DLL
+[10:02:37] [debug] Registers:
+[10:02:37] [debug] EAX: 00000000 EBX: 03442cf0 ECX: 0019eafc EDX: 00000000
+[10:02:37] [debug] ESI: 00000000 EDI: 06232014 EBP: 00000000 ESP: 0019fc80
+[10:02:37] [debug] EIP: 02970e15 EFLAGS: 00010246
+[10:02:37] [debug] Stack:
+[10:02:37] [debug] ESP+00000000: 0019fc90 0019fcb0 0019fcb4 00000000
+[10:02:37] [debug] ESP+00000020: 00000000 00000000 00000000 004665ee
+[10:02:37] [debug] ESP+00000040: 033d5d58 00000000 02310c08 00000000
+[10:02:37] [debug] ESP+00000060: 65636e75 0019fc00 77343eec 7732e694
+[10:02:37] [debug] ESP+00000080: 7ffe0348 00000000 00000000 00000000
+[10:02:37] [debug] ESP+000000a0: 00000000 00000000 00000000 00000000
+[10:02:37] [debug] ESP+000000c0: b47e2fac 000063ac 0019fd94 7732e3f7
+[10:02:37] [debug] ESP+000000e0: 77343eec 7732e694 0019fdb8 999bf311
+[10:02:37] [debug] ESP+00000100: 72c7170e 0231d5b8 3d8339ab 02319bd8
+[10:02:37] [debug] ESP+00000120: 00000000 21319bd8 00000000 033d5d58
+[10:02:37] [debug] ESP+00000140: 0231d5b8 0019fe00 0296fce0 00000000
+[10:02:37] [debug] ESP+00000160: 0725fed0 00000000 0019fe90 004aac5b
+[10:02:37] [debug] ESP+00000180: 004910a0 033d5d58 76b23920 02319bd8
+[10:02:37] [debug] ESP+000001a0: 0048d4db 00000000 000023f0 0019ff74
+[10:02:37] [debug] ESP+000001c0: 00001e62 00000190 00001144 02319bd8
+[10:02:37] [debug] ESP+000001e0: 004c401c 002ca000 004ab530 0019fe5c
+[10:02:37] [debug] ESP+00000200: ffffffff 0049b531 0049b541 004ab530
+[10:02:37] [debug] ESP+00000220: 00000001 023113b8 023113e8 00000094
+[10:02:37] [debug] ESP+00000240: 00000000 00000000 00000000 00000000
+[10:02:37] [debug] ESP+00000260: 00000000 00000000 00000000 00000000
+[10:02:37] [debug] ESP+00000280: 00000000 00000000 00000000 00000000
+[10:02:37] [debug] ESP+000002a0: 00000000 00000000 00000000 00000000
+[10:02:37] [debug] ESP+000002c0: 0049cbca 0049cbca 002ca000 00000000
+[10:02:37] [debug] ESP+000002e0: 0019e4f4 0019ffcc 0049d298 004ba530
+[10:02:37] [debug] ESP+00000300: 76b166f0 0019ffdc 77337ccd 002ca000
+[10:02:37] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[10:02:37] [debug] ESP+00000340: 00000000 0019ff90 00000000 0019ffe4
+[10:02:37] [debug] ESP+00000360: 77337c9b ffffffff 77366904 00000000
+[10:02:37] [debug] ESP+00000380: 78746341 00000020 00000001 000032e4
+[10:02:37] [debug] ESP+000003a0: 00000014 00000001 00000007 00000034
+[10:02:37] [debug] ESP+000003c0: 00000000 00000000 00000000 00000002
+[10:02:37] [debug] ESP+000003e0: 00000254 00000000 f33271ba 00000534
+[10:02:37] [debug] Loaded modules:
+[10:02:37] [debug] 00400000 - 00519000 samp-server.exe
+[10:02:37] [debug] 772d0000 - 77478000 ntdll.dll
+[10:02:37] [debug] 76b00000 - 76bf0000 KERNEL32.DLL
+[10:02:37] [debug] 766d0000 - 76913000 KERNELBASE.dll
+[10:02:37] [debug] 75500000 - 75ad8000 SHELL32.dll
+[10:02:37] [debug] 77120000 - 7719e000 msvcp_win.dll
+[10:02:37] [debug] 771a0000 - 772b3000 ucrtbase.dll
+[10:02:37] [debug] 75b80000 - 75d29000 USER32.dll
+[10:02:37] [debug] 765c0000 - 765da000 win32u.dll
+[10:02:37] [debug] 76f90000 - 76fb3000 GDI32.dll
+[10:02:37] [debug] 76bf0000 - 76ccf000 gdi32full.dll
+[10:02:37] [debug] 720b0000 - 720b8000 WSOCK32.dll
+[10:02:37] [debug] 76d60000 - 76e22000 msvcrt.dll
+[10:02:37] [debug] 765e0000 - 76645000 WS2_32.dll
+[10:02:37] [debug] 76e30000 - 76eeb000 RPCRT4.dll
+[10:02:37] [debug] 72080000 - 720a8000 WINMM.dll
+[10:02:37] [debug] 76d30000 - 76d55000 IMM32.DLL
+[10:02:37] [debug] 732f0000 - 73341000 crashdetect.DLL
+[10:02:37] [debug] 716e0000 - 71749000 MSVCP100.dll
+[10:02:37] [debug] 73230000 - 732ef000 MSVCR100.dll
+[10:02:37] [debug] 10000000 - 1000e000 sscanf.DLL
+[10:02:37] [debug] 72000000 - 72015000 VCRUNTIME140.dll
+[10:02:37] [debug] 731b0000 - 73226000 pawnraknet.DLL
+[10:02:37] [debug] 02a60000 - 02ccb000 pawnplus.DLL
+[10:02:37] [debug] 71f10000 - 71f7d000 MSVCP140.dll
+[10:02:37] [debug] 76650000 - 766cc000 advapi32.dll
+[10:02:37] [debug] 77080000 - 770fb000 sechost.dll
+[10:02:37] [debug] 71fc0000 - 71fcb000 CRYPTBASE.DLL
+[10:02:37] [debug] 76920000 - 76982000 bcryptPrimitives.dll
+[10:02:37] [debug] 73190000 - 731a6000 GPS.DLL
+[10:02:37] [debug] 73120000 - 73187000 streamer.DLL
+[10:02:37] [debug] 730d0000 - 7311e000 mysql.DLL
+[10:02:37] [debug] 730b0000 - 730ca000 log-core.dll
+[10:02:37] [debug] 72fe0000 - 730ad000 libmariadb.dll
+[10:02:37] [debug] 76fc0000 - 7700c000 SHLWAPI.dll
+[10:02:37] [debug] 751c0000 - 752c3000 CRYPT32.dll
+[10:02:37] [debug] 72b20000 - 72b2a000 Secur32.dll
+[10:02:37] [debug] 72af0000 - 72b15000 SSPICLI.DLL
+[10:02:37] [debug] 74ca0000 - 74cb2000 kernel.appcore.dll
+[10:02:37] [debug] 71ef0000 - 71f02000 napinsp.dll
+[10:02:37] [debug] 71460000 - 714b1000 mswsock.dll
+[10:02:37] [debug] 713b0000 - 71454000 DNSAPI.dll
+[10:02:37] [debug] 74c10000 - 74c34000 IPHLPAPI.DLL
+[10:02:37] [debug] 76f80000 - 76f87000 NSI.dll
+[10:02:37] [debug] 713a0000 - 713ae000 winrnr.dll
+[10:02:37] [debug] 71380000 - 71399000 nlansp_c.dll
+[10:02:37] [debug] 71360000 - 71371000 wshbth.dll
+[10:02:37] [debug] 71350000 - 71358000 rasadhlp.dll
+[10:02:37] [debug] 72f50000 - 72fd9000 pawncmd.DLL
+[10:02:37] [debug] 72f20000 - 72f49000 chrono.DLL
+[10:02:37] [debug] 72d40000 - 72f15000 json.DLL
+[10:02:37] [debug] 72d10000 - 72d37000 USERENV.dll
+[10:02:37] [debug] 72cf0000 - 72d09000 bcrypt.dll
+[10:02:37] [debug] 72c70000 - 72ced000 sky.DLL
+[10:02:37] [debug] 02960000 - 02a0b000 ysf.DLL
+[10:02:37] [debug] 752d0000 - 753b9000 ole32.dll
+[10:02:37] [debug] 75e50000 - 760d8000 combase.dll
+[10:02:37] [debug] 760e0000 - 7617c000 OLEAUT32.dll
+[10:02:37] [debug] 70ae0000 - 70b3b000 fwpuclnt.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:32:58] password = ""  (string)
+[20:32:58] filterscripts = ""  (string)
+[20:32:58] 
+[20:32:58] Server Plugins
+[20:32:58] --------------
+[20:32:58]  Loading plugin: crashdetect
+[20:32:58]   CrashDetect plugin 4.19.4
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: sscanf
+[20:32:58] 
+
+[20:32:58]  ===============================
+
+[20:32:58]       sscanf plugin loaded.     
+
+[20:32:58]          Version:  2.8.3        
+
+[20:32:58]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:32:58]  ===============================
+
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: pawnraknet
+[20:32:58] [Pawn.RakNet] plugin v1.6.0 loading...
+[20:32:58] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: pawnplus
+[20:32:58]  PawnPlus v1.4.2 loaded
+[20:32:58]  Created by IllidanS4
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: GPS
+[20:32:58] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: streamer
+[20:32:58] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: mysql
+[20:32:58]  >> plugin.mysql: R41-4 successfully loaded.
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: pawncmd
+[20:32:58] [Pawn.CMD] plugin v3.4.0 loading...
+[20:32:58] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: chrono
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: json
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: sky
+[20:32:58] 
+[20:32:58]  ===============================
+[20:32:58]    
+[20:32:58]    < SKY - 2.3.0 >
+[20:32:58]    
+[20:32:58]    (c) 2008 - Present | YSF Maintainers
+[20:32:58]    (c) 2015 | Oscar "Slice" Broman
+[20:32:58]    
+[20:32:58]    Server Version: 0.3.7 R2
+[20:32:58]    Operating System: Windows
+[20:32:58]    Built on: Sep 27 2021 at 23:19:52
+[20:32:58]    
+[20:32:58]  ===============================
+[20:32:58] 
+[20:32:58]   Loaded.
+[20:32:58]  Loading plugin: ysf
+[20:32:58] 
+[20:32:58]  ==============================================
+[20:32:58]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[20:32:58]   (c) 2008 Alex "Y_Less" Cole
+[20:32:58]   (c) 2010 - 2018 kurta999
+[20:32:58]   (c) 2018 - 2020 IllidanS4
+[20:32:58]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[20:32:58]  ==============================================
+[20:32:58] 
+[20:32:58]   Loaded.
+[20:32:58]  Loaded 12 plugins.
+
+[20:32:58] 
+[20:32:58] Filterscripts
+[20:32:58] ---------------
+[20:32:58]   Loaded 0 filterscripts.
+
+[20:32:59]  
+[20:32:59]  
+[20:32:59]  
+[20:32:59]  ======================================= 
+[20:32:59]  |                                     | 
+[20:32:59]  |        YSI version 4.00.0001        | 
+[20:32:59]  |        By Alex "Y_Less" Cole        | 
+[20:32:59]  |                                     | 
+[20:32:59]  ======================================= 
+[20:32:59]  
+[20:32:59] [OnGameModeInit] Initialising 'Main'...
+[20:32:59] [Database] Connected!
+[20:32:59] [SERVER ECONOMY] Initialization called.
+[20:32:59] [ADMIN ACTIVITY] Initialization called.
+[20:32:59] [ADMIN DUTY TIMES] Initialization called.
+[20:32:59]   [Bank System] Initializing...
+[20:32:59]   [Bank System] Connected to MySQL, loading data...
+[20:32:59] 
+----------------------------------------
+[20:32:59]  Gamemode Ucp versi 0.1 register dan login
+[20:32:59] ----------------------------------------
+
+[20:32:59] Number of vehicle models: 0
+[20:32:59]   [Bank System] Loaded 0 bankers.
+[20:32:59]   [Bank System] Loaded 0 ATMs.
+[20:33:31] [connection] incoming connection: 182.3.43.35:43671 id: 0
+[20:33:32] [join] Suzy has joined the server (0:182.3.43.35)
+[20:33:32] Resetting player statistics for ID 0
+[20:33:40] [nick] Suzy nick changed to Suzy_Kyori
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:38:06] password = ""  (string)
+[20:38:06] filterscripts = ""  (string)
+[20:38:06] 
+[20:38:06] Server Plugins
+[20:38:06] --------------
+[20:38:06]  Loading plugin: crashdetect
+[20:38:06]   CrashDetect plugin 4.19.4
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: sscanf
+[20:38:06] 
+
+[20:38:06]  ===============================
+
+[20:38:06]       sscanf plugin loaded.     
+
+[20:38:06]          Version:  2.8.3        
+
+[20:38:06]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:38:06]  ===============================
+
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: pawnraknet
+[20:38:06] [Pawn.RakNet] plugin v1.6.0 loading...
+[20:38:06] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: pawnplus
+[20:38:06]  PawnPlus v1.4.2 loaded
+[20:38:06]  Created by IllidanS4
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: GPS
+[20:38:06] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: streamer
+[20:38:06] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: mysql
+[20:38:06]  >> plugin.mysql: R41-4 successfully loaded.
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: pawncmd
+[20:38:06] [Pawn.CMD] plugin v3.4.0 loading...
+[20:38:06] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: chrono
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: json
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: sky
+[20:38:06] 
+[20:38:06]  ===============================
+[20:38:06]    
+[20:38:06]    < SKY - 2.3.0 >
+[20:38:06]    
+[20:38:06]    (c) 2008 - Present | YSF Maintainers
+[20:38:06]    (c) 2015 | Oscar "Slice" Broman
+[20:38:06]    
+[20:38:06]    Server Version: 0.3.7 R2
+[20:38:06]    Operating System: Windows
+[20:38:06]    Built on: Sep 27 2021 at 23:19:52
+[20:38:06]    
+[20:38:06]  ===============================
+[20:38:06] 
+[20:38:06]   Loaded.
+[20:38:06]  Loading plugin: ysf
+[20:38:06] 
+[20:38:06]  ==============================================
+[20:38:06]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[20:38:06]   (c) 2008 Alex "Y_Less" Cole
+[20:38:06]   (c) 2010 - 2018 kurta999
+[20:38:06]   (c) 2018 - 2020 IllidanS4
+[20:38:06]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[20:38:06]  ==============================================
+[20:38:06] 
+[20:38:06]   Loaded.
+[20:38:06]  Loaded 12 plugins.
+
+[20:38:06] 
+[20:38:06] Filterscripts
+[20:38:06] ---------------
+[20:38:06]   Loaded 0 filterscripts.
+
+[20:38:07]  
+[20:38:07]  
+[20:38:07]  
+[20:38:07]  ======================================= 
+[20:38:07]  |                                     | 
+[20:38:07]  |        YSI version 4.00.0001        | 
+[20:38:07]  |        By Alex "Y_Less" Cole        | 
+[20:38:07]  |                                     | 
+[20:38:07]  ======================================= 
+[20:38:07]  
+[20:38:07] [OnGameModeInit] Initialising 'Main'...
+[20:38:07] [Database] Connected!
+[20:38:07] [SERVER ECONOMY] Initialization called.
+[20:38:07] [ADMIN ACTIVITY] Initialization called.
+[20:38:07] [ADMIN DUTY TIMES] Initialization called.
+[20:38:07]   [Bank System] Initializing...
+[20:38:07]   [Bank System] Connected to MySQL, loading data...
+[20:38:07] 
+----------------------------------------
+[20:38:07]  Gamemode Ucp versi 0.1 register dan login
+[20:38:07] ----------------------------------------
+
+[20:38:07] Number of vehicle models: 0
+[20:38:07]   [Bank System] Loaded 1 bankers.
+[20:38:07]   [Bank System] Loaded 1 ATMs.
+[20:38:21] [connection] incoming connection: 182.3.43.35:42544 id: 0
+[20:38:21] [join] Suzy has joined the server (0:182.3.43.35)
+[20:38:21] Resetting player statistics for ID 0
+[20:38:34] [nick] Suzy nick changed to Suzy_Kyori
+[20:45:37] Resetting player statistics for ID 0
+[20:45:37] [debug] Server crashed while executing samp.amx
+[20:45:37] [debug] AMX backtrace:
+[20:45:37] [debug] #0 native CallLocalFunction () in samp-server.exe
+[20:45:37] [debug] #1 00078f80 in public _y_utils_OnPlayerDisconnect (0, 0) in samp.amx
+[20:45:37] [debug] #2 00011f98 in public SSCANF_OnPlayerDisconnect (0, 0) in samp.amx
+[20:45:37] [debug] #3 00001d28 in public pGZ_OnPlayerDisconnect (0, 0) in samp.amx
+[20:45:37] [debug] #4 native CallLocalFunction () in samp-server.exe
+[20:45:37] [debug] #5 00001828 in ?? (0, 0) in samp.amx
+[20:45:37] [debug] #6 00017b50 in public OnPlayerDisconnect (0, 0) in samp.amx
+[20:45:37] [debug] Native backtrace:
+[20:45:37] [debug] #0 0047467c in ?? () in samp-server.exe
+[20:45:37] [debug] #1 004010b6 in ?? () in samp-server.exe
+[20:45:37] [debug] #2 7330dc92 in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #3 73315318 in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #4 733097cc in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #5 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #6 02748175 in ?? () in plugins\pawnplus.DLL
+[20:45:37] [debug] #7 027493d2 in ?? () in plugins\pawnplus.DLL
+[20:45:37] [debug] #8 73123484 in ?? () in plugins\streamer.DLL
+[20:45:37] [debug] #9 004746be in ?? () in samp-server.exe
+[20:45:37] [debug] #10 004010b6 in ?? () in samp-server.exe
+[20:45:37] [debug] #11 7330dc92 in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #12 73315318 in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #13 733097cc in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #14 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[20:45:37] [debug] #15 02748175 in ?? () in plugins\pawnplus.DLL
+[20:45:37] [debug] #16 027493d2 in ?? () in plugins\pawnplus.DLL
+[20:45:37] [debug] #17 73123484 in ?? () in plugins\streamer.DLL
+[20:45:37] [debug] #18 0046d9bb in ?? () in samp-server.exe
+[20:45:37] [debug] #19 032e0e15 in ?? () in plugins\ysf.DLL
+[20:45:37] [debug] Registers:
+[20:45:37] [debug] EAX: 00000000 EBX: 03402cf0 ECX: 0019eafc EDX: 00000000
+[20:45:37] [debug] ESI: 00000000 EDI: 0624fdbc EBP: 00000000 ESP: 0019fc80
+[20:45:37] [debug] EIP: 032e0e15 EFLAGS: 00010246
+[20:45:37] [debug] Stack:
+[20:45:37] [debug] ESP+00000000: 0019fc90 0019fcb0 0019fcb4 00000000
+[20:45:37] [debug] ESP+00000020: 00000000 00000000 00000000 004665ee
+[20:45:37] [debug] ESP+00000040: 03395d38 00000000 02220c08 00000000
+[20:45:37] [debug] ESP+00000060: 65636e75 0019fc00 77343eec 7732e694
+[20:45:37] [debug] ESP+00000080: 7ffe0348 00000000 00000000 00000000
+[20:45:37] [debug] ESP+000000a0: 00000000 00000000 00000000 00000000
+[20:45:37] [debug] ESP+000000c0: f67962b1 0000672e 0019fd94 7732e3f7
+[20:45:37] [debug] ESP+000000e0: 77343eec 7732e694 0019fdb8 2408cc0b
+[20:45:37] [debug] ESP+00000100: 72c7170e 0222d5b8 899b16fb 02229bd8
+[20:45:37] [debug] ESP+00000120: 00000000 21229bd8 00000000 03395d38
+[20:45:37] [debug] ESP+00000140: 0222d5b8 0019fe00 032dfce0 00000000
+[20:45:37] [debug] ESP+00000160: 07458a50 00000000 0019fe90 004aac5b
+[20:45:37] [debug] ESP+00000180: 004910a0 03395d38 76b23920 02229bd8
+[20:45:37] [debug] ESP+000001a0: 0048d4db 00000000 000023f0 0019ff74
+[20:45:37] [debug] ESP+000001c0: 00001e62 0000018c 000026e8 02229bd8
+[20:45:37] [debug] ESP+000001e0: 004c401c 00316000 004ab530 0019fe5c
+[20:45:37] [debug] ESP+00000200: ffffffff 0049b531 0049b541 004ab530
+[20:45:37] [debug] ESP+00000220: 00000001 022213b8 022213e8 00000094
+[20:45:37] [debug] ESP+00000240: 00000000 00000000 00000000 00000000
+[20:45:37] [debug] ESP+00000260: 00000000 00000000 00000000 00000000
+[20:45:37] [debug] ESP+00000280: 00000000 00000000 00000000 00000000
+[20:45:37] [debug] ESP+000002a0: 00000000 00000000 00000000 00000000
+[20:45:37] [debug] ESP+000002c0: 0049cbca 0049cbca 00316000 00000000
+[20:45:37] [debug] ESP+000002e0: 0019e4f4 0019ffcc 0049d298 004ba530
+[20:45:37] [debug] ESP+00000300: 76b166f0 0019ffdc 77337ccd 00316000
+[20:45:37] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[20:45:37] [debug] ESP+00000340: 00000000 0019ff90 00000000 0019ffe4
+[20:45:37] [debug] ESP+00000360: 77337c9b ffffffff 773668e2 00000000
+[20:45:37] [debug] ESP+00000380: 78746341 00000020 00000001 000032e4
+[20:45:37] [debug] ESP+000003a0: 00000014 00000001 00000007 00000034
+[20:45:37] [debug] ESP+000003c0: 00000000 00000000 00000000 00000002
+[20:45:37] [debug] ESP+000003e0: 00000254 00000000 f33271ba 00000534
+[20:45:37] [debug] Loaded modules:
+[20:45:37] [debug] 00400000 - 00519000 samp-server.exe
+[20:45:37] [debug] 772d0000 - 77478000 ntdll.dll
+[20:45:37] [debug] 76b00000 - 76bf0000 KERNEL32.DLL
+[20:45:37] [debug] 766d0000 - 76913000 KERNELBASE.dll
+[20:45:37] [debug] 75500000 - 75ad8000 SHELL32.dll
+[20:45:37] [debug] 77120000 - 7719e000 msvcp_win.dll
+[20:45:37] [debug] 771a0000 - 772b3000 ucrtbase.dll
+[20:45:37] [debug] 75b80000 - 75d29000 USER32.dll
+[20:45:37] [debug] 765c0000 - 765da000 win32u.dll
+[20:45:37] [debug] 76f90000 - 76fb3000 GDI32.dll
+[20:45:37] [debug] 76bf0000 - 76ccf000 gdi32full.dll
+[20:45:37] [debug] 720b0000 - 720b8000 WSOCK32.dll
+[20:45:37] [debug] 76d60000 - 76e22000 msvcrt.dll
+[20:45:37] [debug] 765e0000 - 76645000 WS2_32.dll
+[20:45:37] [debug] 76e30000 - 76eeb000 RPCRT4.dll
+[20:45:37] [debug] 72080000 - 720a8000 WINMM.dll
+[20:45:37] [debug] 76d30000 - 76d55000 IMM32.DLL
+[20:45:37] [debug] 732f0000 - 73341000 crashdetect.DLL
+[20:45:37] [debug] 716e0000 - 71749000 MSVCP100.dll
+[20:45:37] [debug] 73230000 - 732ef000 MSVCR100.dll
+[20:45:37] [debug] 10000000 - 1000e000 sscanf.DLL
+[20:45:37] [debug] 72000000 - 72015000 VCRUNTIME140.dll
+[20:45:37] [debug] 731b0000 - 73226000 pawnraknet.DLL
+[20:45:37] [debug] 02730000 - 0299b000 pawnplus.DLL
+[20:45:37] [debug] 71f10000 - 71f7d000 MSVCP140.dll
+[20:45:37] [debug] 76650000 - 766cc000 advapi32.dll
+[20:45:37] [debug] 77080000 - 770fb000 sechost.dll
+[20:45:37] [debug] 71fc0000 - 71fcb000 CRYPTBASE.DLL
+[20:45:37] [debug] 76920000 - 76982000 bcryptPrimitives.dll
+[20:45:37] [debug] 73190000 - 731a6000 GPS.DLL
+[20:45:37] [debug] 73120000 - 73187000 streamer.DLL
+[20:45:37] [debug] 730d0000 - 7311e000 mysql.DLL
+[20:45:37] [debug] 730b0000 - 730ca000 log-core.dll
+[20:45:37] [debug] 72fe0000 - 730ad000 libmariadb.dll
+[20:45:37] [debug] 76fc0000 - 7700c000 SHLWAPI.dll
+[20:45:37] [debug] 751c0000 - 752c3000 CRYPT32.dll
+[20:45:37] [debug] 72b20000 - 72b2a000 Secur32.dll
+[20:45:37] [debug] 72af0000 - 72b15000 SSPICLI.DLL
+[20:45:37] [debug] 74ca0000 - 74cb2000 kernel.appcore.dll
+[20:45:37] [debug] 71ef0000 - 71f02000 napinsp.dll
+[20:45:37] [debug] 71460000 - 714b1000 mswsock.dll
+[20:45:37] [debug] 713b0000 - 71454000 DNSAPI.dll
+[20:45:37] [debug] 74c10000 - 74c34000 IPHLPAPI.DLL
+[20:45:37] [debug] 76f80000 - 76f87000 NSI.dll
+[20:45:37] [debug] 713a0000 - 713ae000 winrnr.dll
+[20:45:37] [debug] 71380000 - 71399000 nlansp_c.dll
+[20:45:37] [debug] 71360000 - 71371000 wshbth.dll
+[20:45:37] [debug] 71350000 - 71358000 rasadhlp.dll
+[20:45:37] [debug] 72f50000 - 72fd9000 pawncmd.DLL
+[20:45:37] [debug] 72f20000 - 72f49000 chrono.DLL
+[20:45:37] [debug] 72d40000 - 72f15000 json.DLL
+[20:45:37] [debug] 72d10000 - 72d37000 USERENV.dll
+[20:45:37] [debug] 72cf0000 - 72d09000 bcrypt.dll
+[20:45:37] [debug] 72c70000 - 72ced000 sky.DLL
+[20:45:37] [debug] 032d0000 - 0337b000 ysf.DLL
+[20:45:37] [debug] 752d0000 - 753b9000 ole32.dll
+[20:45:37] [debug] 75e50000 - 760d8000 combase.dll
+[20:45:37] [debug] 760e0000 - 7617c000 OLEAUT32.dll
+[20:45:37] [debug] 70ae0000 - 70b3b000 fwpuclnt.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:58:46] password = ""  (string)
+[20:58:46] filterscripts = ""  (string)
+[20:58:46] 
+[20:58:46] Server Plugins
+[20:58:46] --------------
+[20:58:46]  Loading plugin: crashdetect
+[20:58:46]   CrashDetect plugin 4.19.4
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: sscanf
+[20:58:46] 
+
+[20:58:46]  ===============================
+
+[20:58:46]       sscanf plugin loaded.     
+
+[20:58:46]          Version:  2.8.3        
+
+[20:58:46]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:58:46]  ===============================
+
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: pawnraknet
+[20:58:46] [Pawn.RakNet] plugin v1.6.0 loading...
+[20:58:46] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: pawnplus
+[20:58:46]  PawnPlus v1.4.2 loaded
+[20:58:46]  Created by IllidanS4
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: GPS
+[20:58:46] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: streamer
+[20:58:46] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: mysql
+[20:58:46]  >> plugin.mysql: R41-4 successfully loaded.
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: pawncmd
+[20:58:46] [Pawn.CMD] plugin v3.4.0 loading...
+[20:58:46] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: chrono
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: json
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: sky
+[20:58:46] 
+[20:58:46]  ===============================
+[20:58:46]    
+[20:58:46]    < SKY - 2.3.0 >
+[20:58:46]    
+[20:58:46]    (c) 2008 - Present | YSF Maintainers
+[20:58:46]    (c) 2015 | Oscar "Slice" Broman
+[20:58:46]    
+[20:58:46]    Server Version: 0.3.7 R2
+[20:58:46]    Operating System: Windows
+[20:58:46]    Built on: Sep 27 2021 at 23:19:52
+[20:58:46]    
+[20:58:46]  ===============================
+[20:58:46] 
+[20:58:46]   Loaded.
+[20:58:46]  Loading plugin: ysf
+[20:58:46] 
+[20:58:46]  ==============================================
+[20:58:46]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[20:58:46]   (c) 2008 Alex "Y_Less" Cole
+[20:58:46]   (c) 2010 - 2018 kurta999
+[20:58:46]   (c) 2018 - 2020 IllidanS4
+[20:58:46]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[20:58:46]  ==============================================
+[20:58:46] 
+[20:58:46]   Loaded.
+[20:58:46]  Loaded 12 plugins.
+
+[20:58:47] 
+[20:58:47] Filterscripts
+[20:58:47] ---------------
+[20:58:47]   Loaded 0 filterscripts.
+
+[20:58:47]  
+[20:58:47]  
+[20:58:47]  
+[20:58:47]  ======================================= 
+[20:58:47]  |                                     | 
+[20:58:47]  |        YSI version 4.00.0001        | 
+[20:58:47]  |        By Alex "Y_Less" Cole        | 
+[20:58:47]  |                                     | 
+[20:58:47]  ======================================= 
+[20:58:47]  
+[20:58:47] [OnGameModeInit] Initialising 'Main'...
+[20:58:47] [Database] Connected!
+[20:58:47] [SERVER ECONOMY] Initialization called.
+[20:58:47] [ADMIN ACTIVITY] Initialization called.
+[20:58:47] [ADMIN DUTY TIMES] Initialization called.
+[20:58:47]   [Bank System] Initializing...
+[20:58:47]   [Bank System] Connected to MySQL, loading data...
+[20:58:47] 
+----------------------------------------
+[20:58:47]  Gamemode Ucp versi 0.1 register dan login
+[20:58:47] ----------------------------------------
+
+[20:58:47] Number of vehicle models: 0
+[20:58:47]   [Bank System] Loaded 1 bankers.
+[20:58:47]   [Bank System] Loaded 1 ATMs.
+[20:59:02] [connection] incoming connection: 182.3.43.35:45252 id: 0
+[20:59:03] [join] Suzy has joined the server (0:182.3.43.35)
+[20:59:03] Resetting player statistics for ID 0
+[20:59:09] [nick] Suzy nick changed to Suzy_Kyori
+[21:01:27] Resetting player statistics for ID 0
+[21:01:27] [debug] Server crashed while executing samp.amx
+[21:01:27] [debug] AMX backtrace:
+[21:01:27] [debug] #0 native CallLocalFunction () in samp-server.exe
+[21:01:27] [debug] #1 0007914c in public _y_utils_OnPlayerDisconnect (0, 0) in samp.amx
+[21:01:27] [debug] #2 00011f98 in public SSCANF_OnPlayerDisconnect (0, 0) in samp.amx
+[21:01:27] [debug] #3 00001d28 in public pGZ_OnPlayerDisconnect (0, 0) in samp.amx
+[21:01:27] [debug] #4 native CallLocalFunction () in samp-server.exe
+[21:01:27] [debug] #5 00001828 in ?? (0, 0) in samp.amx
+[21:01:27] [debug] #6 00017b50 in public OnPlayerDisconnect (0, 0) in samp.amx
+[21:01:27] [debug] Native backtrace:
+[21:01:27] [debug] #0 0047467c in ?? () in samp-server.exe
+[21:01:27] [debug] #1 004010b6 in ?? () in samp-server.exe
+[21:01:27] [debug] #2 7330dc92 in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #3 73315318 in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #4 733097cc in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #5 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #6 02938175 in ?? () in plugins\pawnplus.DLL
+[21:01:27] [debug] #7 029393d2 in ?? () in plugins\pawnplus.DLL
+[21:01:27] [debug] #8 73123484 in ?? () in plugins\streamer.DLL
+[21:01:27] [debug] #9 004746be in ?? () in samp-server.exe
+[21:01:27] [debug] #10 004010b6 in ?? () in samp-server.exe
+[21:01:27] [debug] #11 7330dc92 in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #12 73315318 in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #13 733097cc in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #14 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[21:01:27] [debug] #15 02938175 in ?? () in plugins\pawnplus.DLL
+[21:01:27] [debug] #16 029393d2 in ?? () in plugins\pawnplus.DLL
+[21:01:27] [debug] #17 73123484 in ?? () in plugins\streamer.DLL
+[21:01:27] [debug] #18 0046d9bb in ?? () in samp-server.exe
+[21:01:27] [debug] #19 032f0e15 in ?? () in plugins\ysf.DLL
+[21:01:27] [debug] Registers:
+[21:01:27] [debug] EAX: 00000000 EBX: 03412cf0 ECX: 0019eafc EDX: 00000000
+[21:01:27] [debug] ESI: 00000000 EDI: 06269064 EBP: 00000000 ESP: 0019fc80
+[21:01:27] [debug] EIP: 032f0e15 EFLAGS: 00010246
+[21:01:27] [debug] Stack:
+[21:01:27] [debug] ESP+00000000: 0019fc90 0019fcb0 0019fcb4 00000000
+[21:01:27] [debug] ESP+00000020: 00000000 00000000 00000000 004665ee
+[21:01:27] [debug] ESP+00000040: 033a5ad8 00000000 022f0c08 00000000
+[21:01:27] [debug] ESP+00000060: 65636e75 0019fc00 77343eec 7732e694
+[21:01:27] [debug] ESP+00000080: 7ffe0348 00000000 00000000 00000000
+[21:01:27] [debug] ESP+000000a0: 00000000 00000000 00000000 0019fd5c
+[21:01:27] [debug] ESP+000000c0: 71f250d9 00000ec8 0019fd94 7732e3f7
+[21:01:27] [debug] ESP+000000e0: 71f24f4d 02d8de48 00000000 05934d4d
+[21:01:27] [debug] ESP+00000100: 72c7170e 022fd5b8 135192f4 022f9bd8
+[21:01:27] [debug] ESP+00000120: 00000000 212f9bd8 00000000 033a5ad8
+[21:01:27] [debug] ESP+00000140: 022fd5b8 0019fe00 032efce0 00000000
+[21:01:27] [debug] ESP+00000160: 07463f90 00000000 0019fe90 004aac5b
+[21:01:27] [debug] ESP+00000180: 004910a0 033a5ad8 76b23920 022f9bd8
+[21:01:27] [debug] ESP+000001a0: 0048d4db 00000000 000023f0 0019ff74
+[21:01:27] [debug] ESP+000001c0: 00001e62 0000018c 00000e2c 022f9bd8
+[21:01:27] [debug] ESP+000001e0: 004c401c 00203000 004ab530 0019fe5c
+[21:01:27] [debug] ESP+00000200: ffffffff 0049b531 0049b541 004ab530
+[21:01:27] [debug] ESP+00000220: 00000001 022f13b8 022f13e8 00000094
+[21:01:27] [debug] ESP+00000240: 00000000 00000000 00000000 00000000
+[21:01:27] [debug] ESP+00000260: 00000000 00000000 00000000 00000000
+[21:01:27] [debug] ESP+00000280: 00000000 00000000 00000000 00000000
+[21:01:27] [debug] ESP+000002a0: 00000000 00000000 00000000 00000000
+[21:01:27] [debug] ESP+000002c0: 0049cbca 0049cbca 00203000 00000000
+[21:01:27] [debug] ESP+000002e0: 0019e4f4 0019ffcc 0049d298 004ba530
+[21:01:27] [debug] ESP+00000300: 76b166f0 0019ffdc 77337ccd 00203000
+[21:01:27] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[21:01:27] [debug] ESP+00000340: 00000000 0019ff90 00000000 0019ffe4
+[21:01:27] [debug] ESP+00000360: 77337c9b ffffffff 77366903 00000000
+[21:01:27] [debug] ESP+00000380: 78746341 00000020 00000001 000032e4
+[21:01:27] [debug] ESP+000003a0: 00000014 00000001 00000007 00000034
+[21:01:27] [debug] ESP+000003c0: 00000000 00000000 00000000 00000002
+[21:01:27] [debug] ESP+000003e0: 00000254 00000000 f33271ba 00000534
+[21:01:27] [debug] Loaded modules:
+[21:01:27] [debug] 00400000 - 00519000 samp-server.exe
+[21:01:27] [debug] 772d0000 - 77478000 ntdll.dll
+[21:01:27] [debug] 76b00000 - 76bf0000 KERNEL32.DLL
+[21:01:27] [debug] 766d0000 - 76913000 KERNELBASE.dll
+[21:01:27] [debug] 75500000 - 75ad8000 SHELL32.dll
+[21:01:27] [debug] 77120000 - 7719e000 msvcp_win.dll
+[21:01:27] [debug] 771a0000 - 772b3000 ucrtbase.dll
+[21:01:27] [debug] 75b80000 - 75d29000 USER32.dll
+[21:01:27] [debug] 765c0000 - 765da000 win32u.dll
+[21:01:27] [debug] 76f90000 - 76fb3000 GDI32.dll
+[21:01:27] [debug] 76bf0000 - 76ccf000 gdi32full.dll
+[21:01:27] [debug] 720b0000 - 720b8000 WSOCK32.dll
+[21:01:27] [debug] 76d60000 - 76e22000 msvcrt.dll
+[21:01:27] [debug] 765e0000 - 76645000 WS2_32.dll
+[21:01:27] [debug] 76e30000 - 76eeb000 RPCRT4.dll
+[21:01:27] [debug] 72080000 - 720a8000 WINMM.dll
+[21:01:27] [debug] 76d30000 - 76d55000 IMM32.DLL
+[21:01:27] [debug] 732f0000 - 73341000 crashdetect.DLL
+[21:01:27] [debug] 716e0000 - 71749000 MSVCP100.dll
+[21:01:27] [debug] 73230000 - 732ef000 MSVCR100.dll
+[21:01:27] [debug] 10000000 - 1000e000 sscanf.DLL
+[21:01:27] [debug] 72000000 - 72015000 VCRUNTIME140.dll
+[21:01:27] [debug] 731b0000 - 73226000 pawnraknet.DLL
+[21:01:27] [debug] 02920000 - 02b8b000 pawnplus.DLL
+[21:01:27] [debug] 71f10000 - 71f7d000 MSVCP140.dll
+[21:01:27] [debug] 76650000 - 766cc000 advapi32.dll
+[21:01:27] [debug] 77080000 - 770fb000 sechost.dll
+[21:01:27] [debug] 71fc0000 - 71fcb000 CRYPTBASE.DLL
+[21:01:27] [debug] 76920000 - 76982000 bcryptPrimitives.dll
+[21:01:27] [debug] 73190000 - 731a6000 GPS.DLL
+[21:01:27] [debug] 73120000 - 73187000 streamer.DLL
+[21:01:27] [debug] 730d0000 - 7311e000 mysql.DLL
+[21:01:27] [debug] 730b0000 - 730ca000 log-core.dll
+[21:01:27] [debug] 72fe0000 - 730ad000 libmariadb.dll
+[21:01:27] [debug] 76fc0000 - 7700c000 SHLWAPI.dll
+[21:01:27] [debug] 751c0000 - 752c3000 CRYPT32.dll
+[21:01:27] [debug] 72b20000 - 72b2a000 Secur32.dll
+[21:01:27] [debug] 72af0000 - 72b15000 SSPICLI.DLL
+[21:01:27] [debug] 74ca0000 - 74cb2000 kernel.appcore.dll
+[21:01:27] [debug] 71ef0000 - 71f02000 napinsp.dll
+[21:01:27] [debug] 71460000 - 714b1000 mswsock.dll
+[21:01:27] [debug] 713b0000 - 71454000 DNSAPI.dll
+[21:01:27] [debug] 74c10000 - 74c34000 IPHLPAPI.DLL
+[21:01:27] [debug] 76f80000 - 76f87000 NSI.dll
+[21:01:27] [debug] 713a0000 - 713ae000 winrnr.dll
+[21:01:27] [debug] 71380000 - 71399000 nlansp_c.dll
+[21:01:27] [debug] 71360000 - 71371000 wshbth.dll
+[21:01:27] [debug] 71350000 - 71358000 rasadhlp.dll
+[21:01:27] [debug] 72f50000 - 72fd9000 pawncmd.DLL
+[21:01:27] [debug] 72f20000 - 72f49000 chrono.DLL
+[21:01:27] [debug] 72d40000 - 72f15000 json.DLL
+[21:01:27] [debug] 72d10000 - 72d37000 USERENV.dll
+[21:01:27] [debug] 72cf0000 - 72d09000 bcrypt.dll
+[21:01:27] [debug] 72c70000 - 72ced000 sky.DLL
+[21:01:27] [debug] 032e0000 - 0338b000 ysf.DLL
+[21:01:27] [debug] 752d0000 - 753b9000 ole32.dll
+[21:01:27] [debug] 75e50000 - 760d8000 combase.dll
+[21:01:27] [debug] 760e0000 - 7617c000 OLEAUT32.dll
+[21:01:27] [debug] 70ae0000 - 70b3b000 fwpuclnt.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:06:36] password = ""  (string)
+[21:06:36] filterscripts = ""  (string)
+[21:06:36] 
+[21:06:36] Server Plugins
+[21:06:36] --------------
+[21:06:36]  Loading plugin: crashdetect
+[21:06:36]   CrashDetect plugin 4.19.4
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: sscanf
+[21:06:36] 
+
+[21:06:36]  ===============================
+
+[21:06:36]       sscanf plugin loaded.     
+
+[21:06:36]          Version:  2.8.3        
+
+[21:06:36]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:06:36]  ===============================
+
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: pawnraknet
+[21:06:36] [Pawn.RakNet] plugin v1.6.0 loading...
+[21:06:36] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: pawnplus
+[21:06:36]  PawnPlus v1.4.2 loaded
+[21:06:36]  Created by IllidanS4
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: GPS
+[21:06:36] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: streamer
+[21:06:36] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: mysql
+[21:06:36]  >> plugin.mysql: R41-4 successfully loaded.
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: pawncmd
+[21:06:36] [Pawn.CMD] plugin v3.4.0 loading...
+[21:06:36] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: chrono
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: json
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: sky
+[21:06:36] 
+[21:06:36]  ===============================
+[21:06:36]    
+[21:06:36]    < SKY - 2.3.0 >
+[21:06:36]    
+[21:06:36]    (c) 2008 - Present | YSF Maintainers
+[21:06:36]    (c) 2015 | Oscar "Slice" Broman
+[21:06:36]    
+[21:06:36]    Server Version: 0.3.7 R2
+[21:06:36]    Operating System: Windows
+[21:06:36]    Built on: Sep 27 2021 at 23:19:52
+[21:06:36]    
+[21:06:36]  ===============================
+[21:06:36] 
+[21:06:36]   Loaded.
+[21:06:36]  Loading plugin: ysf
+[21:06:36] 
+[21:06:36]  ==============================================
+[21:06:36]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[21:06:36]   (c) 2008 Alex "Y_Less" Cole
+[21:06:36]   (c) 2010 - 2018 kurta999
+[21:06:36]   (c) 2018 - 2020 IllidanS4
+[21:06:36]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[21:06:36]  ==============================================
+[21:06:36] 
+[21:06:36]   Loaded.
+[21:06:36]  Loaded 12 plugins.
+
+[21:06:36] 
+[21:06:36] Filterscripts
+[21:06:36] ---------------
+[21:06:36]   Loaded 0 filterscripts.
+
+[21:06:36]  
+[21:06:36]  
+[21:06:36]  
+[21:06:36]  ======================================= 
+[21:06:36]  |                                     | 
+[21:06:36]  |        YSI version 4.00.0001        | 
+[21:06:36]  |        By Alex "Y_Less" Cole        | 
+[21:06:36]  |                                     | 
+[21:06:36]  ======================================= 
+[21:06:36]  
+[21:06:36] [OnGameModeInit] Initialising 'Main'...
+[21:06:36] [Database] Connected!
+[21:06:36] [SERVER ECONOMY] Initialization called.
+[21:06:36] [ADMIN ACTIVITY] Initialization called.
+[21:06:36] [ADMIN DUTY TIMES] Initialization called.
+[21:06:36]   [Bank System] Initializing...
+[21:06:36]   [Bank System] Connected to MySQL, loading data...
+[21:06:36] 
+----------------------------------------
+[21:06:36]  Gamemode Ucp versi 0.1 register dan login
+[21:06:36] ----------------------------------------
+
+[21:06:36] Number of vehicle models: 0
+[21:06:36]   [Bank System] Loaded 1 bankers.
+[21:06:36]   [Bank System] Loaded 1 ATMs.
+[21:07:09] [connection] incoming connection: 182.3.43.35:37694 id: 0
+[21:07:10] [join] Suzy has joined the server (0:182.3.43.35)
+[21:07:10] Resetting player statistics for ID 0
+[21:07:16] [nick] Suzy nick changed to Suzy_Kyori
+[21:08:06] Resetting player statistics for ID 0
+[21:08:06] [debug] Server crashed while executing samp.amx
+[21:08:06] [debug] AMX backtrace:
+[21:08:06] [debug] #0 native CallLocalFunction () in samp-server.exe
+[21:08:06] [debug] #1 00079260 in public _y_utils_OnPlayerDisconnect (0, 0) in samp.amx
+[21:08:06] [debug] #2 00011f98 in public SSCANF_OnPlayerDisconnect (0, 0) in samp.amx
+[21:08:06] [debug] #3 00001d28 in public pGZ_OnPlayerDisconnect (0, 0) in samp.amx
+[21:08:06] [debug] #4 native CallLocalFunction () in samp-server.exe
+[21:08:06] [debug] #5 00001828 in ?? (0, 0) in samp.amx
+[21:08:06] [debug] #6 00017b50 in public OnPlayerDisconnect (0, 0) in samp.amx
+[21:08:07] [debug] Native backtrace:
+[21:08:07] [debug] #0 0047467c in ?? () in samp-server.exe
+[21:08:07] [debug] #1 004010b6 in ?? () in samp-server.exe
+[21:08:07] [debug] #2 7330dc92 in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #3 73315318 in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #4 733097cc in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #5 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #6 02948175 in ?? () in plugins\pawnplus.DLL
+[21:08:07] [debug] #7 029493d2 in ?? () in plugins\pawnplus.DLL
+[21:08:07] [debug] #8 73123484 in ?? () in plugins\streamer.DLL
+[21:08:07] [debug] #9 004746be in ?? () in samp-server.exe
+[21:08:07] [debug] #10 004010b6 in ?? () in samp-server.exe
+[21:08:07] [debug] #11 7330dc92 in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #12 73315318 in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #13 733097cc in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #14 7330dcf4 in ?? () in plugins\crashdetect.DLL
+[21:08:07] [debug] #15 02948175 in ?? () in plugins\pawnplus.DLL
+[21:08:07] [debug] #16 029493d2 in ?? () in plugins\pawnplus.DLL
+[21:08:07] [debug] #17 73123484 in ?? () in plugins\streamer.DLL
+[21:08:07] [debug] #18 0046d9bb in ?? () in samp-server.exe
+[21:08:07] [debug] #19 032f0e15 in ?? () in plugins\ysf.DLL
+[21:08:07] [debug] Registers:
+[21:08:07] [debug] EAX: 00000000 EBX: 03402cf0 ECX: 0019eafc EDX: 00000000
+[21:08:07] [debug] ESI: 00000000 EDI: 062521e0 EBP: 00000000 ESP: 0019fc80
+[21:08:07] [debug] EIP: 032f0e15 EFLAGS: 00010246
+[21:08:07] [debug] Stack:
+[21:08:07] [debug] ESP+00000000: 0019fc90 0019fcb0 0019fcb4 00000000
+[21:08:07] [debug] ESP+00000020: 00000000 00000000 00000000 004665ee
+[21:08:07] [debug] ESP+00000040: 03395c78 00000000 022c0c08 00000000
+[21:08:07] [debug] ESP+00000060: 65636e75 0019fc00 77343eec 7732e694
+[21:08:07] [debug] ESP+00000080: 7ffe0348 00000000 00000000 00000000
+[21:08:07] [debug] ESP+000000a0: 00000000 00000000 00000000 0019fd5c
+[21:08:07] [debug] ESP+000000c0: 71f250d9 0000162c 0019fd94 7732e3f7
+[21:08:07] [debug] ESP+000000e0: 71f24f4d 03134ab8 00000000 52bedc4d
+[21:08:07] [debug] ESP+00000100: 72c7170e 022cd5b8 ab6e7d75 022c9bd8
+[21:08:07] [debug] ESP+00000120: 00000000 212c9bd8 00000000 03395c78
+[21:08:07] [debug] ESP+00000140: 022cd5b8 0019fe00 032efce0 00000000
+[21:08:07] [debug] ESP+00000160: 0745a4d0 00000000 0019fe90 004aac5b
+[21:08:07] [debug] ESP+00000180: 004910a0 03395c78 76b23920 022c9bd8
+[21:08:07] [debug] ESP+000001a0: 0048d4db 00000000 000023f0 0019ff74
+[21:08:07] [debug] ESP+000001c0: 00001e62 00000184 00001f14 022c9bd8
+[21:08:07] [debug] ESP+000001e0: 004c401c 0036b000 004ab530 0019fe5c
+[21:08:07] [debug] ESP+00000200: ffffffff 0049b531 0049b541 004ab530
+[21:08:07] [debug] ESP+00000220: 00000001 022c13b8 022c13e8 00000094
+[21:08:07] [debug] ESP+00000240: 00000000 00000000 00000000 00000000
+[21:08:07] [debug] ESP+00000260: 00000000 00000000 00000000 00000000
+[21:08:07] [debug] ESP+00000280: 00000000 00000000 00000000 00000000
+[21:08:07] [debug] ESP+000002a0: 00000000 00000000 00000000 00000000
+[21:08:07] [debug] ESP+000002c0: 0049cbca 0049cbca 0036b000 00000000
+[21:08:07] [debug] ESP+000002e0: 0019e4f4 0019ffcc 0049d298 004ba530
+[21:08:07] [debug] ESP+00000300: 76b166f0 0019ffdc 77337ccd 0036b000
+[21:08:07] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[21:08:07] [debug] ESP+00000340: 00000000 0019ff90 00000000 0019ffe4
+[21:08:07] [debug] ESP+00000360: 77337c9b ffffffff 773668f3 00000000
+[21:08:07] [debug] ESP+00000380: 78746341 00000020 00000001 000032e4
+[21:08:07] [debug] ESP+000003a0: 00000014 00000001 00000007 00000034
+[21:08:07] [debug] ESP+000003c0: 00000000 00000000 00000000 00000002
+[21:08:07] [debug] ESP+000003e0: 00000254 00000000 f33271ba 00000534
+[21:08:07] [debug] Loaded modules:
+[21:08:07] [debug] 00400000 - 00519000 samp-server.exe
+[21:08:07] [debug] 772d0000 - 77478000 ntdll.dll
+[21:08:07] [debug] 76b00000 - 76bf0000 KERNEL32.DLL
+[21:08:07] [debug] 766d0000 - 76913000 KERNELBASE.dll
+[21:08:07] [debug] 75500000 - 75ad8000 SHELL32.dll
+[21:08:07] [debug] 77120000 - 7719e000 msvcp_win.dll
+[21:08:07] [debug] 771a0000 - 772b3000 ucrtbase.dll
+[21:08:07] [debug] 75b80000 - 75d29000 USER32.dll
+[21:08:07] [debug] 765c0000 - 765da000 win32u.dll
+[21:08:07] [debug] 76f90000 - 76fb3000 GDI32.dll
+[21:08:07] [debug] 76bf0000 - 76ccf000 gdi32full.dll
+[21:08:07] [debug] 720b0000 - 720b8000 WSOCK32.dll
+[21:08:07] [debug] 76d60000 - 76e22000 msvcrt.dll
+[21:08:07] [debug] 765e0000 - 76645000 WS2_32.dll
+[21:08:07] [debug] 76e30000 - 76eeb000 RPCRT4.dll
+[21:08:07] [debug] 72080000 - 720a8000 WINMM.dll
+[21:08:07] [debug] 76d30000 - 76d55000 IMM32.DLL
+[21:08:07] [debug] 732f0000 - 73341000 crashdetect.DLL
+[21:08:07] [debug] 716e0000 - 71749000 MSVCP100.dll
+[21:08:07] [debug] 73230000 - 732ef000 MSVCR100.dll
+[21:08:07] [debug] 10000000 - 1000e000 sscanf.DLL
+[21:08:07] [debug] 72000000 - 72015000 VCRUNTIME140.dll
+[21:08:07] [debug] 731b0000 - 73226000 pawnraknet.DLL
+[21:08:07] [debug] 02930000 - 02b9b000 pawnplus.DLL
+[21:08:07] [debug] 71f10000 - 71f7d000 MSVCP140.dll
+[21:08:07] [debug] 76650000 - 766cc000 advapi32.dll
+[21:08:07] [debug] 77080000 - 770fb000 sechost.dll
+[21:08:07] [debug] 71fc0000 - 71fcb000 CRYPTBASE.DLL
+[21:08:07] [debug] 76920000 - 76982000 bcryptPrimitives.dll
+[21:08:07] [debug] 73190000 - 731a6000 GPS.DLL
+[21:08:07] [debug] 73120000 - 73187000 streamer.DLL
+[21:08:07] [debug] 730d0000 - 7311e000 mysql.DLL
+[21:08:07] [debug] 72fe0000 - 72ffa000 log-core.dll
+[21:08:07] [debug] 73000000 - 730cd000 libmariadb.dll
+[21:08:07] [debug] 76fc0000 - 7700c000 SHLWAPI.dll
+[21:08:07] [debug] 751c0000 - 752c3000 CRYPT32.dll
+[21:08:07] [debug] 72b20000 - 72b2a000 Secur32.dll
+[21:08:07] [debug] 72af0000 - 72b15000 SSPICLI.DLL
+[21:08:07] [debug] 74ca0000 - 74cb2000 kernel.appcore.dll
+[21:08:07] [debug] 71ef0000 - 71f02000 napinsp.dll
+[21:08:07] [debug] 71460000 - 714b1000 mswsock.dll
+[21:08:07] [debug] 713b0000 - 71454000 DNSAPI.dll
+[21:08:07] [debug] 74c10000 - 74c34000 IPHLPAPI.DLL
+[21:08:07] [debug] 76f80000 - 76f87000 NSI.dll
+[21:08:07] [debug] 713a0000 - 713ae000 winrnr.dll
+[21:08:07] [debug] 71380000 - 71399000 nlansp_c.dll
+[21:08:07] [debug] 71360000 - 71371000 wshbth.dll
+[21:08:07] [debug] 71350000 - 71358000 rasadhlp.dll
+[21:08:07] [debug] 72f50000 - 72fd9000 pawncmd.DLL
+[21:08:07] [debug] 72f20000 - 72f49000 chrono.DLL
+[21:08:07] [debug] 72d40000 - 72f15000 json.DLL
+[21:08:07] [debug] 72d10000 - 72d37000 USERENV.dll
+[21:08:07] [debug] 72cf0000 - 72d09000 bcrypt.dll
+[21:08:07] [debug] 72c70000 - 72ced000 sky.DLL
+[21:08:07] [debug] 032e0000 - 0338b000 ysf.DLL
+[21:08:07] [debug] 752d0000 - 753b9000 ole32.dll
+[21:08:07] [debug] 75e50000 - 760d8000 combase.dll
+[21:08:07] [debug] 760e0000 - 7617c000 OLEAUT32.dll
+[21:08:07] [debug] 70ae0000 - 70b3b000 fwpuclnt.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:09:18] password = ""  (string)
+[21:09:18] filterscripts = ""  (string)
+[21:09:18] 
+[21:09:19] Server Plugins
+[21:09:19] --------------
+[21:09:19]  Loading plugin: crashdetect
+[21:09:19]   CrashDetect plugin 4.19.4
+[21:09:19]   Loaded.
+[21:09:19]  Loading plugin: sscanf
+[21:09:19] 
+
+[21:09:19]  ===============================
+
+[21:09:19]       sscanf plugin loaded.     
+
+[21:09:19]          Version:  2.8.3        
+
+[21:09:19]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:09:20]  ===============================
+
+[21:09:20]   Loaded.
+[21:09:20]  Loading plugin: pawnraknet
+[21:09:20] [Pawn.RakNet] plugin v1.6.0 loading...
+[21:09:20] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[21:09:20]   Loaded.
+[21:09:20]  Loading plugin: pawnplus
+[21:09:20]  PawnPlus v1.4.2 loaded
+[21:09:20]  Created by IllidanS4
+[21:09:20]   Loaded.
+[21:09:20]  Loading plugin: GPS
+[21:09:21] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[21:09:21]   Loaded.
+[21:09:21]  Loading plugin: streamer
+[21:09:21] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[21:09:21]   Loaded.
+[21:09:21]  Loading plugin: mysql
+[21:09:22]  >> plugin.mysql: R41-4 successfully loaded.
+[21:09:22]   Loaded.
+[21:09:22]  Loading plugin: pawncmd
+[21:09:22] [Pawn.CMD] plugin v3.4.0 loading...
+[21:09:22] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[21:09:22]   Loaded.
+[21:09:22]  Loading plugin: chrono
+[21:09:22]   Loaded.
+[21:09:22]  Loading plugin: json
+[21:09:22]   Loaded.
+[21:09:23]  Loading plugin: sky
+[21:09:23] 
+[21:09:23]  ===============================
+[21:09:23]    
+[21:09:23]    < SKY - 2.3.0 >
+[21:09:23]    
+[21:09:23]    (c) 2008 - Present | YSF Maintainers
+[21:09:23]    (c) 2015 | Oscar "Slice" Broman
+[21:09:23]    
+[21:09:24]    Server Version: 0.3.7 R2
+[21:09:24]    Operating System: Windows
+[21:09:24]    Built on: Sep 27 2021 at 23:19:52
+[21:09:24]    
+[21:09:24]  ===============================
+[21:09:24] 
+[21:09:24]   Loaded.
+[21:09:24]  Loading plugin: ysf
+[21:09:24] 
+[21:09:25]  ==============================================
+[21:09:25]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[21:09:25]   (c) 2008 Alex "Y_Less" Cole
+[21:09:25]   (c) 2010 - 2018 kurta999
+[21:09:25]   (c) 2018 - 2020 IllidanS4
+[21:09:25]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[21:09:25]  ==============================================
+[21:09:25] 
+[21:09:25]   Loaded.
+[21:09:25]  Loaded 12 plugins.
+
+[21:09:26] 
+[21:09:26] Filterscripts
+[21:09:26] ---------------
+[21:09:26]   Loaded 0 filterscripts.
+
+[21:09:26]  
+[21:09:26]  
+[21:09:26]  
+[21:09:26]  ======================================= 
+[21:09:27]  |                                     | 
+[21:09:27]  |        YSI version 4.00.0001        | 
+[21:09:27]  |        By Alex "Y_Less" Cole        | 
+[21:09:27]  |                                     | 
+[21:09:27]  ======================================= 
+[21:09:27]  
+[21:09:27] [OnGameModeInit] Initialising 'Main'...
+[21:09:27] [Database] Connected!
+[21:09:27] [SERVER ECONOMY] Initialization called.
+[21:09:27] [ADMIN ACTIVITY] Initialization called.
+[21:09:27] [ADMIN DUTY TIMES] Initialization called.
+[21:09:27]   [Bank System] Initializing...
+[21:09:27]   [Bank System] Connected to MySQL, loading data...
+[21:09:27] 
+----------------------------------------
+[21:09:27]  Gamemode Ucp versi 0.1 register dan login
+[21:09:27] ----------------------------------------
+
+[21:09:27] Number of vehicle models: 0
+[21:09:27]   [Bank System] Loaded 1 bankers.
+[21:09:27]   [Bank System] Loaded 1 ATMs.
+[21:09:55] [connection] incoming connection: 182.3.43.35:42653 id: 0
+[21:10:07] [connection] incoming connection: 182.3.43.35:39749 id: 0
+[21:10:07] [join] Suzy has joined the server (0:182.3.43.35)
+[21:10:07] Resetting player statistics for ID 0
+[21:10:13] [nick] Suzy nick changed to Suzy_Kyori
+[21:10:37] Resetting player statistics for ID 0
+[21:10:37] [part] Suzy_Kyori has left the server (0:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:13:51] password = ""  (string)
+[23:13:51] filterscripts = ""  (string)
+[23:13:51] 
+[23:13:51] Server Plugins
+[23:13:51] --------------
+[23:13:51]  Loading plugin: crashdetect
+[23:13:51]   CrashDetect plugin 4.19.4
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: sscanf
+[23:13:51] 
+
+[23:13:51]  ===============================
+
+[23:13:51]       sscanf plugin loaded.     
+
+[23:13:51]          Version:  2.8.3        
+
+[23:13:51]   (c) 2018 Alex "Y_Less" Cole  
+
+[23:13:51]  ===============================
+
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: pawnraknet
+[23:13:51] [Pawn.RakNet] plugin v1.6.0 loading...
+[23:13:51] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: pawnplus
+[23:13:51]  PawnPlus v1.4.2 loaded
+[23:13:51]  Created by IllidanS4
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: GPS
+[23:13:51] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: streamer
+[23:13:51] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: mysql
+[23:13:51]  >> plugin.mysql: R41-4 successfully loaded.
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: pawncmd
+[23:13:51] [Pawn.CMD] plugin v3.4.0 loading...
+[23:13:51] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: chrono
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: json
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: sky
+[23:13:51] 
+[23:13:51]  ===============================
+[23:13:51]    
+[23:13:51]    < SKY - 2.3.0 >
+[23:13:51]    
+[23:13:51]    (c) 2008 - Present | YSF Maintainers
+[23:13:51]    (c) 2015 | Oscar "Slice" Broman
+[23:13:51]    
+[23:13:51]    Server Version: 0.3.7 R2
+[23:13:51]    Operating System: Windows
+[23:13:51]    Built on: Sep 27 2021 at 23:19:52
+[23:13:51]    
+[23:13:51]  ===============================
+[23:13:51] 
+[23:13:51]   Loaded.
+[23:13:51]  Loading plugin: ysf
+[23:13:51] 
+[23:13:51]  ==============================================
+[23:13:51]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[23:13:51]   (c) 2008 Alex "Y_Less" Cole
+[23:13:51]   (c) 2010 - 2018 kurta999
+[23:13:51]   (c) 2018 - 2020 IllidanS4
+[23:13:51]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[23:13:51]  ==============================================
+[23:13:51] 
+[23:13:51]   Loaded.
+[23:13:51]  Loaded 12 plugins.
+
+[23:13:51] 
+[23:13:51] Filterscripts
+[23:13:51] ---------------
+[23:13:51]   Loaded 0 filterscripts.
+
+[23:13:51]  
+[23:13:51]  
+[23:13:51]  
+[23:13:51]  ======================================= 
+[23:13:51]  |                                     | 
+[23:13:51]  |        YSI version 4.00.0001        | 
+[23:13:51]  |        By Alex "Y_Less" Cole        | 
+[23:13:51]  |                                     | 
+[23:13:51]  ======================================= 
+[23:13:51]  
+[23:13:51] [OnGameModeInit] Initialising 'Main'...
+[23:13:51] [Database] Connected!
+[23:13:51] [SERVER ECONOMY] Initialization called.
+[23:13:51] [ADMIN ACTIVITY] Initialization called.
+[23:13:51] [ADMIN DUTY TIMES] Initialization called.
+[23:13:51]   [Bank System] Initializing...
+[23:13:51]   [Bank System] Connected to MySQL, loading data...
+[23:13:51] 
+----------------------------------------
+[23:13:51]  Gamemode Ucp versi 0.1 register dan login
+[23:13:51] ----------------------------------------
+
+[23:13:51] Number of vehicle models: 0
+[23:13:51]   [Bank System] Loaded 1 bankers.
+[23:13:51]   [Bank System] Loaded 1 ATMs.
+[23:14:11] [connection] incoming connection: 182.3.43.35:49752 id: 0
+[23:14:12] [join] Suzy has joined the server (0:182.3.43.35)
+[23:14:12] Resetting player statistics for ID 0
+[23:14:20] [nick] Suzy nick changed to Suzy_Kyori
