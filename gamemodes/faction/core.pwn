@@ -33,4 +33,4 @@ enum factionData
 	SpawnVW
 };
 new FactionData[MAX_FACTIONS][factionData];
-new FactionRanks[MAX_FACTIONS][15][32]
+new FactionRanks[MAX_FACTIONS][15][32];

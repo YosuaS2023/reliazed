@@ -286,8 +286,8 @@ public VehicleLoaded()
 					{
 						Iter_Add(OwnedVehicles<p>, vehicleid);
 
-						mysql_tquery(g_iHandle, sprintf("SELECT * FROM `weapon_vehicles` WHERE `vehicleid`='%d' LIMIT %d;", VehicleData[vehicleid][vehIndex], MAX_VEHICLE_STORAGE), "VehicleWeaponLoaded", "d", vehicleid);
-						mysql_tquery(g_iHandle, sprintf("SELECT * FROM `carstorage` WHERE `itemVehicle`='%d' LIMIT %d;", VehicleData[vehicleid][vehIndex], MAX_VEHICLE_STORAGE), "VehicleInventoryLoaded", "d", vehicleid);
+						mysql_tquery(sqlcon, sprintf("SELECT * FROM `weapon_vehicles` WHERE `vehicleid`='%d' LIMIT %d;", VehicleData[vehicleid][vehIndex], MAX_VEHICLE_STORAGE), "VehicleWeaponLoaded", "d", vehicleid);
+						mysql_tquery(sqlcon, sprintf("SELECT * FROM `carstorage` WHERE `itemVehicle`='%d' LIMIT %d;", VehicleData[vehicleid][vehIndex], MAX_VEHICLE_STORAGE), "VehicleInventoryLoaded", "d", vehicleid);
 						break;
 					}
 				}
@@ -347,8 +347,8 @@ public VehicleLoaded()
 			Vehicle_Save(vehicleid, VEHICLE_SAVE_MISC);
 
 			// Load vehicle mod
-			mysql_tquery(g_iHandle, sprintf("SELECT * FROM `vehicle_mod` WHERE `vehicleid`='%d' LIMIT 1;", VehicleData[vehicleid][vehIndex]), "VehicleModLoaded", "dd", vehicleid, VehicleData[vehicleid][vehVehicleID]);
-			mysql_tquery(g_iHandle, sprintf("SELECT * FROM `vehicle_object` WHERE `vehicle`='%d' ORDER BY `id` DESC LIMIT 5", VehicleData[vehicleid][vehIndex]), "Vehicle_ObjectLoad", "d", VehicleData[vehicleid][vehVehicleID]);
+			mysql_tquery(sqlcon, sprintf("SELECT * FROM `vehicle_mod` WHERE `vehicleid`='%d' LIMIT 1;", VehicleData[vehicleid][vehIndex]), "VehicleModLoaded", "dd", vehicleid, VehicleData[vehicleid][vehVehicleID]);
+			mysql_tquery(sqlcon, sprintf("SELECT * FROM `vehicle_object` WHERE `vehicle`='%d' ORDER BY `id` DESC LIMIT 5", VehicleData[vehicleid][vehIndex]), "Vehicle_ObjectLoad", "d", VehicleData[vehicleid][vehVehicleID]);
 		}
 		else break;
 	}
@@ -379,7 +379,7 @@ public OldVehicleLoaded(playerid)
 
 			if((vehicleid = Vehicle_Create(model, x, y, z, angle, color1, color2)) != RETURN_INVALID_VEHICLE_ID) {
 				Vehicle_SetOwner(playerid, vehicleid);
-				mysql_tquery(g_iHandle, sprintf("DELETE FROM `player_vehicles` WHERE `ID`='%d';", id));
+				mysql_tquery(sqlcon, sprintf("DELETE FROM `player_vehicles` WHERE `ID`='%d';", id));
 			}
 		}
 	}
@@ -577,7 +577,7 @@ Vehicle_Create(modelid, Float:x, Float:y, Float:z, Float:rotation, color1 = -1, 
 		SetVehicleNumberPlate(VehicleData[vehicleid][vehVehicleID], VehicleData[vehicleid][vehPlate]);
 
 
-		if(database) mysql_tquery(g_iHandle, sprintf("INSERT INTO `server_vehicles` (`model`) VALUES ('%d');", modelid), "VehicleCreated", "d", vehicleid);
+		if(database) mysql_tquery(sqlcon, sprintf("INSERT INTO `server_vehicles` (`model`) VALUES ('%d');", modelid), "VehicleCreated", "d", vehicleid);
 		return vehicleid;
 	}
 	return RETURN_INVALID_VEHICLE_ID;
@@ -633,16 +633,16 @@ Vehicle_Delete(vehicleid, bool:database = true)
 		if(database)
 		{
 			// Cargo on vehicle remove
-			mysql_tquery(g_iHandle, sprintf("DELETE FROM `vehicle_cargo` WHERE `vehicle_id`='%d';", VehicleData[vehicleid][vehIndex]));
+			mysql_tquery(sqlcon, sprintf("DELETE FROM `vehicle_cargo` WHERE `vehicle_id`='%d';", VehicleData[vehicleid][vehIndex]));
 
 			// Weapon on vehicle remove (soon)
-			mysql_tquery(g_iHandle, sprintf("DELETE FROM `weapon_vehicles` WHERE `vehicleid`='%d';", VehicleData[vehicleid][vehIndex]));
+			mysql_tquery(sqlcon, sprintf("DELETE FROM `weapon_vehicles` WHERE `vehicleid`='%d';", VehicleData[vehicleid][vehIndex]));
 
 			// Modding remove
-			mysql_tquery(g_iHandle, sprintf("DELETE FROM `vehicle_mod` WHERE `vehicleid`='%d';", VehicleData[vehicleid][vehIndex]));
+			mysql_tquery(sqlcon, sprintf("DELETE FROM `vehicle_mod` WHERE `vehicleid`='%d';", VehicleData[vehicleid][vehIndex]));
 
 			// Vehicle database
-			mysql_tquery(g_iHandle, sprintf("DELETE FROM `server_vehicles` WHERE `id` = '%d';", VehicleData[vehicleid][vehIndex]));
+			mysql_tquery(sqlcon, sprintf("DELETE FROM `server_vehicles` WHERE `id` = '%d';", VehicleData[vehicleid][vehIndex]));
 		}
 		Vehicle_ResetVariable(vehicleid);
 	}
@@ -664,10 +664,10 @@ Vehicle_FactionDelete(factionid)
 			}
 
 			// Cargo on vehicle remove
-			mysql_tquery(g_iHandle, sprintf("DELETE FROM `vehicle_cargo` WHERE `vehicle_id`='%d';", VehicleData[vehicleid][vehIndex]));
+			mysql_tquery(sqlcon, sprintf("DELETE FROM `vehicle_cargo` WHERE `vehicle_id`='%d';", VehicleData[vehicleid][vehIndex]));
 
 			// Vehicle database
-			mysql_tquery(g_iHandle, sprintf("DELETE FROM `server_vehicles` WHERE `id` = '%d';", VehicleData[vehicleid][vehIndex]));
+			mysql_tquery(sqlcon, sprintf("DELETE FROM `server_vehicles` WHERE `id` = '%d';", VehicleData[vehicleid][vehIndex]));
 
 			Vehicle_ResetVariable(vehicleid);
 		}
@@ -684,7 +684,7 @@ Vehicle_FactionDelete(factionid)
 Vehicle_ExecuteInt(vehicleid, const column[], value)
 {
 	if(Vehicle_IsExists(vehicleid))
-		return mysql_tquery(g_iHandle, sprintf("UPDATE `server_vehicles` SET `%s` = '%d' WHERE id='%d';", column, value, VehicleData[vehicleid][vehIndex]));
+		return mysql_tquery(sqlcon, sprintf("UPDATE `server_vehicles` SET `%s` = '%d' WHERE id='%d';", column, value, VehicleData[vehicleid][vehIndex]));
 
 	return 0;
 }
@@ -722,7 +722,7 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 			case VEHICLE_SAVE_ALL: 
 			{
 				new query[1250];
-				mysql_format(g_iHandle, query, sizeof(query), "UPDATE `server_vehicles` SET `model`='%d',`extraid`='%d',`posX`='%.4f',`posY`='%.4f',`posZ`='%.4f',`posRZ`='%.4f',`renttime`='%d',`health`='%.2f',`plate`='%s',`fuel`='%.2f', `neoncolor` = '%d', `togneon` = '%d'",
+				mysql_format(sqlcon, query, sizeof(query), "UPDATE `server_vehicles` SET `model`='%d',`extraid`='%d',`posX`='%.4f',`posY`='%.4f',`posZ`='%.4f',`posRZ`='%.4f',`renttime`='%d',`health`='%.2f',`plate`='%s',`fuel`='%.2f', `neoncolor` = '%d', `togneon` = '%d'",
 					VehicleData[vehicleid][vehModel],
 					VehicleData[vehicleid][vehExtraID],
 					VehicleData[vehicleid][vehPosX],
@@ -737,7 +737,7 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 					VehicleData[vehicleid][vehTogNeon]
 				);
 
-				mysql_format(g_iHandle, query, sizeof(query), "%s, `vehwoods` = '%d', `vehcomponent` = '%d', `parking` = '%d', `house_parking` = '%d', `doorstatus` = '%d', `enginestatus` = '%d'",
+				mysql_format(sqlcon, query, sizeof(query), "%s, `vehwoods` = '%d', `vehcomponent` = '%d', `parking` = '%d', `house_parking` = '%d', `doorstatus` = '%d', `enginestatus` = '%d'",
 					query,
 					VehicleData[vehicleid][vehComponent],
 					VehicleData[vehicleid][vehWoods],
@@ -747,13 +747,13 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 					VehicleData[vehicleid][vehEngineStatus]
 				);
 
-				mysql_format(g_iHandle, query, sizeof(query), "%s, `vehlocktire` = '%d', `vehhandbrake` = '%d'",
+				mysql_format(sqlcon, query, sizeof(query), "%s, `vehlocktire` = '%d', `vehhandbrake` = '%d'",
 					query,
 					VehicleData[vehicleid][vehLockTire],
 					VehicleData[vehicleid][vehHandBrake]					
 				);
 
-				mysql_format(g_iHandle, query, sizeof(query), "%s,`type`='%d',`color1`='%d',`color2`='%d',`damage1`='%d',`damage2`='%d',`damage3`='%d',`damage4`='%d',`paintjob`='%d',`state`='%d',`siren`='%d',`engineup`='%d',`bodyup`='%d',`gasup`='%d',`bodyrepair`='%.3f', `turbo`='%d', `accumulated_mileage` = '%.4f', `current_mileage` = '%.4f', `durability_mileage` = '%.4f' WHERE `id`='%d';",
+				mysql_format(sqlcon, query, sizeof(query), "%s,`type`='%d',`color1`='%d',`color2`='%d',`damage1`='%d',`damage2`='%d',`damage3`='%d',`damage4`='%d',`paintjob`='%d',`state`='%d',`siren`='%d',`engineup`='%d',`bodyup`='%d',`gasup`='%d',`bodyrepair`='%.3f', `turbo`='%d', `accumulated_mileage` = '%.4f', `current_mileage` = '%.4f', `durability_mileage` = '%.4f' WHERE `id`='%d';",
 					query,
 					VehicleData[vehicleid][vehType],
 					VehicleData[vehicleid][vehColor1],
@@ -775,11 +775,11 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 					VehicleData[vehicleid][durabilityMileage],
 					VehicleData[vehicleid][vehIndex]
 				);
-				mysql_tquery(g_iHandle, query);
+				mysql_tquery(sqlcon, query);
 			}
 			case VEHICLE_SAVE_COLOR:
 			{
-				mysql_tquery(g_iHandle, sprintf("UPDATE `server_vehicles` SET `color1`='%d', `color2`='%d', `paintjob`='%d' WHERE `id`='%d';",
+				mysql_tquery(sqlcon, sprintf("UPDATE `server_vehicles` SET `color1`='%d', `color2`='%d', `paintjob`='%d' WHERE `id`='%d';",
 					VehicleData[vehicleid][vehColor1],
 					VehicleData[vehicleid][vehColor2],
 					VehicleData[vehicleid][vehPaintjob],
@@ -789,7 +789,7 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 			case VEHICLE_SAVE_POSITION:
 			{
 				new query[500];
-				mysql_format(g_iHandle, query, sizeof(query), "UPDATE `server_vehicles` SET `posX`='%.4f',`posY`='%.4f',`posZ`='%.4f',`posRZ`='%.4f',`interior`='%d',`world`='%d',`doorstatus`='%d',`enginestatus`='%d' WHERE `id`='%d';",
+				mysql_format(sqlcon, query, sizeof(query), "UPDATE `server_vehicles` SET `posX`='%.4f',`posY`='%.4f',`posZ`='%.4f',`posRZ`='%.4f',`interior`='%d',`world`='%d',`doorstatus`='%d',`enginestatus`='%d' WHERE `id`='%d';",
 					VehicleData[vehicleid][vehPosX],
 					VehicleData[vehicleid][vehPosY],
 					VehicleData[vehicleid][vehPosZ],
@@ -800,12 +800,12 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 					VehicleData[vehicleid][vehEngineStatus],
 					VehicleData[vehicleid][vehIndex]
 				);
-				mysql_tquery(g_iHandle, query);
+				mysql_tquery(sqlcon, query);
 			}
 			case VEHICLE_SAVE_DAMAGES:
 			{
 				new query[500];
-				mysql_format(g_iHandle, query, sizeof(query), "UPDATE `server_vehicles` SET `damage1`='%d', `damage2`='%d', `damage3`='%d', `damage4`='%d', `health`='%.2f', `fuel`='%.2f' WHERE `id`='%d';",
+				mysql_format(sqlcon, query, sizeof(query), "UPDATE `server_vehicles` SET `damage1`='%d', `damage2`='%d', `damage3`='%d', `damage4`='%d', `health`='%.2f', `fuel`='%.2f' WHERE `id`='%d';",
 					VehicleData[vehicleid][vehPanel],
 					VehicleData[vehicleid][vehDoor],
 					VehicleData[vehicleid][vehLight],
@@ -814,11 +814,11 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 					VehicleData[vehicleid][vehFuel],
 					VehicleData[vehicleid][vehIndex]
 				);
-				mysql_tquery(g_iHandle, query);
+				mysql_tquery(sqlcon, query);
 			}
 			case VEHICLE_SAVE_MISC:
 			{
-				mysql_tquery(g_iHandle, sprintf("UPDATE `server_vehicles` SET `plate`='%s', `renttime`='%d', `state`='%d', `insurance`='%d', `engineup` ='%d', `bodyup` ='%d', `gasup`='%d', `bodyrepair`='%.3f', `neoncolor`='%d', `togneon`='%d', `vehwoods` = '%d', `vehcomponent` = '%d', `turbo` = '%d', `parking` = '%d', `house_parking` = '%d', `accumulated_mileage` = '%.4f', `current_mileage` = '%.4f', `durability_mileage` = '%.4f' WHERE `id`='%d';",
+				mysql_tquery(sqlcon, sprintf("UPDATE `server_vehicles` SET `plate`='%s', `renttime`='%d', `state`='%d', `insurance`='%d', `engineup` ='%d', `bodyup` ='%d', `gasup`='%d', `bodyrepair`='%.3f', `neoncolor`='%d', `togneon`='%d', `vehwoods` = '%d', `vehcomponent` = '%d', `turbo` = '%d', `parking` = '%d', `house_parking` = '%d', `accumulated_mileage` = '%.4f', `current_mileage` = '%.4f', `durability_mileage` = '%.4f' WHERE `id`='%d';",
 					SQL_ReturnEscaped(VehicleData[vehicleid][vehPlate]),
 					VehicleData[vehicleid][vehRentTime],
 					VehicleData[vehicleid][vehState],
@@ -843,7 +843,7 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 			case VEHICLE_SAVE_COMPONENT:
 			{
 				new query[500];
-				mysql_format(g_iHandle, query, sizeof query, "INSERT INTO `vehicle_mod` VALUES ('%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d') ON DUPLICATE KEY UPDATE ", 
+				mysql_format(sqlcon, query, sizeof query, "INSERT INTO `vehicle_mod` VALUES ('%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d') ON DUPLICATE KEY UPDATE ", 
 					VehicleData[vehicleid][vehIndex],
 					VehicleData[vehicleid][vehMod][0],
 					VehicleData[vehicleid][vehMod][1],
@@ -863,7 +863,7 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 					VehicleData[vehicleid][vehMod][15],
 					VehicleData[vehicleid][vehMod][16]
 				);
-				mysql_format(g_iHandle, query, sizeof query, "%smod0=%d,mod1=%d,mod2=%d,mod3=%d,mod4=%d,mod5=%d,mod6=%d,mod7=%d,mod8=%d,mod9=%d,mod10=%d,mod11=%d,mod12=%d,mod13=%d,mod14=%d,mod15=%d,mod16=%d;",
+				mysql_format(sqlcon, query, sizeof query, "%smod0=%d,mod1=%d,mod2=%d,mod3=%d,mod4=%d,mod5=%d,mod6=%d,mod7=%d,mod8=%d,mod9=%d,mod10=%d,mod11=%d,mod12=%d,mod13=%d,mod14=%d,mod15=%d,mod16=%d;",
 					query,
 					VehicleData[vehicleid][vehMod][0],
 					VehicleData[vehicleid][vehMod][1],
@@ -883,7 +883,7 @@ Vehicle_Save(vehicleid, save_mode = VEHICLE_SAVE_ALL)
 					VehicleData[vehicleid][vehMod][15],
 					VehicleData[vehicleid][vehMod][16]
 				);
-				mysql_tquery(g_iHandle, query);
+				mysql_tquery(sqlcon, query);
 			}
 		}
 		return 1;
@@ -1173,7 +1173,7 @@ Vehicle_PlayerTotalCount(playerid)
 {
 	new Cache:execute, total = 0;
 
-	execute = mysql_query(g_iHandle, sprintf("SELECT `id` FROM `server_vehicles` WHERE `extraid`='%d' AND `type`='%d';", GetPlayerSQLID(playerid), VEHICLE_TYPE_PLAYER));
+	execute = mysql_query(sqlcon, sprintf("SELECT `id` FROM `server_vehicles` WHERE `extraid`='%d' AND `type`='%d';", GetPlayerSQLID(playerid), VEHICLE_TYPE_PLAYER));
 
 	if(cache_num_rows())
 		total = cache_num_rows();
@@ -1186,7 +1186,7 @@ Vehicle_CargoCount(vehicleid)
 {
 	new Cache:execute, total = 0;
 
-	execute = mysql_query(g_iHandle, sprintf("SELECT `id` FROM `vehicle_cargo` WHERE `vehicle_id`='%d';", VehicleData[vehicleid][vehIndex]));
+	execute = mysql_query(sqlcon, sprintf("SELECT `id` FROM `vehicle_cargo` WHERE `vehicle_id`='%d';", VehicleData[vehicleid][vehIndex]));
 
 	if(cache_num_rows())
 		total = cache_num_rows();
@@ -1519,33 +1519,33 @@ Vehicle_GetState(vehicleid)
 
 Vehicle_PlayerLoad(playerid)
 {
-	mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `parking`='0' AND `house_parking`='-1' AND `extraid`='%d' AND `type`='%d' AND `state`='%d' ORDER BY `id` ASC LIMIT %d;", GetPlayerSQLID(playerid), VEHICLE_TYPE_PLAYER, VEHICLE_STATE_SPAWNED, MAX_OWNED_VEHICLES), "VehicleLoaded", "");
-	mysql_tquery(g_iHandle, sprintf("SELECT * FROM `player_vehicles` WHERE `owner`='%d';", GetPlayerSQLID(playerid)), "OldVehicleLoaded", "d", playerid);
+	mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `parking`='0' AND `house_parking`='-1' AND `extraid`='%d' AND `type`='%d' AND `state`='%d' ORDER BY `id` ASC LIMIT %d;", GetPlayerSQLID(playerid), VEHICLE_TYPE_PLAYER, VEHICLE_STATE_SPAWNED, MAX_OWNED_VEHICLES), "VehicleLoaded", "");
+	mysql_tquery(sqlcon, sprintf("SELECT * FROM `player_vehicles` WHERE `owner`='%d';", GetPlayerSQLID(playerid)), "OldVehicleLoaded", "d", playerid);
 	return 1;
 }
 
 Vehicle_RentalLoad(playerid)
 {
-	mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `extraid`='%d' AND `type`='%d' ORDER BY `id` ASC LIMIT %d;", GetPlayerSQLID(playerid), VEHICLE_TYPE_RENTAL, MAX_RENTED_VEHICLES), "VehicleLoaded", "d", INVALID_PLAYER_ID);
+	mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `extraid`='%d' AND `type`='%d' ORDER BY `id` ASC LIMIT %d;", GetPlayerSQLID(playerid), VEHICLE_TYPE_RENTAL, MAX_RENTED_VEHICLES), "VehicleLoaded", "d", INVALID_PLAYER_ID);
 	return 1;
 }
 
 Vehicle_FactionLoad(factionid)
 {
-	// mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `health` = '2000.0' WHERE `engineup` = '1' AND `extraid`='%d' AND `type`='%d' ORDER BY `id` ASC;", factionid, VEHICLE_TYPE_FACTION), "VehicleLoaded", "d", INVALID_PLAYER_ID);
-	mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `extraid`='%d' AND `type`='%d' ORDER BY `id` ASC;", factionid, VEHICLE_TYPE_FACTION), "VehicleLoaded", "d", INVALID_PLAYER_ID);
+	// mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `health` = '2000.0' WHERE `engineup` = '1' AND `extraid`='%d' AND `type`='%d' ORDER BY `id` ASC;", factionid, VEHICLE_TYPE_FACTION), "VehicleLoaded", "d", INVALID_PLAYER_ID);
+	mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `extraid`='%d' AND `type`='%d' ORDER BY `id` ASC;", factionid, VEHICLE_TYPE_FACTION), "VehicleLoaded", "d", INVALID_PLAYER_ID);
 	return 1;
 }
 
 Vehicle_SidejobLoad()
 {
-	mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `type`='%d' ORDER BY `id` ASC;", VEHICLE_TYPE_SIDEJOB), "VehicleLoaded", "d", INVALID_PLAYER_ID);
+	mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `type`='%d' ORDER BY `id` ASC;", VEHICLE_TYPE_SIDEJOB), "VehicleLoaded", "d", INVALID_PLAYER_ID);
 	return 1;
 }
 
 Vehicle_DMVLoad()
 {
-	mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `type`='%d' ORDER BY `id` ASC;", VEHICLE_TYPE_DRIVING_SCHOOL), "VehicleLoaded", "d", INVALID_PLAYER_ID);
+	mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `type`='%d' ORDER BY `id` ASC;", VEHICLE_TYPE_DRIVING_SCHOOL), "VehicleLoaded", "d", INVALID_PLAYER_ID);
 	return 1;
 }
 
@@ -1710,8 +1710,8 @@ Vehicle_AddItem(playerid, index, slot, items[], model)
     VehicleStorageData[index][slot][vehInvQuantity] = quantity;
 
     new query[400];
-    mysql_format(g_iHandle, query, sizeof(query), "INSERT INTO `carstorage` (`itemVehicle`,`itemName`,`itemModel`,`itemQuantity`) VALUES('%d', '%s', '%d', '%d');", VehicleData[index][vehIndex], items, model, quantity);
-    mysql_tquery(g_iHandle, query, "VehicleInventoryCreated", "dd", index, slot);
+    mysql_format(sqlcon, query, sizeof(query), "INSERT INTO `carstorage` (`itemVehicle`,`itemName`,`itemModel`,`itemQuantity`) VALUES('%d', '%s', '%d', '%d');", VehicleData[index][vehIndex], items, model, quantity);
+    mysql_tquery(sqlcon, query, "VehicleInventoryCreated", "dd", index, slot);
 
 	SetTrunkStatus(nearest_vehicle, false);
     SendServerMessage(playerid, "Sukses meletakkan "YELLOW"%s "WHITE"kedalam bagasi!", items);
@@ -2080,15 +2080,15 @@ Dialog:ClaimInsurance(playerid, response, listitem, inputtext[])
 		if(gettime() < claim_time)
 			return SendErrorMessage(playerid, "Kendaraan ini belum bisa diambil!");
 
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '2000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '1';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '2000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '1';", VEHICLE_STATE_SPAWNED, id));
 		
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '1000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '0';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '1000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '0';", VEHICLE_STATE_SPAWNED, id));
 
 
-		if(Model_GetCategory(claim_model) == CATEGORY_BOAT) mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `posX`='725.09',`posY`='-1935.05',`posZ`='-0.1206',`posRZ`='179.0585' WHERE `id`='%d';", id));
-		else mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `posX`='%.2f',`posY`='%.2f',`posZ`='%.2f',`posRZ`='%.2f' WHERE `id`='%d';", insurancePosition[index][0], insurancePosition[index][1], insurancePosition[index][2], insurancePosition[index][3], id));
+		if(Model_GetCategory(claim_model) == CATEGORY_BOAT) mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `posX`='725.09',`posY`='-1935.05',`posZ`='-0.1206',`posRZ`='179.0585' WHERE `id`='%d';", id));
+		else mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `posX`='%.2f',`posY`='%.2f',`posZ`='%.2f',`posRZ`='%.2f' WHERE `id`='%d';", insurancePosition[index][0], insurancePosition[index][1], insurancePosition[index][2], insurancePosition[index][3], id));
 		
-		mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", playerid);
+		mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", playerid);
 
 		SendServerMessage(playerid, "Kamu telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"insurance center.", inputtext);
 	}
@@ -2105,14 +2105,14 @@ Dialog:ForceInsurance(playerid, response, listitem, inputtext[])
 			id = g_selected_vehicle[playerid][listitem],
 			claim_model = g_selected_vehicle_price[playerid][listitem];
 		//Untuk yang upgrade
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '2000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '1';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '2000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '1';", VEHICLE_STATE_SPAWNED, id));
 		//Untuk yang tidak upgrade
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '1000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '0';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `state` = '%d', `vehhandbrake` = '0', `health` = '1000.0', `damage1` = '0', `damage2` = '0', `damage3` = '0', `damage4` = '0', `insurancetime` = 0, `interior` = 0, `world` = 0 WHERE `id` = '%d' AND `engineup` = '0';", VEHICLE_STATE_SPAWNED, id));
 
-		if(Model_GetCategory(claim_model) == CATEGORY_BOAT) mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `posX`='725.09',`posY`='-1935.05',`posZ`='-0.1206',`posRZ`='179.0585' WHERE `id`='%d';", id));
-		else mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `posX`='%.2f',`posY`='%.2f',`posZ`='%.2f',`posRZ`='%.2f' WHERE `id`='%d';", insurancePosition[index][0], insurancePosition[index][1], insurancePosition[index][2], insurancePosition[index][3], id));
+		if(Model_GetCategory(claim_model) == CATEGORY_BOAT) mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `posX`='725.09',`posY`='-1935.05',`posZ`='-0.1206',`posRZ`='179.0585' WHERE `id`='%d';", id));
+		else mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `posX`='%.2f',`posY`='%.2f',`posZ`='%.2f',`posRZ`='%.2f' WHERE `id`='%d';", insurancePosition[index][0], insurancePosition[index][1], insurancePosition[index][2], insurancePosition[index][3], id));
 
-		mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", targetid);
+		mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", targetid);
 
 		SendServerMessage(playerid, "Kamu telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"insurance center.", inputtext);
 		SendServerMessage(targetid, "Admin "RED"%s "WHITE"telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"insurance center.", ReturnAdminName(playerid), inputtext);
@@ -2131,9 +2131,9 @@ Dialog:ForceVehicleSpawn(playerid, response, listitem, inputtext[])
 			id = g_selected_vehicle[playerid][listitem]
 		;
 
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET state=%d,`house_parking`='-1',insurancetime=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET state=%d,`house_parking`='-1',insurancetime=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
 
-		mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d' LIMIT 1;", id), "VehicleLoaded", "d", targetid);
+		mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d' LIMIT 1;", id), "VehicleLoaded", "d", targetid);
 
 		SendServerMessage(playerid, "Kamu telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"house parking.", inputtext);
 		DeletePVar(playerid, "ForceSpawnVehicle");
@@ -2153,12 +2153,12 @@ Dialog:ForceDeath(playerid, response, listitem, inputtext[])
 			id = g_selected_vehicle[playerid][listitem],
 			claim_model = g_selected_vehicle_price[playerid][listitem];
 
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET state=%d,`health`='1000.0',insurancetime=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET state=%d,`health`='1000.0',insurancetime=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
 
-		if(Model_GetCategory(claim_model) == CATEGORY_BOAT) mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `posX`='725.09',`posY`='-1935.05',`posZ`='-0.1206',`posRZ`='179.0585' WHERE `id`='%d';", id));
-		else mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET `posX`='%.2f',`posY`='%.2f',`posZ`='%.2f',`posRZ`='%.2f' WHERE `id`='%d';", insurancePosition[index][0], insurancePosition[index][1], insurancePosition[index][2], insurancePosition[index][3], id));
+		if(Model_GetCategory(claim_model) == CATEGORY_BOAT) mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `posX`='725.09',`posY`='-1935.05',`posZ`='-0.1206',`posRZ`='179.0585' WHERE `id`='%d';", id));
+		else mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET `posX`='%.2f',`posY`='%.2f',`posZ`='%.2f',`posRZ`='%.2f' WHERE `id`='%d';", insurancePosition[index][0], insurancePosition[index][1], insurancePosition[index][2], insurancePosition[index][3], id));
 
-		mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d' LIMIT 1;", id), "VehicleLoaded", "d", targetid);
+		mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d' LIMIT 1;", id), "VehicleLoaded", "d", targetid);
 
 		SendServerMessage(playerid, "Kamu telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"death list.", inputtext);
 		DeletePVar(playerid, "ForceDeathPlayer");
@@ -2173,7 +2173,7 @@ Dialog:VehicleDeath(playerid, response, listitem, inputtext[])
 		new Cache:execute, output[600], name[MAX_PLAYER_NAME], issued[MAX_PLAYER_NAME];
 		SetPVarInt(playerid, "VehicleDeleteList", GetPVarInt(playerid, "VehicleDeleteList") + 1);
 
-		execute = mysql_query(g_iHandle, sprintf("SELECT * FROM `cardestroy` ORDER BY `destroyTime` DESC LIMIT %d, 10", GetPVarInt(playerid, "VehicleDeleteList") * 10));
+		execute = mysql_query(sqlcon, sprintf("SELECT * FROM `cardestroy` ORDER BY `destroyTime` DESC LIMIT %d, 10", GetPVarInt(playerid, "VehicleDeleteList") * 10));
 
 		if(cache_num_rows())
 		{
@@ -2259,8 +2259,8 @@ Dialog:ClaimImpound(playerid, response, listitem, inputtext[])
 		if(GetMoney(playerid) < claim_price)
 			return SendErrorMessage(playerid, "Uang tidak cukup, kamu butuh %s!", FormatNumber(claim_price));
 
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET state=%d,impoundtime=0,impoundprice=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
-		mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", playerid);
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET state=%d,impoundtime=0,impoundprice=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", playerid);
 
 		SendServerMessage(playerid, "Kamu telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"impound center.", inputtext);
 	}
@@ -2275,8 +2275,8 @@ Dialog:ForceRelease(playerid, response, listitem, inputtext[])
 			targetid = GetPVarInt(playerid, "ForceRelease"),
 			id = g_selected_vehicle[playerid][listitem];
 
-		mysql_tquery(g_iHandle, sprintf("UPDATE server_vehicles SET state=%d,impoundtime=0,impoundprice=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
-		mysql_tquery(g_iHandle, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", targetid);
+		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET state=%d,impoundtime=0,impoundprice=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
+		mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", targetid);
 
 		SendServerMessage(playerid, "Kamu telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"impound center.", inputtext);
 		SendServerMessage(targetid, "Admin "RED"%s "WHITE"telah mengeluarkan "CYAN"%s "WHITE"dari "YELLOW"impound center.", ReturnAdminName(playerid), inputtext);
@@ -2321,7 +2321,7 @@ Dialog:VehicleTrunk(playerid, response, listitem, inputtext[])
 				if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) 
 					return SendErrorMessage(playerid, "Kamu tidak bisa mengambil senjata saat di dalam mobil");
 
-				mysql_tquery(g_iHandle, sprintf("DELETE FROM `weapon_vehicles` WHERE `vehicleid` = '%d' AND `ammo`='%d' AND `weaponid`='%d' AND `durability`='%d' LIMIT 1;", VehicleData[vehicleid][vehIndex], VehicleData[vehicleid][vehAmmo][listitem], VehicleData[vehicleid][vehWeapon][listitem], VehicleData[vehicleid][vehDurability][listitem]));
+				mysql_tquery(sqlcon, sprintf("DELETE FROM `weapon_vehicles` WHERE `vehicleid` = '%d' AND `ammo`='%d' AND `weaponid`='%d' AND `durability`='%d' LIMIT 1;", VehicleData[vehicleid][vehIndex], VehicleData[vehicleid][vehAmmo][listitem], VehicleData[vehicleid][vehWeapon][listitem], VehicleData[vehicleid][vehDurability][listitem]));
 
 				new serial[128];
 				valstr(serial, VehicleData[vehicleid][vehSerial][listitem]);
@@ -2346,7 +2346,7 @@ Dialog:VehicleTrunk(playerid, response, listitem, inputtext[])
 				if(Inventory_Add(playerid, VehicleStorageData[vehicleid][listitem][vehInvName], VehicleStorageData[vehicleid][listitem][vehInvModel], VehicleStorageData[vehicleid][listitem][vehInvQuantity]) == -1)
 					return 1;
 
-				mysql_tquery(g_iHandle, sprintf("DELETE FROM `carstorage` WHERE `itemID`='%d';", VehicleStorageData[vehicleid][listitem][vehInvIndex]));
+				mysql_tquery(sqlcon, sprintf("DELETE FROM `carstorage` WHERE `itemID`='%d';", VehicleStorageData[vehicleid][listitem][vehInvIndex]));
 
                 SetTrunkStatus(nearest_vehicle, false);
 
@@ -2397,7 +2397,7 @@ Dialog:VehicleTrunkOption(playerid, response, listitem, inputtext[])
                 VehicleData[index][vehDurability][slot]   	= ReturnWeaponDurability(playerid, weaponid);
 				VehicleData[index][vehSerial][slot]			= ReturnWeaponSerial(playerid, weaponid);
 
-                mysql_tquery(g_iHandle, sprintf("INSERT INTO `weapon_vehicles`(`vehicleid`, `weaponid`, `ammo`, `durability`, `serial`) VALUES ('%d','%d','%d','%d', '%d');", VehicleData[index][vehIndex], VehicleData[index][vehWeapon][slot], VehicleData[index][vehAmmo][slot], VehicleData[index][vehDurability][slot], VehicleData[index][vehSerial][slot]));
+                mysql_tquery(sqlcon, sprintf("INSERT INTO `weapon_vehicles`(`vehicleid`, `weaponid`, `ammo`, `durability`, `serial`) VALUES ('%d','%d','%d','%d', '%d');", VehicleData[index][vehIndex], VehicleData[index][vehWeapon][slot], VehicleData[index][vehAmmo][slot], VehicleData[index][vehDurability][slot], VehicleData[index][vehSerial][slot]));
 
                 SetTrunkStatus(nearest_vehicle, false);
                 ResetWeaponID(playerid, VehicleData[index][vehWeapon][slot]);

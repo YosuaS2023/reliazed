@@ -58,8 +58,8 @@ CMD:paycheck(playerid, params[])
 		return SendErrorMessage(playerid, "Kamu harus menunggu %d menit untuk Paycheck!", PlayerData[playerid][pPaycheck]/60);
 
 	new str[256];
-	new taxval = PlayerData[playerid][pSalary]/100*GovData[govTax];
-	format(str, sizeof(str), "{FFFFFF}Salary: {009000}$%s\n{FFFFFF}Tax: {FFFF00}-$%s {FF0000}(%d percent)\n{FFFFFF}Total Interest: {00FF00}$%s", FormatMoney(PlayerData[playerid][pSalary]), FormatMoney(taxval), GovData[govTax], FormatMoney(PlayerData[playerid][pSalary]-taxval));
+	new taxval = PlayerData[playerid][pSalary]/100*govData[govTax];
+	format(str, sizeof(str), "{FFFFFF}Salary: {009000}$%s\n{FFFFFF}Tax: {FFFF00}-$%s {FF0000}(%d percent)\n{FFFFFF}Total Interest: {00FF00}$%s", FormatMoney(PlayerData[playerid][pSalary]), FormatMoney(taxval), govData[govTax], FormatMoney(PlayerData[playerid][pSalary]-taxval));
 	Dialog_Show(playerid, salary_paycheck, DIALOG_STYLE_MSGBOX, "Paycheck", str, "Get", "Close");
 	return 1;
 }
@@ -68,7 +68,7 @@ Dialog:salary_paycheck(playerid, response, listitem, inputtext[])
 {
     if(response)
     {
-        new taxval = PlayerData[playerid][pSalary]/100*GovData[govTax];
+        new taxval = PlayerData[playerid][pSalary]/100*govData[govTax];
         new nxtlevel = PlayerData[playerid][pScore]+1;
         new expamount = nxtlevel*1;
         Bank_SetBalance(playerid, PlayerData[playerid][pSalary]-taxval);
@@ -99,9 +99,6 @@ Dialog:salary_paycheck(playerid, response, listitem, inputtext[])
         {
             PlayerData[playerid][pQuitjob]--;
         }
-		UpdateCharacterInt(playerid, "pExp", PlayerData[playerid][pExp]);
-		UpdateCharacterInt(playerid, "pScore", PlayerData[playerid][pScore]);
-		UpdateCharacterInt(playerid, "pPaycheck", PlayerData[playerid][pPaycheck]);
     }
 }
 

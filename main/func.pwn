@@ -34,6 +34,100 @@ ReturnName(playerid, underscore=1, mask = 0)
     return name;
 }
 
+stock SendAdminMessage(color, const str[], {Float,_}:...)
+{
+    static
+        args,
+        start,
+        end,
+        string[144]
+    ;
+    #emit LOAD.S.pri 8
+    #emit STOR.pri args
+
+    if(args > 8)
+    {
+        #emit ADDR.pri str
+        #emit STOR.pri start
+
+        for (end = start + (args - 8); end > start; end -= 4)
+        {
+            #emit LREF.pri end
+            #emit PUSH.pri
+        }
+        #emit PUSH.S str
+        #emit PUSH.C 144
+        #emit PUSH.C string
+
+        #emit LOAD.S.pri 8
+        #emit ADD.C 4
+        #emit PUSH.pri
+
+        #emit SYSREQ.C format
+        #emit LCTRL 5
+        #emit SCTRL 4
+
+        foreach (new i : Player)
+        {
+            if(SQL_IsCharacterLogged(i) && AccountData[i][uAdmin] >= 1) {
+                SendClientMessage(i, color, string);
+            }
+        }
+        return 1;
+    }
+    foreach (new i : Player)
+    {
+        if(SQL_IsCharacterLogged(i) && AccountData[i][uAdmin] >= 1) {
+            SendClientMessage(i, color, str);
+        }
+    }
+    return 1;
+}
+stock ReturnWeaponName(weaponid)
+{
+    new weapon[22];
+    switch(weaponid)
+    {
+        case 0: weapon = "Fist";
+        case 18: weapon = "Molotov Cocktail";
+        case 44: weapon = "Night Vision Goggles";
+        case 45: weapon = "Thermal Goggles";
+        case 54: weapon = "Fall";
+        default: GetWeaponName(weaponid, weapon, sizeof(weapon));
+    }
+    return weapon;
+}
+GetMonth(bulan)
+{
+    static
+        month[12];
+
+    switch (bulan) {
+        case 1: month = "January";
+        case 2: month = "February";
+        case 3: month = "March";
+        case 4: month = "April";
+        case 5: month = "May";
+        case 6: month = "June";
+        case 7: month = "July";
+        case 8: month = "August";
+        case 9: month = "September";
+        case 10: month = "October";
+        case 11: month = "November";
+        case 12: month = "December";
+    }
+    return month;
+}
+ReturnDate()
+{
+    static date[6], string[72];
+
+    getdate(date[2], date[1], date[0]);
+    gettime(date[3], date[4], date[5]);
+
+    format(string, sizeof(string), "%02d %s %d, %02d:%02d:%02d", date[0],GetMonth(date[1]), date[2], date[3], date[4], date[5]);
+    return string;
+}
 SendNearbyMessage(playerid, Float:radius, color, const str[], {Float,_}:...)
 {
     static
@@ -321,6 +415,10 @@ stock SetHealth(playerid, Float:health)
     {
         PlayerData[playerid][pHealth] = 1;
         SetPlayerHealth(playerid, 1);
+        if(PlayerData[playerid][pInjured])
+        {
+            SetPlayerInjured(playerid);
+        }
     }
     else
     {
@@ -346,6 +444,19 @@ TerminateConnection(playerid)
     return 1;
 }
 
+IsNumeric(const str[])
+{
+	for (new i = 0, l = strlen(str); i != l; i ++)
+	{
+	    if (i == 0 && str[0] == '-')
+			continue;
+
+	    else if (str[i] < '0' || str[i] > '9')
+			return 0;
+	}
+	return 1;
+}
+
 stock SetPlayerPosEx(playerid, Float:x, Float:y, Float:z, time = 500)
 {
     if(PlayerData[playerid][pFreeze])
@@ -369,7 +480,7 @@ stock FormatMoney(amount, delimiter[2]=".", comma[2]=",") // first type data on 
 {
   #define MAX_MONEY_String 16
   new MoneyAtString[MAX_MONEY_String];
-  format(MoneyAtString, MAX_MONEY_String, "%d", amount);
+  format(MoneyAtString, MAX_MONEY_String, "$%d", amount);
   new l = strlen(MoneyAtString);
   if (amount < 0) // - value (minus)
   {

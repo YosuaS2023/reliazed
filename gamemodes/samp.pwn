@@ -23,6 +23,9 @@
 
 #include <a_samp>
 
+#undef MAX_PLAYERS
+#define MAX_PLAYERS 500
+
 #include <a_mysql> 
 #include <GPS>
 #include <samp\samp_zona>
@@ -35,10 +38,13 @@
 #include <easyDialog>
 #include <Pawn.CMD.inc>
 #include <crashdetect>
+#include <filemanager>
 #include <strlib>                   //by Slice
 #include <YSI\y_timers>             //by Y_Less from YSI
 #include <YSI\y_colours>            //by Y_Less from YSI
+#include <YSI\y_vehicledata>
 #include <eSelection>
+#include <MemoryPluginVersion>
 
 #define DEVELOPER "Suzy"
 //==========[ MODULAR ]==========
@@ -52,6 +58,20 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "../main/macros.pwn"
 #include "../main/color.pwn"
 #include "../main/mysql.pwn"
+#include "../main/sscanf.pwn"
+#include "./server_management/config_define.pwn"
+
+// utils
+#include "./utils/define_vehicle.pwn"
+#include "./utils/define_bodypart.pwn"
+
+#include "./utils/variable_vehicle.pwn"
+
+#include "./utils/array_vehicle.pwn"
+
+#include "./utils/function_server.pwn"
+#include "./utils/function_player.pwn"
+#include "./utils/function_vehicle.pwn"
 
 #include "./route/core.pwn"
 #include "./route/function.pwn"
@@ -64,7 +84,11 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "./bank/core.pwn"
 #include "./economy/core.pwn"
 #include "./admin/admin_developer/core.pwn"
+#include "./faction/core.pwn"
+#include "./weapon/core.pwn"
+//#include "./vehicle/core.pwn"
 
+#include "./player_interface/player_textdraw.pwn"
 #include "./ptask_function/ptask_function_stats.pwn"
 
 #include "./ucp_character/function.pwn"
@@ -73,10 +97,24 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "../main/timer.pwn"
 //===============================
 /* Gamemode Start! */
+#include "./systems/systems_log.pwn"
+#include "./systems/systems_stats_player.pwn"
+#include "./systems/systems_injured.pwn"
 #include "./ucp_system/function.pwn"
 #include "./ucp_system/timer.pwn"
 
+#include "./dynamic_job/function.pwn"
+#include "./dynamic_job/command.pwn"
+
 #include "./bank/mysql.pwn"
+
+#include "./faction/function.pwn"
+#include "./faction/general.pwn"
+#include "./faction/cmd.pwn"
+#include "./faction/dialog.pwn"
+
+#include "./faction/vehicle/function.pwn"
+#include "./faction/vehicle/command.pwn"
 
 #include "./command/list.pwn"
 
@@ -100,7 +138,12 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "./bank/command.pwn"
 #include "./bank/callback.pwn"
 
+// vehicle private
+//#include "./vehicle/function.pwn"
+
 #include "./inventory/function.pwn"
+
+#include "./weapon/cmd.pwn"
 main()
 {
     print("\n----------------------------------------");
@@ -306,6 +349,31 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 }
 public OnModelSelectionResponse(playerid, extraid, index, modelid, response)
 {
+	if ((response) && (extraid == MODEL_SELECTION_ADD_SKIN))
+	{
+	    FactionData[PlayerData[playerid][pFactionEdit]][factionSkins][PlayerData[playerid][pSelectedSlot]] = modelid;
+		Faction_Save(PlayerData[playerid][pFactionEdit]);
+
+		SendServerMessage(playerid, "You have set the skin ID in slot %d to %d.", PlayerData[playerid][pSelectedSlot], modelid);
+	}
+    if ((response) && (extraid == MODEL_SELECTION_FACTION_SKIN))
+	{
+	    new factionid = PlayerData[playerid][pFaction];
+
+		if (factionid == -1 || !IsNearFactionLocker(playerid))
+	    	return 0;
+
+		if (modelid == 19300)
+		    return SendErrorMessage(playerid, "There is no model in the selected slot.");
+
+  		SetFactionSkin(playerid, modelid);
+		SendNearbyMessage(playerid, 30.0, COLOR_PURPLE, "* %s has changed their uniform.", ReturnName(playerid));
+	}
+	if ((response) && (extraid == MODEL_SELECTION_FACTION_SKINS))
+	{
+	    ShowPlayerDialog(playerid, DIALOG_EDITLOCKER_SKIN, DIALOG_STYLE_LIST, "Edit Skin", "Add by Model ID\nAdd by Thumbnail\nClear Slot", "Select", "Cancel");
+	    PlayerData[playerid][pSelectedSlot] = index;
+	}
 	if((response) && (extraid == MODEL_SELECTION_SKIN))
     {
         for (new i = 0; i < 50; i ++) {

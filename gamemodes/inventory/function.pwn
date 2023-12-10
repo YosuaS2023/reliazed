@@ -61,7 +61,7 @@ stock Inventory_Count(playerid, item[])
 	return 0;
 }
 
-stock PlayerHasItem(playerid, item[])
+stock Inventory_HasItem(playerid, item[])
 {
 	return (Inventory_GetItemID(playerid, item) != -1);
 }

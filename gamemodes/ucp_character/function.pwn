@@ -30,6 +30,15 @@ ResetStatistics(playerid)
 	PlayerData[playerid][pSalary] = 0;
 	PlayerData[playerid][pLogged] = 0;
 	PlayerData[playerid][pPaycheck] = 0;
+	// Faction
+	
+	PlayerData[playerid][pFaction] = -1;
+	PlayerData[playerid][pFactionID] = -1;
+	PlayerData[playerid][pOnDuty] = false;
+	PlayerData[playerid][pFactionEdit] = -1;
+	PlayerData[playerid][pFactionRank] = -1;
+	PlayerData[playerid][pFactionOffer] = -1;
+	PlayerData[playerid][pFactionOffered] = -1;
     printf("Resetting player statistics for ID %d", playerid);
     return 1;
 }

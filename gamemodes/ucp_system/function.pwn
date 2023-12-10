@@ -81,6 +81,20 @@ FUNC::OnQueryFinished(extraid, threadid, race_check)
                 PlayerData[extraid][pSalary] = cache_get_field_int(0, "pSalary");
                 PlayerData[extraid][pPaycheck] = cache_get_field_int(0, "pPaycheck");
 
+                PlayerData[extraid][pStory] = cache_get_field_int(0, "Story");
+                PlayerData[extraid][pDutyTime] = cache_get_field_int(0, "DutyTime");
+                PlayerData[extraid][pDutySecond] = cache_get_field_int(0, "DutySecond");
+                PlayerData[extraid][pDutyMinute] = cache_get_field_int(0, "DutyMinute");
+                PlayerData[extraid][pDutyHour] = cache_get_field_int(0, "DutyHour");
+
+                PlayerData[extraid][pFaction] = cache_get_field_int(0, "Faction");
+                PlayerData[extraid][pFactionID] = cache_get_field_int(0, "FactionID");
+                PlayerData[extraid][pFactionSkin] = cache_get_field_int(0, "FactionSkin");
+                PlayerData[extraid][pFactionRank] = cache_get_field_int(0, "FactionRank");
+
+                PlayerData[extraid][pJob] = cache_get_field_int(0, "Job");
+
+                mysql_tquery(sqlcon, sprintf("SELECT * FROM `damages` WHERE `IDs` = '%d' ORDER BY `time` DESC LIMIT %d", PlayerData[extraid][pID], MAX_DAMAGE), "OnQueryFinished", "dd", extraid, THREAD_LOAD_DAMAGES);
                 if(!PlayerData[extraid][pCreated])
                 {
                     new string[200], header[50];
@@ -147,6 +161,20 @@ FUNC::OnQueryFinished(extraid, threadid, race_check)
                 new str[500];
                 format(str, sizeof(str), ""WHITE_E"Selamat datang di Basic Roleplay "YELLOW_E"%s"WHITE_E".\n\nMasukkan password untuk mendaftarkan akun: (password minimal 8 sampai dengan 32 karakter).", ReturnName(extraid));
                 ShowPlayerDialog(extraid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "REGISTER", str, "Daftarkan", "Keluar");
+            }
+        }
+        case THREAD_LOAD_DAMAGES:
+        {
+            cache_get_data(rows, fields);
+
+            for (new i = 0; i < rows && i < MAX_DAMAGE; i ++) if(!DamageData[extraid][i][damageExists]) {
+                DamageData[extraid][i][damageExists] = true;
+                DamageData[extraid][i][damageID] = cache_get_field_int(i, "ID");
+                DamageData[extraid][i][damageAmount] = cache_get_field_float(i, "amount");
+                DamageData[extraid][i][damageKevlar] = cache_get_field_float(i, "amountkevlar");
+                DamageData[extraid][i][damageWeapon] = cache_get_field_int(i, "weapon");
+                DamageData[extraid][i][damageBodypart] = cache_get_field_int(i, "bodypart");
+                DamageData[extraid][i][damageTime] = cache_get_field_int(i, "time");
             }
         }
     }

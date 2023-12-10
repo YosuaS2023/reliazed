@@ -1,0 +1,2 @@
+#define MAX_FACTIONS 10
+#define JOB_STOCK_LIMIT (15000)

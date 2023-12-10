@@ -78,7 +78,7 @@ RefreshFactionWeapon(playerid)
 }*/
 
 // Funtion
-Function:OnLoadPlayerFacWeapons(playerid)
+function OnLoadPlayerFacWeapons(playerid)
 {
 	new weaponid, ammo;
 

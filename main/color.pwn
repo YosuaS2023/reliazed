@@ -1,4 +1,5 @@
-//Colors
+//Color
+#define COLOR_CLIENT        (0xAAC4E5FF)
 #define COLOR_RIKO		  0xADD8E6FF
 #define COLOR_SERVER      0xC6E2FFFF
 #define COLOR_WHITE       0xFFFFFFFF

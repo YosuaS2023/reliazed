@@ -1,2 +1,6 @@
-new MotdData[MAX_PLAYERS][e_MotdData];
-new GovData[gov_data];
+new MotdData[e_MotdData];
+new govData[gov_data];
+new FactionVehicle[MAX_FACTION_VEHICLE][e_faction_vehicle];
+new VehCore[MAX_VEHICLES][vCore];
+
+new selectedTarget[MAX_PLAYERS];

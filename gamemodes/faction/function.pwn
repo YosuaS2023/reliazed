@@ -1,4 +1,4 @@
-stock GetInitials(const string[])
+GetInitials(const string[])
 {
 	new
 	    ret[32],
@@ -12,7 +12,7 @@ stock GetInitials(const string[])
 	return ret;
 }
 
-stock IsNearFactionLocker(playerid)
+function IsNearFactionLocker(playerid)
 {
 	new factionid = PlayerData[playerid][pFaction];
 
@@ -25,7 +25,7 @@ stock IsNearFactionLocker(playerid)
 	return 0;
 }
 
-stock GetFactionByID(sqlid)
+function GetFactionByID(sqlid)
 {
 	forex(i, MAX_FACTIONS) if (FactionData[i][factionExists] && FactionData[i][factionID] == sqlid)
 	    return i;
@@ -33,7 +33,7 @@ stock GetFactionByID(sqlid)
 	return -1;
 }
 
-stock SetFaction(playerid, id)
+function SetFaction(playerid, id)
 {
 	if (id != -1 && FactionData[id][factionExists])
 	{
@@ -43,11 +43,7 @@ stock SetFaction(playerid, id)
 	return 1;
 }
 
-stock RemoveAlpha(color) {
-    return (color & ~0xFF);
-}
-
-stock SetFactionColor(playerid)
+function SetFactionColor(playerid)
 {
 	new factionid = PlayerData[playerid][pFaction];
 
@@ -57,7 +53,7 @@ stock SetFactionColor(playerid)
 	return 0;
 }
 
-stock Faction_Update(factionid)
+function Faction_Update(factionid)
 {
 	if (factionid != -1 || FactionData[factionid][factionExists])
 	{
@@ -70,7 +66,7 @@ stock Faction_Update(factionid)
 	return 1;
 }
 
-stock Faction_Refresh(factionid)
+function Faction_Refresh(factionid)
 {
 	if (factionid != -1 && FactionData[factionid][factionExists])
 	{
@@ -94,7 +90,7 @@ stock Faction_Refresh(factionid)
 	return 1;
 }
 
-stock Faction_Save(factionid)
+function Faction_Save(factionid)
 {
 	static
 	    query[2048];
@@ -134,7 +130,7 @@ stock Faction_Save(factionid)
 	return mysql_tquery(sqlcon, query);
 }
 
-stock Faction_SaveRanks(factionid)
+function Faction_SaveRanks(factionid)
 {
 	static
 	    query[768];
@@ -197,7 +193,7 @@ Faction_Delete(factionid)
 	return 1;
 }
 
-stock GetFactionType(playerid)
+function GetFactionType(playerid)
 {
 	if (PlayerData[playerid][pFaction] == -1)
 	    return 0;
@@ -205,7 +201,7 @@ stock GetFactionType(playerid)
 	return (FactionData[PlayerData[playerid][pFaction]][factionType]);
 }
 
-stock Faction_ShowSalary(playerid, factionid)
+function Faction_ShowSalary(playerid, factionid)
 {
     if (factionid != -1 && FactionData[factionid][factionExists])
 	{
@@ -215,7 +211,7 @@ stock Faction_ShowSalary(playerid, factionid)
 		string[0] = 0;
 
 		forex(i, FactionData[factionid][factionRanks])
-			format(string, sizeof(string), "%sRank %d: $%s\n", string, i + 1, FormatNumber(FactionData[factionid][factionSalary][i]));
+			format(string, sizeof(string), "%sRank %d: $%s\n", string, i + 1, FormatMoney(FactionData[factionid][factionSalary][i]));
 
 		PlayerData[playerid][pFactionEdit] = factionid;
 		ShowPlayerDialog(playerid, DIALOG_EDITFACTION_SALARY_LIST, DIALOG_STYLE_LIST, FactionData[factionid][factionName], string, "Change", "Cancel");
@@ -223,7 +219,7 @@ stock Faction_ShowSalary(playerid, factionid)
 	return 1;
 }
 
-stock Faction_ShowRanks(playerid, factionid)
+function Faction_ShowRanks(playerid, factionid)
 {
     if (factionid != -1 && FactionData[factionid][factionExists])
 	{
@@ -241,7 +237,7 @@ stock Faction_ShowRanks(playerid, factionid)
 	return 1;
 }
 
-stock Faction_Create(name[], type)
+function Faction_Create(name[], type)
 {
 	forex(i, MAX_FACTIONS) if (!FactionData[i][factionExists])
 	{
@@ -348,7 +344,7 @@ FUNC::Faction_Load()
 	}
 	return 1;
 }
-stock Faction_GetName(playerid)
+Faction_GetName(playerid)
 {
     new
 		factionid = PlayerData[playerid][pFaction],
@@ -361,7 +357,7 @@ stock Faction_GetName(playerid)
 	return name;
 }
 
-stock Faction_GetRank(playerid)
+Faction_GetRank(playerid)
 {
     new
 		factionid = PlayerData[playerid][pFaction],

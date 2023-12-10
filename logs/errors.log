@@ -1,45 +1,16 @@
-[23:13:51] [plugins/mysql] error #1146 while executing query "    SELECT      `id`    FROM      `server_economies`    WHERE `deleted_at` = 0    ORDER BY `id` DESC    LIMIT 1;  ": Table 'reliazed.server_economies' doesn't exist
-[23:13:51] [plugins/mysql] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210130_104400_+0700_000000_create_admin_acitivities_table.sql'
-[23:13:51] [plugins/mysql] mysql_tquery_file: can't open file 'scriptfiles/sql_migrations/20210206_202500_+0700_000000_create_admin_duty_times_table.sql'
-[23:13:51] [plugins/mysql] error #1146 while executing query "UPDATE `admin_duty_times` SET `ended_at` = CURRENT_TIMESTAMP WHERE `ended_at` IS NULL;": Table 'reliazed.admin_duty_times' doesn't exist
-[23:13:51] [plugins/mysql] mysql_format: destination size '512' is too small
-[23:13:51] [plugins/mysql] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
-[23:14:01] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:01
-
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:08] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:08
-
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:12] [plugins/mysql] cache_get_value_name_int: field 'Developer' not found
-[23:14:15] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:15
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:21] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:21
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:28] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:28
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:35] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:35
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:41] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:41
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:48] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:48
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:14:54] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:14:54
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
-[23:15:01] [plugins/mysql] error #1146 while executing query "UPDATE `server` SET `admin_online` = 'Last Check : Saturday, 09 December 2023 -- 14:15:01
-
-* (Founder) Suzy (ID: 0), ON-DUTY: No *
-' WHERE `ID` = '1'": Table 'reliazed.server' doesn't exist
+[05:50:16] [plugins/mysql] mysql_tquery: invalid connection handle '0'
+[05:50:16] [plugins/mysql] mysql_format: destination size '512' is too small
+[05:50:16] [plugins/mysql] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[05:50:16] [plugins/mysql] orm_insert: invalid orm id '0'
+[05:51:01] [plugins/mysql] cache_get_value_name_int: field 'Developer' not found
+[05:51:07] [plugins/mysql] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[05:51:26] [plugins/mysql] cache_get_value_name_int: field 'Developer' not found
+[05:51:32] [plugins/mysql] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[05:52:53] [plugins/mysql] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '5' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[05:55:06] [plugins/mysql] cache_get_value_name_int: field 'Developer' not found
+[05:55:14] [plugins/mysql] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[05:56:04] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='3', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[05:56:31] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='2', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[05:57:05] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='0', `bodypart`='0', `amount`='1.32', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[05:57:23] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='8', `bodypart`='0', `amount`='2.64', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[05:58:01] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='0', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist

@@ -18,3 +18,16 @@ FUNC::SpawnTimer(playerid)
     }
     return 1;
 }
+
+timer ClearPlayerAnimations[3000](playerid)
+{
+    ClearAnimations(playerid);
+    return 1;
+}
+timer GetUpAnimations[500](playerid)
+{
+    ApplyAnimation(playerid, "PED", "GETUP", 4.1, 0, 0, 0, 0, 0, 1);
+    ApplyAnimation(playerid, "PED", "GETUP", 4.1, 0, 0, 0, 0, 0, 1);
+    defer ClearPlayerAnimations(playerid);
+    return 1;
+}

@@ -186,7 +186,7 @@ CMD:destroyfaction(playerid, params[])
 }
 
 CMD:f(playerid, params[])
-	return cmd_faction(playerid, params);
+	return callcmd::faction(playerid, params);
 
 CMD:faction(playerid, params[])
 {

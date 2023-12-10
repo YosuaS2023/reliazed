@@ -3,8 +3,11 @@
 #define SERVER_DISCORD					"Coming Soon"
 #define SERVER_REVISION                 "MRP V0.1"
 
-#undef MAX_PLAYERS
-#define MAX_PLAYERS 500
+#define ADM_FOUNDER                     (4)
+#define NO_PERMISSION                   "ERROR: Kamu tidak diizinkan menggunakan perintah ini!"
+#define PRESSED(%0) (((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
+
+#define MAX_FACTION_VEHICLE 10
 
 #define SendServerMessage(%0,%1)        SendClientMessageEx(%0, COLOR_SERVER, "SERVER: "WHITE""%1)
 #define SendCustomMessage(%0,%1,%2)     SendClientMessageEx(%0, COLOR_SERVER, %1": "WHITE""%2)
