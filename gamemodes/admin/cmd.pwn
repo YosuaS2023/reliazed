@@ -214,3 +214,50 @@ CMD:asay(playerid, params[])
     SendClientMessageToAllEx(X11_TOMATO_1, "Admin %s: %s", ReturnAdminName(playerid), ColouredText(params));
     return 1;
 }
+
+CMD:setarmor(playerid, params[])
+{
+	static
+		userid,
+	    Float:amount;
+
+	if (AccountData[playerid][uAdmin] < 1)
+	    return SendErrorMessage(playerid, "You don't have permission to use this command.");
+
+	if (sscanf(params, "uf", userid, amount))
+		return SendSyntaxMessage(playerid, "/setarmor [playerid/PartOfName] [amount]");
+
+	if (userid == INVALID_PLAYER_ID)
+	    return SendErrorMessage(playerid, "You have specified an invalid player.");
+
+	SetArmour(userid, amount);
+	SendServerMessage(playerid, "You have set %s's armour to %.2f.", ReturnName(userid), amount);
+	return 1;
+}
+
+CMD:sethp(playerid, params[])
+{
+	new
+		userid,
+	    Float:amount;
+
+	if (AccountData[playerid][uAdmin] < 1)
+	    return SendErrorMessage(playerid, "You don't have permission to use this command.");
+
+	if (sscanf(params, "uf", userid, amount))
+		return SendSyntaxMessage(playerid, "/sethp [playerid/PartOfName] [amount]");
+
+	if (userid == INVALID_PLAYER_ID)
+	    return SendErrorMessage(playerid, "You have specified an invalid player.");
+
+	if(amount <= 7.0)
+	{
+		InjuredPlayer(userid, INVALID_PLAYER_ID, WEAPON_COLLISION);
+	}
+	else
+	{
+		SetHealth(userid, amount);
+	}
+	SendServerMessage(playerid, "You have set %s's health to %.2f.", ReturnName(userid), amount);
+	return 1;
+}

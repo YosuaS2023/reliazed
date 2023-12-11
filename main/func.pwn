@@ -415,7 +415,7 @@ stock SetHealth(playerid, Float:health)
     {
         PlayerData[playerid][pHealth] = 1;
         SetPlayerHealth(playerid, 1);
-        if(PlayerData[playerid][pInjured])
+        if(!PlayerData[playerid][pInjured])
         {
             SetPlayerInjured(playerid);
         }
@@ -424,23 +424,6 @@ stock SetHealth(playerid, Float:health)
     {
         SetPlayerHealth(playerid, PlayerData[playerid][pHealth]);
     }
-    return 1;
-}
-
-TerminateConnection(playerid)
-{
-    if(PlayerData[playerid][pShowFooter]) {
-        KillTimer(PlayerData[playerid][pFooterTimer]);
-    }
-    if(PlayerData[playerid][pFreeze]) {
-        stop PlayerData[playerid][pFreezeTimer];
-    }
-    stop AccountData[playerid][uLoginTimer];
-
-
-    SQL_SaveCharacter(playerid);
-    SQL_SaveAccounts(playerid);
-    ResetStatistics(playerid);
     return 1;
 }
 

@@ -47314,3 +47314,96 @@
 [05:57:05] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='0', `bodypart`='0', `amount`='1.32', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
 [05:57:23] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='8', `bodypart`='0', `amount`='2.64', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
 [05:58:01] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='0', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[06:09:37] [ERROR] mysql_tquery: invalid connection handle '0'
+[06:09:37] [WARNING] mysql_connect_file: no password specified
+[06:09:37] [WARNING] mysql_connect: no password specified
+[06:09:37] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[06:09:37] [ERROR] mysql_format: destination size '512' is too small
+[06:09:37] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[06:09:37] [ERROR] orm_insert: invalid orm id '0'
+[06:10:07] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[06:10:14] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[06:13:37] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[06:13:48] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '5' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[06:16:26] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='0', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[06:17:59] [ERROR] mysql_tquery: invalid connection handle '0'
+[06:17:59] [WARNING] mysql_connect_file: no password specified
+[06:17:59] [WARNING] mysql_connect: no password specified
+[06:17:59] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[06:17:59] [ERROR] mysql_format: destination size '512' is too small
+[06:17:59] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[06:17:59] [ERROR] orm_insert: invalid orm id '0'
+[06:18:22] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[06:18:27] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[06:19:00] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[06:19:49] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[06:20:11] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[06:20:34] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[06:20:42] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '5' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[06:21:04] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='0', `bodypart`='0', `amount`='1.32', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[06:21:06] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='0', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[06:21:07] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='2', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[08:55:18] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:55:18] [WARNING] mysql_connect_file: no password specified
+[08:55:18] [WARNING] mysql_connect: no password specified
+[08:55:18] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:55:18] [ERROR] mysql_format: destination size '512' is too small
+[08:55:18] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:55:18] [ERROR] orm_insert: invalid orm id '0'
+[08:55:40] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:55:48] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:57:26] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:57:38] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:58:17] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:58:36] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '5' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:58:44] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='0', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[08:58:58] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='2', `amount`='13.20', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[09:00:12] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='25', `bodypart`='5', `amount`='26.40', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:00:12] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='25', `bodypart`='4', `amount`='23.10', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:00:12] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='25', `bodypart`='1', `amount`='49.50', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:00:12] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='25', `bodypart`='0', `amount`='49.50', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:00:12] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='0', `amount`='8.25', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:00:12] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='6', `amount`='8.25', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:00:12] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='1', `amount`='8.25', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:01:08] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='3', `amount`='8.25', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:01:21] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='2', `amount`='8.25', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[16:58:27] [ERROR] mysql_tquery: invalid connection handle '0'
+[16:58:27] [WARNING] mysql_connect_file: no password specified
+[16:58:27] [WARNING] mysql_connect: no password specified
+[16:58:27] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[16:58:27] [ERROR] mysql_format: destination size '512' is too small
+[16:58:27] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[16:58:27] [ERROR] orm_insert: invalid orm id '0'
+[16:58:45] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[16:59:06] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[07:23:22] [ERROR] mysql_tquery: invalid connection handle '0'
+[07:23:22] [WARNING] mysql_connect_file: no password specified
+[07:23:22] [WARNING] mysql_connect: no password specified
+[07:23:22] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[07:23:22] [ERROR] mysql_format: destination size '512' is too small
+[07:23:22] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[07:23:22] [ERROR] orm_insert: invalid orm id '0'
+[07:23:50] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[07:24:01] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '5' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[07:24:01] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '5'": Table 'reliazed.characters_inventory' doesn't exist
+[07:24:23] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[07:24:31] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[07:24:31] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '1'": Table 'reliazed.characters_inventory' doesn't exist
+[07:24:42] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='3', `amount`='0.00', `amountkevlar`='17.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[07:25:05] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='2', `amount`='18.00', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[07:25:14] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='6', `amount`='22.00', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[07:25:17] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='5', `amount`='19.00', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
+[07:26:14] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='3', `amount`='0.00', `amountkevlar`='19.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[07:26:14] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='2', `amount`='0.00', `amountkevlar`='19.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[07:26:19] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='4', `amount`='0.00', `amountkevlar`='15.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[07:26:19] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='1', `amount`='0.00', `amountkevlar`='19.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[07:26:20] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='5', `amount`='0.00', `amountkevlar`='18.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[07:28:48] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '3', `amount`= '19.00', `amountkevlar`= '19.00', `time`= '1702308374' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
+[07:28:48] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '2', `amount`= '0.00', `amountkevlar`= '19.00', `time`= '1702308374' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
+[07:28:48] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '4', `amount`= '0.00', `amountkevlar`= '15.00', `time`= '1702308379' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
+[07:28:48] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '1', `amount`= '0.00', `amountkevlar`= '36.00', `time`= '1702308395' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
+[07:28:48] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '5', `amount`= '0.00', `amountkevlar`= '35.00', `time`= '1702308393' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
+[07:29:52] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '3', `amount`= '168.00', `amountkevlar`= '168.00', `time`= '1702308310' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
+[07:29:52] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '2', `amount`= '73.00', `amountkevlar`= '73.00', `time`= '1702308307' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
+[07:29:52] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '6', `amount`= '64.00', `amountkevlar`= '64.00', `time`= '1702308315' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
+[07:29:52] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '5', `amount`= '19.00', `amountkevlar`= '19.00', `time`= '1702308317' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist

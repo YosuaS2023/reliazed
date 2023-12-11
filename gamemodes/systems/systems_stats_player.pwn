@@ -1,19 +1,3 @@
-#define MAX_DAMAGE                      (55)
-#define TOTAL_BODY_STATUS				(7)
-
-enum damageData {
-    damageID,
-    damageExists,
-    damageBodypart,
-    damageWeapon,
-    Float:damageAmount,
-	Float:damageKevlar,
-    damageTime
-};
-
-new DamageData[MAX_PLAYERS][MAX_DAMAGE][damageData];
-new damageList[MAX_PLAYERS][10][128];
-
 DamageCreated(playerid, damageid)
 {
     DamageData[playerid][damageid][damageID] = cache_insert_id();
@@ -240,7 +224,7 @@ CMD:resetshooter(playerid, params[])
     static
         userid;
 
-    if (CheckAdmin(playerid, 4))
+    if (CheckAdmin(playerid, 3))
         return PermissionError(playerid);
 
     if(sscanf(params, "u", userid)) return SendSyntaxMessage(playerid, "/shooter [playerid/PartOfName]");

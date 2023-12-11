@@ -24,8 +24,6 @@ new const ColorsRutePlayerGPS[] = {
  	#define GPS_MODE_2
 #endif
 
-#define MAX_DOTS 100
-
 #include <GPS> 
 
 #include <YSI_Coding\y_hooks>

@@ -1,34 +1,4 @@
-#define MAX_DYNAMIC_JOB		10
 #include   <ysi\y_hooks>
-
-enum
-{
-	JOB_POS_ICON = 0,
-	JOB_POS_LABEL,
-	JOB_POS_LABEL_POINT,
-	JOB_POS_PICKUP,
-	JOB_POS_PICKUP_POINT
-}
-
-enum jobData {
-    jobID,
-    jobExists,
-    jobType,
-    Float:jobPos[3],
-    Float:jobPoint[3],
-    Float:jobDeliver[3],
-    jobInterior,
-    jobWorld,
-    jobPointInt,
-    jobPointWorld,
-    jobStock,
-    jobPickups[3],
-    jobIcon,
-    jobPrison,
-    Text3D:jobText3D[3]
-};
-new JobData[MAX_DYNAMIC_JOB][jobData];
-
 hook OnGameModeInit()
 {
     mysql_tquery(sqlcon, "SELECT * FROM `jobs`", "Job_Load");

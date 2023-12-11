@@ -26662,3 +26662,1309 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 
 [06:06:10]  ===============================
 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[06:09:36] password = ""  (string)
+[06:09:36] filterscripts = ""  (string)
+[06:09:36] 
+[06:09:36] Server Plugins
+[06:09:36] --------------
+[06:09:36]  Loading plugin: crashdetect
+[06:09:36]   CrashDetect plugin 4.19.4
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: sscanf
+[06:09:37] 
+
+[06:09:37]  ===============================
+
+[06:09:37]       sscanf plugin loaded.     
+
+[06:09:37]          Version:  2.8.3        
+
+[06:09:37]   (c) 2018 Alex "Y_Less" Cole  
+
+[06:09:37]  ===============================
+
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: pawnraknet
+[06:09:37] [Pawn.RakNet] plugin v1.6.0 loading...
+[06:09:37] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: pawnplus
+[06:09:37]  PawnPlus v1.4.2 loaded
+[06:09:37]  Created by IllidanS4
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: GPS
+[06:09:37] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: streamer
+[06:09:37] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: mysql
+[06:09:37]  >> plugin.mysql: R41-4 successfully loaded.
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: pawncmd
+[06:09:37] [Pawn.CMD] plugin v3.4.0 loading...
+[06:09:37] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: chrono
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: json
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: sky
+[06:09:37] 
+[06:09:37]  ===============================
+[06:09:37]    
+[06:09:37]    < SKY - 2.3.0 >
+[06:09:37]    
+[06:09:37]    (c) 2008 - Present | YSF Maintainers
+[06:09:37]    (c) 2015 | Oscar "Slice" Broman
+[06:09:37]    
+[06:09:37]    Server Version: 0.3.7 R2
+[06:09:37]    Operating System: Windows
+[06:09:37]    Built on: Sep 27 2021 at 23:19:52
+[06:09:37]    
+[06:09:37]  ===============================
+[06:09:37] 
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: ysf
+[06:09:37] 
+[06:09:37]  ==============================================
+[06:09:37]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[06:09:37]   (c) 2008 Alex "Y_Less" Cole
+[06:09:37]   (c) 2010 - 2018 kurta999
+[06:09:37]   (c) 2018 - 2020 IllidanS4
+[06:09:37]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[06:09:37]  ==============================================
+[06:09:37] 
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: pawn-memory
+[06:09:37] ========================
+[06:09:37] = Memory access plugin =
+[06:09:37] =       Made by BigETI =
+[06:09:37] = Loaded!              =
+[06:09:37] ========================
+[06:09:37]   Loaded.
+[06:09:37]  Loading plugin: filemanager
+[06:09:37] ******************
+[06:09:37] ** FILE MANAGER **
+[06:09:37] **    Loaded    **
+[06:09:37] ** Version 1.5 **
+[06:09:37] ******************
+[06:09:37]   Loaded.
+[06:09:37]  Loaded 14 plugins.
+
+[06:09:37] 
+[06:09:37] Filterscripts
+[06:09:37] ---------------
+[06:09:37]   Loaded 0 filterscripts.
+
+[06:09:37]  
+[06:09:37]  
+[06:09:37]  
+[06:09:37]  ======================================= 
+[06:09:37]  |                                     | 
+[06:09:37]  |        YSI version 4.00.0001        | 
+[06:09:37]  |        By Alex "Y_Less" Cole        | 
+[06:09:37]  |                                     | 
+[06:09:37]  ======================================= 
+[06:09:37]  
+[06:09:37] [OnGameModeInit] Initialising 'Main'...
+[06:09:37] [Database] Connected!
+[06:09:37] [SERVER ECONOMY] Initialization called.
+[06:09:37] [ADMIN ACTIVITY] Initialization called.
+[06:09:37] [ADMIN DUTY TIMES] Initialization called.
+[06:09:37] --------------------------------
+[06:09:37] MOTD Admin: Jangan menyalagunakan command admin! | MOTD: Player: Jika menemukan bug silahkan laporkan melalui discord!
+[06:09:37] Goverment [Salary Tax: 0, Vault: 0]
+[06:09:37] SETTING MAX: [FACTION MAX: 10]
+[06:09:37] --------------------------------
+[06:09:37]   [Bank System] Initializing...
+[06:09:37]   [Bank System] Connected to MySQL, loading data...
+[06:09:37] 
+----------------------------------------
+[06:09:37]  Gamemode Ucp versi 0.1 register dan login
+[06:09:37] ----------------------------------------
+
+[06:09:37] Number of vehicle models: 0
+[06:09:37] [SERVER ECONOMY] Server economy not detected. Creating new one ...
+[06:09:37] [ADMIN ACTIVITY] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[06:09:37] [ADMIN DUTY TIMES] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[06:09:37] [ADMIN DUTY TIMES] All Admin duty times are updated.
+[06:09:37]   [Bank System] Loaded 1 bankers.
+[06:09:37]   [Bank System] Loaded 1 ATMs.
+[06:10:06] [connection] incoming connection: 111.94.57.31:43364 id: 0
+[06:10:07] [join] Suzy has joined the server (0:111.94.57.31)
+[06:10:07] Resetting player statistics for ID 0
+[06:10:14] [nick] Suzy nick changed to Suzy_Kyori
+[06:13:36] [connection] incoming connection: 113.11.183.208:62129 id: 1
+[06:13:37] [join] sachio has joined the server (1:113.11.183.208)
+[06:13:37] Resetting player statistics for ID 1
+[06:13:48] [nick] sachio nick changed to Zanvaris_Zen
+[06:16:27] [kill] Suzy_Kyori killed Zanvaris_Zen Silenced Pistol
+[06:17:23] Resetting player statistics for ID 1
+[06:17:23] [part] Zanvaris_Zen has left the server (1:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[06:17:59] password = ""  (string)
+[06:17:59] filterscripts = ""  (string)
+[06:17:59] 
+[06:17:59] Server Plugins
+[06:17:59] --------------
+[06:17:59]  Loading plugin: crashdetect
+[06:17:59]   CrashDetect plugin 4.19.4
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: sscanf
+[06:17:59] 
+
+[06:17:59]  ===============================
+
+[06:17:59]       sscanf plugin loaded.     
+
+[06:17:59]          Version:  2.8.3        
+
+[06:17:59]   (c) 2018 Alex "Y_Less" Cole  
+
+[06:17:59]  ===============================
+
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: pawnraknet
+[06:17:59] [Pawn.RakNet] plugin v1.6.0 loading...
+[06:17:59] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: pawnplus
+[06:17:59]  PawnPlus v1.4.2 loaded
+[06:17:59]  Created by IllidanS4
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: GPS
+[06:17:59] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: streamer
+[06:17:59] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: mysql
+[06:17:59]  >> plugin.mysql: R41-4 successfully loaded.
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: pawncmd
+[06:17:59] [Pawn.CMD] plugin v3.4.0 loading...
+[06:17:59] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: chrono
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: json
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: sky
+[06:17:59] 
+[06:17:59]  ===============================
+[06:17:59]    
+[06:17:59]    < SKY - 2.3.0 >
+[06:17:59]    
+[06:17:59]    (c) 2008 - Present | YSF Maintainers
+[06:17:59]    (c) 2015 | Oscar "Slice" Broman
+[06:17:59]    
+[06:17:59]    Server Version: 0.3.7 R2
+[06:17:59]    Operating System: Windows
+[06:17:59]    Built on: Sep 27 2021 at 23:19:52
+[06:17:59]    
+[06:17:59]  ===============================
+[06:17:59] 
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: ysf
+[06:17:59] 
+[06:17:59]  ==============================================
+[06:17:59]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[06:17:59]   (c) 2008 Alex "Y_Less" Cole
+[06:17:59]   (c) 2010 - 2018 kurta999
+[06:17:59]   (c) 2018 - 2020 IllidanS4
+[06:17:59]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[06:17:59]  ==============================================
+[06:17:59] 
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: pawn-memory
+[06:17:59] ========================
+[06:17:59] = Memory access plugin =
+[06:17:59] =       Made by BigETI =
+[06:17:59] = Loaded!              =
+[06:17:59] ========================
+[06:17:59]   Loaded.
+[06:17:59]  Loading plugin: filemanager
+[06:17:59] ******************
+[06:17:59] ** FILE MANAGER **
+[06:17:59] **    Loaded    **
+[06:17:59] ** Version 1.5 **
+[06:17:59] ******************
+[06:17:59]   Loaded.
+[06:17:59]  Loaded 14 plugins.
+
+[06:17:59] 
+[06:17:59] Filterscripts
+[06:17:59] ---------------
+[06:17:59]   Loaded 0 filterscripts.
+
+[06:17:59]  
+[06:17:59]  
+[06:17:59]  
+[06:17:59]  ======================================= 
+[06:17:59]  |                                     | 
+[06:17:59]  |        YSI version 4.00.0001        | 
+[06:17:59]  |        By Alex "Y_Less" Cole        | 
+[06:17:59]  |                                     | 
+[06:17:59]  ======================================= 
+[06:17:59]  
+[06:17:59] [OnGameModeInit] Initialising 'Main'...
+[06:17:59] [Database] Connected!
+[06:17:59] [SERVER ECONOMY] Initialization called.
+[06:17:59] [ADMIN ACTIVITY] Initialization called.
+[06:17:59] [ADMIN DUTY TIMES] Initialization called.
+[06:17:59] --------------------------------
+[06:17:59] MOTD Admin: Jangan menyalagunakan command admin! | MOTD: Player: Jika menemukan bug silahkan laporkan melalui discord!
+[06:17:59] Goverment [Salary Tax: 0, Vault: 0]
+[06:17:59] SETTING MAX: [FACTION MAX: 10]
+[06:17:59] --------------------------------
+[06:17:59]   [Bank System] Initializing...
+[06:17:59]   [Bank System] Connected to MySQL, loading data...
+[06:17:59] 
+----------------------------------------
+[06:17:59]  Gamemode Ucp versi 0.1 register dan login
+[06:17:59] ----------------------------------------
+
+[06:17:59] Number of vehicle models: 0
+[06:17:59] [SERVER ECONOMY] Server economy not detected. Creating new one ...
+[06:17:59] [ADMIN ACTIVITY] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[06:17:59] [ADMIN DUTY TIMES] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[06:17:59] [ADMIN DUTY TIMES] All Admin duty times are updated.
+[06:17:59]   [Bank System] Loaded 1 bankers.
+[06:17:59]   [Bank System] Loaded 1 ATMs.
+[06:18:18] [connection] incoming connection: 111.94.57.31:49090 id: 0
+[06:18:22] [join] Suzy has joined the server (0:111.94.57.31)
+[06:18:22] Resetting player statistics for ID 0
+[06:18:27] [nick] Suzy nick changed to Suzy_Kyori
+[06:18:42] [connection] incoming connection: 113.11.183.208:65252 id: 1
+[06:18:59] [connection] incoming connection: 113.11.183.208:65415 id: 1
+[06:19:00] [join] sachio has joined the server (1:113.11.183.208)
+[06:19:00] Resetting player statistics for ID 1
+[06:19:27] [connection] incoming connection: 113.11.183.208:1173 id: 2
+[06:19:30] Resetting player statistics for ID 1
+[06:19:30] [part] sachio has left the server (1:0)
+[06:19:49] [connection] incoming connection: 113.11.183.208:1385 id: 1
+[06:19:49] [join] sachio has joined the server (1:113.11.183.208)
+[06:19:49] Resetting player statistics for ID 1
+[06:20:04] Resetting player statistics for ID 1
+[06:20:04] [part] sachio has left the server (1:0)
+[06:20:10] [connection] incoming connection: 113.11.183.208:1651 id: 1
+[06:20:10] [join] sachio has joined the server (1:113.11.183.208)
+[06:20:10] Resetting player statistics for ID 1
+[06:20:26] Resetting player statistics for ID 1
+[06:20:26] [part] sachio has left the server (1:0)
+[06:20:34] [connection] incoming connection: 113.11.183.208:1869 id: 1
+[06:20:34] [join] sachio has joined the server (1:113.11.183.208)
+[06:20:34] Resetting player statistics for ID 1
+[06:20:42] [nick] sachio nick changed to Zanvaris_Zen
+[06:21:07] [kill] Suzy_Kyori killed Zanvaris_Zen Silenced Pistol
+[06:21:28] Resetting player statistics for ID 0
+[06:21:28] [part] Suzy_Kyori has left the server (0:0)
+[06:21:28] Resetting player statistics for ID 1
+[06:21:28] [part] Zanvaris_Zen has left the server (1:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:43:12] password = ""  (string)
+[08:43:12] filterscripts = ""  (string)
+[08:43:12] 
+[08:43:12] Server Plugins
+[08:43:12] --------------
+[08:43:12]  Loading plugin: crashdetect
+[08:43:12]   CrashDetect plugin 4.19.4
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: sscanf
+[08:43:12] 
+
+[08:43:12]  ===============================
+
+[08:43:12]       sscanf plugin loaded.     
+
+[08:43:12]          Version:  2.8.3        
+
+[08:43:12]   (c) 2018 Alex "Y_Less" Cole  
+
+[08:43:12]  ===============================
+
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: pawnraknet
+[08:43:12] [Pawn.RakNet] plugin v1.6.0 loading...
+[08:43:12] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: pawnplus
+[08:43:12]  PawnPlus v1.4.2 loaded
+[08:43:12]  Created by IllidanS4
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: GPS
+[08:43:12] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: streamer
+[08:43:12] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: mysql
+[08:43:12]  >> plugin.mysql: R41-4 successfully loaded.
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: pawncmd
+[08:43:12] [Pawn.CMD] plugin v3.4.0 loading...
+[08:43:12] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: chrono
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: json
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: sky
+[08:43:12] 
+[08:43:12]  ===============================
+[08:43:12]    
+[08:43:12]    < SKY - 2.3.0 >
+[08:43:12]    
+[08:43:12]    (c) 2008 - Present | YSF Maintainers
+[08:43:12]    (c) 2015 | Oscar "Slice" Broman
+[08:43:12]    
+[08:43:12]    Server Version: 0.3.7 R2
+[08:43:12]    Operating System: Windows
+[08:43:12]    Built on: Sep 27 2021 at 23:19:52
+[08:43:12]    
+[08:43:12]  ===============================
+[08:43:12] 
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: ysf
+[08:43:12] 
+[08:43:12]  ==============================================
+[08:43:12]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[08:43:12]   (c) 2008 Alex "Y_Less" Cole
+[08:43:12]   (c) 2010 - 2018 kurta999
+[08:43:12]   (c) 2018 - 2020 IllidanS4
+[08:43:12]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[08:43:12]  ==============================================
+[08:43:12] 
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: pawn-memory
+[08:43:12] ========================
+[08:43:12] = Memory access plugin =
+[08:43:12] =       Made by BigETI =
+[08:43:12] = Loaded!              =
+[08:43:12] ========================
+[08:43:12]   Loaded.
+[08:43:12]  Loading plugin: filemanager
+[08:43:12] ******************
+[08:43:12] ** FILE MANAGER **
+[08:43:12] **    Loaded    **
+[08:43:12] ** Version 1.5 **
+[08:43:12] ******************
+[08:43:12]   Loaded.
+[08:43:12]  Loaded 14 plugins.
+
+[08:43:12] 
+[08:43:12] Filterscripts
+[08:43:12] ---------------
+[08:43:12]   Loaded 0 filterscripts.
+
+[08:43:12] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[08:43:12] Script[gamemodes/t.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[08:43:12] Number of vehicle models: 0
+[08:43:30] [connection] incoming connection: 111.94.57.31:40191 id: 0
+[08:43:31] [join] Suzy has joined the server (0:111.94.57.31)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:44:56] password = ""  (string)
+[08:44:56] filterscripts = ""  (string)
+[08:44:56] 
+[08:44:56] Server Plugins
+[08:44:56] --------------
+[08:44:56]  Loading plugin: crashdetect
+[08:44:56]   CrashDetect plugin 4.19.4
+[08:44:56]   Loaded.
+[08:44:56]  Loading plugin: sscanf
+[08:44:56] 
+
+[08:44:56]  ===============================
+
+[08:44:56]       sscanf plugin loaded.     
+
+[08:44:56]          Version:  2.8.3        
+
+[08:44:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[08:44:56]  ===============================
+
+[08:44:56]   Loaded.
+[08:44:56]  Loading plugin: pawnraknet
+[08:44:56] [Pawn.RakNet] plugin v1.6.0 loading...
+[08:44:56] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[08:44:56]   Loaded.
+[08:44:56]  Loading plugin: pawnplus
+[08:44:56]  PawnPlus v1.4.2 loaded
+[08:44:56]  Created by IllidanS4
+[08:44:56]   Loaded.
+[08:44:56]  Loading plugin: GPS
+[08:44:57] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: streamer
+[08:44:57] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: mysql
+[08:44:57]  >> plugin.mysql: R41-4 successfully loaded.
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: pawncmd
+[08:44:57] [Pawn.CMD] plugin v3.4.0 loading...
+[08:44:57] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: chrono
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: json
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: sky
+[08:44:57] 
+[08:44:57]  ===============================
+[08:44:57]    
+[08:44:57]    < SKY - 2.3.0 >
+[08:44:57]    
+[08:44:57]    (c) 2008 - Present | YSF Maintainers
+[08:44:57]    (c) 2015 | Oscar "Slice" Broman
+[08:44:57]    
+[08:44:57]    Server Version: 0.3.7 R2
+[08:44:57]    Operating System: Windows
+[08:44:57]    Built on: Sep 27 2021 at 23:19:52
+[08:44:57]    
+[08:44:57]  ===============================
+[08:44:57] 
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: ysf
+[08:44:57] 
+[08:44:57]  ==============================================
+[08:44:57]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[08:44:57]   (c) 2008 Alex "Y_Less" Cole
+[08:44:57]   (c) 2010 - 2018 kurta999
+[08:44:57]   (c) 2018 - 2020 IllidanS4
+[08:44:57]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[08:44:57]  ==============================================
+[08:44:57] 
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: pawn-memory
+[08:44:57] ========================
+[08:44:57] = Memory access plugin =
+[08:44:57] =       Made by BigETI =
+[08:44:57] = Loaded!              =
+[08:44:57] ========================
+[08:44:57]   Loaded.
+[08:44:57]  Loading plugin: filemanager
+[08:44:57] ******************
+[08:44:57] ** FILE MANAGER **
+[08:44:57] **    Loaded    **
+[08:44:57] ** Version 1.5 **
+[08:44:57] ******************
+[08:44:57]   Loaded.
+[08:44:57]  Loaded 14 plugins.
+
+[08:44:57] 
+[08:44:57] Filterscripts
+[08:44:57] ---------------
+[08:44:57]   Loaded 0 filterscripts.
+
+[08:44:57] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[08:44:57] Script[gamemodes/t.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[08:44:57] Number of vehicle models: 0
+[08:45:01] [connection] incoming connection: 111.94.57.31:44264 id: 0
+[08:45:05] [join] Suzy has joined the server (0:111.94.57.31)
+[08:45:29] [connection] incoming connection: 111.94.57.31:41702 id: 1
+[08:45:30] [part] Suzy has left the server (0:0)
+[08:45:40] [connection] incoming connection: 111.94.57.31:39017 id: 0
+[08:45:40] [join] Suzz has joined the server (0:111.94.57.31)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:55:01] password = ""  (string)
+[08:55:01] filterscripts = ""  (string)
+[08:55:01] 
+[08:55:01] Server Plugins
+[08:55:01] --------------
+[08:55:01]  Loading plugin: crashdetect
+[08:55:01]   CrashDetect plugin 4.19.4
+[08:55:01]   Loaded.
+[08:55:01]  Loading plugin: sscanf
+[08:55:01] 
+
+[08:55:01]  ===============================
+
+[08:55:01]       sscanf plugin loaded.     
+
+[08:55:01]          Version:  2.8.3        
+
+[08:55:01]   (c) 2018 Alex "Y_Less" Cole  
+
+[08:55:01]  ===============================
+
+[08:55:01]   Loaded.
+[08:55:01]  Loading plugin: pawnraknet
+[08:55:01] [Pawn.RakNet] plugin v1.6.0 loading...
+[08:55:01] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[08:55:01]   Loaded.
+[08:55:01]  Loading plugin: pawnplus
+[08:55:01]  PawnPlus v1.4.2 loaded
+[08:55:01]  Created by IllidanS4
+[08:55:01]   Loaded.
+[08:55:01]  Loading plugin: GPS
+[08:55:02] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: streamer
+[08:55:02] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: mysql
+[08:55:02]  >> plugin.mysql: R41-4 successfully loaded.
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: pawncmd
+[08:55:02] [Pawn.CMD] plugin v3.4.0 loading...
+[08:55:02] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: chrono
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: json
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: sky
+[08:55:02] 
+[08:55:02]  ===============================
+[08:55:02]    
+[08:55:02]    < SKY - 2.3.0 >
+[08:55:02]    
+[08:55:02]    (c) 2008 - Present | YSF Maintainers
+[08:55:02]    (c) 2015 | Oscar "Slice" Broman
+[08:55:02]    
+[08:55:02]    Server Version: 0.3.7 R2
+[08:55:02]    Operating System: Windows
+[08:55:02]    Built on: Sep 27 2021 at 23:19:52
+[08:55:02]    
+[08:55:02]  ===============================
+[08:55:02] 
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: ysf
+[08:55:02] 
+[08:55:02]  ==============================================
+[08:55:02]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[08:55:02]   (c) 2008 Alex "Y_Less" Cole
+[08:55:02]   (c) 2010 - 2018 kurta999
+[08:55:02]   (c) 2018 - 2020 IllidanS4
+[08:55:02]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[08:55:02]  ==============================================
+[08:55:02] 
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: pawn-memory
+[08:55:02] ========================
+[08:55:02] = Memory access plugin =
+[08:55:02] =       Made by BigETI =
+[08:55:02] = Loaded!              =
+[08:55:02] ========================
+[08:55:02]   Loaded.
+[08:55:02]  Loading plugin: filemanager
+[08:55:02] ******************
+[08:55:02] ** FILE MANAGER **
+[08:55:02] **    Loaded    **
+[08:55:02] ** Version 1.5 **
+[08:55:02] ******************
+[08:55:02]   Loaded.
+[08:55:02]  Loaded 14 plugins.
+
+[08:55:02] 
+[08:55:02] Filterscripts
+[08:55:02] ---------------
+[08:55:02]   Loaded 0 filterscripts.
+
+[08:55:02] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[08:55:02] Script[gamemodes/t.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[08:55:02] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:55:17] password = ""  (string)
+[08:55:17] filterscripts = ""  (string)
+[08:55:17] 
+[08:55:17] Server Plugins
+[08:55:17] --------------
+[08:55:17]  Loading plugin: crashdetect
+[08:55:17]   CrashDetect plugin 4.19.4
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: sscanf
+[08:55:17] 
+
+[08:55:17]  ===============================
+
+[08:55:17]       sscanf plugin loaded.     
+
+[08:55:17]          Version:  2.8.3        
+
+[08:55:17]   (c) 2018 Alex "Y_Less" Cole  
+
+[08:55:17]  ===============================
+
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: pawnraknet
+[08:55:17] [Pawn.RakNet] plugin v1.6.0 loading...
+[08:55:17] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: pawnplus
+[08:55:17]  PawnPlus v1.4.2 loaded
+[08:55:17]  Created by IllidanS4
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: GPS
+[08:55:17] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: streamer
+[08:55:17] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: mysql
+[08:55:17]  >> plugin.mysql: R41-4 successfully loaded.
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: pawncmd
+[08:55:17] [Pawn.CMD] plugin v3.4.0 loading...
+[08:55:17] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: chrono
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: json
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: sky
+[08:55:17] 
+[08:55:17]  ===============================
+[08:55:17]    
+[08:55:17]    < SKY - 2.3.0 >
+[08:55:17]    
+[08:55:17]    (c) 2008 - Present | YSF Maintainers
+[08:55:17]    (c) 2015 | Oscar "Slice" Broman
+[08:55:17]    
+[08:55:17]    Server Version: 0.3.7 R2
+[08:55:17]    Operating System: Windows
+[08:55:17]    Built on: Sep 27 2021 at 23:19:52
+[08:55:17]    
+[08:55:17]  ===============================
+[08:55:17] 
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: ysf
+[08:55:17] 
+[08:55:17]  ==============================================
+[08:55:17]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[08:55:17]   (c) 2008 Alex "Y_Less" Cole
+[08:55:17]   (c) 2010 - 2018 kurta999
+[08:55:17]   (c) 2018 - 2020 IllidanS4
+[08:55:17]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[08:55:17]  ==============================================
+[08:55:17] 
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: pawn-memory
+[08:55:17] ========================
+[08:55:17] = Memory access plugin =
+[08:55:17] =       Made by BigETI =
+[08:55:17] = Loaded!              =
+[08:55:17] ========================
+[08:55:17]   Loaded.
+[08:55:17]  Loading plugin: filemanager
+[08:55:17] ******************
+[08:55:17] ** FILE MANAGER **
+[08:55:17] **    Loaded    **
+[08:55:17] ** Version 1.5 **
+[08:55:17] ******************
+[08:55:17]   Loaded.
+[08:55:17]  Loaded 14 plugins.
+
+[08:55:18] 
+[08:55:18] Filterscripts
+[08:55:18] ---------------
+[08:55:18]   Loaded 0 filterscripts.
+
+[08:55:18]  
+[08:55:18]  
+[08:55:18]  
+[08:55:18]  ======================================= 
+[08:55:18]  |                                     | 
+[08:55:18]  |        YSI version 4.00.0001        | 
+[08:55:18]  |        By Alex "Y_Less" Cole        | 
+[08:55:18]  |                                     | 
+[08:55:18]  ======================================= 
+[08:55:18]  
+[08:55:18] [OnGameModeInit] Initialising 'Main'...
+[08:55:18] [Database] Connected!
+[08:55:18] [SERVER ECONOMY] Initialization called.
+[08:55:18] [ADMIN ACTIVITY] Initialization called.
+[08:55:18] [ADMIN DUTY TIMES] Initialization called.
+[08:55:18] --------------------------------
+[08:55:18] MOTD Admin: Jangan menyalagunakan command admin! | MOTD: Player: Jika menemukan bug silahkan laporkan melalui discord!
+[08:55:18] Goverment [Salary Tax: 0, Vault: 0]
+[08:55:18] SETTING MAX: [FACTION MAX: 10]
+[08:55:18] --------------------------------
+[08:55:18]   [Bank System] Initializing...
+[08:55:18]   [Bank System] Connected to MySQL, loading data...
+[08:55:18] 
+----------------------------------------
+[08:55:18]  Gamemode Ucp versi 0.1 register dan login
+[08:55:18] ----------------------------------------
+
+[08:55:18] Number of vehicle models: 0
+[08:55:18] [SERVER ECONOMY] Server economy not detected. Creating new one ...
+[08:55:18] [ADMIN ACTIVITY] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[08:55:18] [ADMIN DUTY TIMES] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[08:55:18] [ADMIN DUTY TIMES] All Admin duty times are updated.
+[08:55:18]   [Bank System] Loaded 1 bankers.
+[08:55:18]   [Bank System] Loaded 1 ATMs.
+[08:55:39] [connection] incoming connection: 111.94.57.31:14515 id: 0
+[08:55:40] [join] Suzy has joined the server (0:111.94.57.31)
+[08:55:40] Resetting player statistics for ID 0
+[08:55:48] [nick] Suzy nick changed to Suzy_Kyori
+[08:57:22] Resetting player statistics for ID 0
+[08:57:22] [part] Suzy_Kyori has left the server (0:0)
+[08:57:25] [connection] incoming connection: 111.94.57.31:48706 id: 0
+[08:57:26] [join] Suzy has joined the server (0:111.94.57.31)
+[08:57:26] Resetting player statistics for ID 0
+[08:57:38] [nick] Suzy nick changed to Suzy_Kyori
+[08:58:17] [connection] incoming connection: 113.11.183.208:3127 id: 1
+[08:58:17] [join] sachio has joined the server (1:113.11.183.208)
+[08:58:17] Resetting player statistics for ID 1
+[08:58:36] [nick] sachio nick changed to Zanvaris_Zen
+[08:58:44] [kill] Suzy_Kyori killed Zanvaris_Zen Silenced Pistol
+[08:58:58] [kill] Suzy_Kyori killed Zanvaris_Zen Silenced Pistol
+[08:59:10] [chat] [Suzy_Kyori]: creategun
+[08:59:23] [kill] Zanvaris_Zen killed Suzy_Kyori Shotgun
+[09:00:12] [kill] Zanvaris_Zen killed Suzy_Kyori Shotgun
+[09:00:21] [chat] [Suzy_Kyori]: damages
+[09:00:50] [kill] Zanvaris_Zen killed Suzy_Kyori Colt 45
+[09:01:08] [kill] Zanvaris_Zen killed Suzy_Kyori Colt 45
+[09:01:21] [kill] Zanvaris_Zen killed Suzy_Kyori Colt 45
+[09:01:30] [kill] Zanvaris_Zen killed Suzy_Kyori Colt 45
+[09:02:09] Resetting player statistics for ID 1
+[09:02:09] [part] Zanvaris_Zen has left the server (1:0)
+[09:06:18] Resetting player statistics for ID 0
+[09:06:18] [part] Suzy_Kyori has left the server (0:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:58:26] password = ""  (string)
+[16:58:26] filterscripts = ""  (string)
+[16:58:26] 
+[16:58:26] Server Plugins
+[16:58:26] --------------
+[16:58:26]  Loading plugin: crashdetect
+[16:58:26]   CrashDetect plugin 4.19.4
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: sscanf
+[16:58:26] 
+
+[16:58:26]  ===============================
+
+[16:58:26]       sscanf plugin loaded.     
+
+[16:58:26]          Version:  2.8.3        
+
+[16:58:26]   (c) 2018 Alex "Y_Less" Cole  
+
+[16:58:26]  ===============================
+
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: pawnraknet
+[16:58:26] [Pawn.RakNet] plugin v1.6.0 loading...
+[16:58:26] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: pawnplus
+[16:58:26]  PawnPlus v1.4.2 loaded
+[16:58:26]  Created by IllidanS4
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: GPS
+[16:58:26] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: streamer
+[16:58:26] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: mysql
+[16:58:26]  >> plugin.mysql: R41-4 successfully loaded.
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: pawncmd
+[16:58:26] [Pawn.CMD] plugin v3.4.0 loading...
+[16:58:26] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: chrono
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: json
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: sky
+[16:58:26] 
+[16:58:26]  ===============================
+[16:58:26]    
+[16:58:26]    < SKY - 2.3.0 >
+[16:58:26]    
+[16:58:26]    (c) 2008 - Present | YSF Maintainers
+[16:58:26]    (c) 2015 | Oscar "Slice" Broman
+[16:58:26]    
+[16:58:26]    Server Version: 0.3.7 R2
+[16:58:26]    Operating System: Windows
+[16:58:26]    Built on: Sep 27 2021 at 23:19:52
+[16:58:26]    
+[16:58:26]  ===============================
+[16:58:26] 
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: ysf
+[16:58:26] 
+[16:58:26]  ==============================================
+[16:58:26]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[16:58:26]   (c) 2008 Alex "Y_Less" Cole
+[16:58:26]   (c) 2010 - 2018 kurta999
+[16:58:26]   (c) 2018 - 2020 IllidanS4
+[16:58:26]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[16:58:26]  ==============================================
+[16:58:26] 
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: pawn-memory
+[16:58:26] ========================
+[16:58:26] = Memory access plugin =
+[16:58:26] =       Made by BigETI =
+[16:58:26] = Loaded!              =
+[16:58:26] ========================
+[16:58:26]   Loaded.
+[16:58:26]  Loading plugin: filemanager
+[16:58:26] ******************
+[16:58:26] ** FILE MANAGER **
+[16:58:26] **    Loaded    **
+[16:58:26] ** Version 1.5 **
+[16:58:26] ******************
+[16:58:26]   Loaded.
+[16:58:26]  Loaded 14 plugins.
+
+[16:58:27] 
+[16:58:27] Filterscripts
+[16:58:27] ---------------
+[16:58:27]   Loaded 0 filterscripts.
+
+[16:58:27]  
+[16:58:27]  
+[16:58:27]  
+[16:58:27]  ======================================= 
+[16:58:27]  |                                     | 
+[16:58:27]  |        YSI version 4.00.0001        | 
+[16:58:27]  |        By Alex "Y_Less" Cole        | 
+[16:58:27]  |                                     | 
+[16:58:27]  ======================================= 
+[16:58:27]  
+[16:58:27] [OnGameModeInit] Initialising 'Main'...
+[16:58:27] [Database] Connected!
+[16:58:27] [SERVER ECONOMY] Initialization called.
+[16:58:27] [ADMIN ACTIVITY] Initialization called.
+[16:58:27] [ADMIN DUTY TIMES] Initialization called.
+[16:58:27] --------------------------------
+[16:58:27] MOTD Admin: Jangan menyalagunakan command admin! | MOTD: Player: Jika menemukan bug silahkan laporkan melalui discord!
+[16:58:27] Goverment [Salary Tax: 0, Vault: 0]
+[16:58:27] SETTING MAX: [FACTION MAX: 10]
+[16:58:27] --------------------------------
+[16:58:27]   [Bank System] Initializing...
+[16:58:27]   [Bank System] Connected to MySQL, loading data...
+[16:58:27] 
+----------------------------------------
+[16:58:27]  Gamemode Ucp versi 0.1 register dan login
+[16:58:27] ----------------------------------------
+
+[16:58:27] Number of vehicle models: 0
+[16:58:27] [SERVER ECONOMY] Server economy not detected. Creating new one ...
+[16:58:27] [ADMIN ACTIVITY] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[16:58:27] [ADMIN DUTY TIMES] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[16:58:27] [ADMIN DUTY TIMES] All Admin duty times are updated.
+[16:58:27]   [Bank System] Loaded 1 bankers.
+[16:58:27]   [Bank System] Loaded 1 ATMs.
+[16:58:44] [connection] incoming connection: 182.2.167.76:37491 id: 0
+[16:58:45] [join] Suzy has joined the server (0:182.2.167.76)
+[16:58:45] Resetting player statistics for ID 0
+[16:59:06] [nick] Suzy nick changed to Suzy_Kyori
+[17:03:07] Resetting player statistics for ID 0
+[17:03:07] [part] Suzy_Kyori has left the server (0:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:23:21] password = ""  (string)
+[07:23:21] filterscripts = ""  (string)
+[07:23:21] 
+[07:23:21] Server Plugins
+[07:23:21] --------------
+[07:23:21]  Loading plugin: crashdetect
+[07:23:21]   CrashDetect plugin 4.19.4
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: sscanf
+[07:23:21] 
+
+[07:23:21]  ===============================
+
+[07:23:21]       sscanf plugin loaded.     
+
+[07:23:21]          Version:  2.8.3        
+
+[07:23:21]   (c) 2018 Alex "Y_Less" Cole  
+
+[07:23:21]  ===============================
+
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: pawnraknet
+[07:23:21] [Pawn.RakNet] plugin v1.6.0 loading...
+[07:23:21] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: pawnplus
+[07:23:21]  PawnPlus v1.4.2 loaded
+[07:23:21]  Created by IllidanS4
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: GPS
+[07:23:21] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: streamer
+[07:23:21] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: mysql
+[07:23:21]  >> plugin.mysql: R41-4 successfully loaded.
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: pawncmd
+[07:23:21] [Pawn.CMD] plugin v3.4.0 loading...
+[07:23:21] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: chrono
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: json
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: sky
+[07:23:21] 
+[07:23:21]  ===============================
+[07:23:21]    
+[07:23:21]    < SKY - 2.3.0 >
+[07:23:21]    
+[07:23:21]    (c) 2008 - Present | YSF Maintainers
+[07:23:21]    (c) 2015 | Oscar "Slice" Broman
+[07:23:21]    
+[07:23:21]    Server Version: 0.3.7 R2
+[07:23:21]    Operating System: Windows
+[07:23:21]    Built on: Sep 27 2021 at 23:19:52
+[07:23:21]    
+[07:23:21]  ===============================
+[07:23:21] 
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: ysf
+[07:23:21] 
+[07:23:21]  ==============================================
+[07:23:21]  YSF 2.2 (compiled Sep 19 2021 13:01:03) loaded
+[07:23:21]   (c) 2008 Alex "Y_Less" Cole
+[07:23:21]   (c) 2010 - 2018 kurta999
+[07:23:21]   (c) 2018 - 2020 IllidanS4
+[07:23:21]  Server version: 0.3.7 R2-1 or R2-2, Windows
+[07:23:21]  ==============================================
+[07:23:21] 
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: pawn-memory
+[07:23:21] ========================
+[07:23:21] = Memory access plugin =
+[07:23:21] =       Made by BigETI =
+[07:23:21] = Loaded!              =
+[07:23:21] ========================
+[07:23:21]   Loaded.
+[07:23:21]  Loading plugin: filemanager
+[07:23:21] ******************
+[07:23:21] ** FILE MANAGER **
+[07:23:21] **    Loaded    **
+[07:23:21] ** Version 1.5 **
+[07:23:21] ******************
+[07:23:21]   Loaded.
+[07:23:21]  Loaded 14 plugins.
+
+[07:23:21] 
+[07:23:21] Filterscripts
+[07:23:21] ---------------
+[07:23:21]   Loaded 0 filterscripts.
+
+[07:23:21]  
+[07:23:21]  
+[07:23:21]  
+[07:23:21]  ======================================= 
+[07:23:21]  |                                     | 
+[07:23:21]  |        YSI version 4.00.0001        | 
+[07:23:21]  |        By Alex "Y_Less" Cole        | 
+[07:23:21]  |                                     | 
+[07:23:21]  ======================================= 
+[07:23:21]  
+[07:23:22] [OnGameModeInit] Initialising 'Main'...
+[07:23:22] [Database] Connected!
+[07:23:22] [SERVER ECONOMY] Initialization called.
+[07:23:22] [ADMIN ACTIVITY] Initialization called.
+[07:23:22] [ADMIN DUTY TIMES] Initialization called.
+[07:23:22] --------------------------------
+[07:23:22] MOTD Admin: Jangan menyalagunakan command admin! | MOTD: Player: Jika menemukan bug silahkan laporkan melalui discord!
+[07:23:22] Goverment [Salary Tax: 0, Vault: 0]
+[07:23:22] SETTING MAX: [FACTION MAX: 10]
+[07:23:22] --------------------------------
+[07:23:22]   [Bank System] Initializing...
+[07:23:22]   [Bank System] Connected to MySQL, loading data...
+[07:23:22] 
+----------------------------------------
+[07:23:22]  Gamemode Ucp versi 0.1 register dan login
+[07:23:22] ----------------------------------------
+
+[07:23:22] Number of vehicle models: 0
+[07:23:22] [SERVER ECONOMY] Server economy not detected. Creating new one ...
+[07:23:22] [ADMIN ACTIVITY] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[07:23:22] [ADMIN DUTY TIMES] Migration(s) on file "20210130_104400_+0700_000000_create_admin_acitivities_table.sql" successfully executed.
+[07:23:22] [ADMIN DUTY TIMES] All Admin duty times are updated.
+[07:23:22]   [Bank System] Loaded 1 bankers.
+[07:23:22]   [Bank System] Loaded 1 ATMs.
+[07:23:49] [connection] incoming connection: 113.11.183.213:41248 id: 0
+[07:23:50] [join] sachio has joined the server (0:113.11.183.213)
+[07:23:50] Resetting player statistics for ID 0
+[07:24:01] [nick] sachio nick changed to Zanvaris_Zen
+[07:24:22] [connection] incoming connection: 111.94.57.31:40144 id: 1
+[07:24:23] [join] Suzy has joined the server (1:111.94.57.31)
+[07:24:23] Resetting player statistics for ID 1
+[07:24:31] [nick] Suzy nick changed to Suzy_Kyori
+[07:28:48] Resetting player statistics for ID 1
+[07:28:48] [part] Suzy_Kyori has left the server (1:0)
+[07:29:52] Resetting player statistics for ID 0
+[07:29:52] [part] Zanvaris_Zen has left the server (0:0)

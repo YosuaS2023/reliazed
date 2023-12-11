@@ -52,6 +52,8 @@ forward OnGameModeInitEx();
 forward OnPlayerLogin(playerid);
 forward OnPlayerDisconnectEx(playerid, reason);
 #define GPS_MODE_ALL
+#include "./core/utils.pwn"
+#include "./core/systems.pwn"
 #include "../main/define.pwn"
 #include "../main/enum.pwn"
 #include "../main/enum_variable.pwn"
@@ -59,19 +61,6 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "../main/color.pwn"
 #include "../main/mysql.pwn"
 #include "../main/sscanf.pwn"
-#include "./server_management/config_define.pwn"
-
-// utils
-#include "./utils/define_vehicle.pwn"
-#include "./utils/define_bodypart.pwn"
-
-#include "./utils/variable_vehicle.pwn"
-
-#include "./utils/array_vehicle.pwn"
-
-#include "./utils/function_server.pwn"
-#include "./utils/function_player.pwn"
-#include "./utils/function_vehicle.pwn"
 
 #include "./route/core.pwn"
 #include "./route/function.pwn"
@@ -97,9 +86,6 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "../main/timer.pwn"
 //===============================
 /* Gamemode Start! */
-#include "./systems/systems_log.pwn"
-#include "./systems/systems_stats_player.pwn"
-#include "./systems/systems_injured.pwn"
 #include "./ucp_system/function.pwn"
 #include "./ucp_system/timer.pwn"
 
@@ -142,6 +128,7 @@ forward OnPlayerDisconnectEx(playerid, reason);
 //#include "./vehicle/function.pwn"
 
 #include "./inventory/function.pwn"
+#include "./inventory/callback.pwn"
 
 #include "./weapon/cmd.pwn"
 main()
@@ -250,7 +237,7 @@ public OnPlayerRequestClass(playerid, classid)
     {
         SendErrorMessage(playerid, "Format Nama tidak sesuai.");
         SendErrorMessage(playerid, "Gunakan nama dengan format nama biasa.");
-        SendErrorMessage(playerid, "Sebagai contoh, Cagus, Jordan, Sanjaya lainnya.");
+        SendErrorMessage(playerid, "Sebagai contoh, Suzy, Zuan, Oxy.");
         KickEx(playerid);
     }
     if(!PlayerData[playerid][pKicked])
@@ -303,6 +290,43 @@ public OnPlayerSpawn(playerid)
 
         SetPlayerInterior(playerid, PlayerData[playerid][pInterior]);
         SetPlayerVirtualWorld(playerid, PlayerData[playerid][pWorld]);
+            if(PlayerData[playerid][pInjured])
+            {
+                SavePlayerWeapon(playerid);
+
+                SetPlayerPosEx(playerid, PlayerData[playerid][pPos][0], PlayerData[playerid][pPos][1], PlayerData[playerid][pPos][2]);
+
+                InjuredTag(playerid, true);
+
+                if(PlayerData[playerid][pDead] <= 20)
+                {
+                    PlayerDeath[playerid] = 1;
+                    InjuredTag(playerid, false, true);
+                }
+
+                TextDrawShowForPlayer(playerid, gServerTextdraws[0]);
+                TextDrawSetString(gServerTextdraws[0], "You_are_injured!_~r~/call_911_~w~or_~r~/giveup");
+
+                SendClientMessage(playerid, X11_TOMATO_1, "WARNING:"WHITE" Anda terluka dan membutuhkan pertolongan medis [ Pengembangan ]");
+                SendClientMessage(playerid, X11_GREY_60, "USAGE:"WHITE" (( /giveup untuk spawn. Tunggu 5 menit agar bisa melakukannya. ))");
+
+                PlayerData[playerid][pGiveupTime] = (5 * 60);
+
+                ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
+                ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
+
+                SetArmour(playerid, GetArmour(playerid));
+                SetHealth(playerid, GetHealth(playerid));
+            }
+            else
+            {
+                SetArmour(playerid, GetArmour(playerid));
+                SetHealth(playerid, GetHealth(playerid));
+
+                /*if(IsPlayerDuty(playerid))  RefreshFactionWeapon(playerid);
+                else */RefreshWeapon(playerid);
+            }
+        }
     }
 	return 1;
 }
