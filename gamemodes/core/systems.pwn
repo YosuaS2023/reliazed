@@ -2,3 +2,4 @@
 #include "./systems/systems_log.pwn"
 #include "./systems/systems_stats_player.pwn"
 #include "./systems/systems_injured.pwn"
+#include "./systems/systems_scriptinit.pwn"

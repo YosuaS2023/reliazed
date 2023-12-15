@@ -2,9 +2,8 @@
  *                        Script Information:
  *
  * Name: Base Roleplay Script v0.1
- * Created by: Cagus
- * Github link: https://github.com/Cagus17/gamemode-basic-ucp
- *
+ * Created by: 
+
  * Thanks to:
  * SAMP Team
  * pBlueG for mysql
@@ -14,10 +13,6 @@
  * Zeek for crashdetect
  * ===================================================================
 **/
-
-#pragma compat 1
-#pragma compress 0
-#pragma dynamic 1_048_576
 // Configuration
 // ATM Robbery Config
 
@@ -30,7 +25,9 @@
 #include <GPS>
 #include <samp\samp_zona>
 #include <streamer>                 //by Incognito
+#include <EVF>
 #include <Dini>
+#include <chalk>
 #include <sscanf2>                  //by Y_Less fixed by maddinat0r & Emmet_
 #include <chrono>                   //by Southclaws
 #include <Southclaws\json>
@@ -54,6 +51,7 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #define GPS_MODE_ALL
 #include "./core/utils.pwn"
 #include "./core/systems.pwn"
+#include "./core/timers.pwn"
 #include "../main/define.pwn"
 #include "../main/enum.pwn"
 #include "../main/enum_variable.pwn"
@@ -61,26 +59,22 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "../main/color.pwn"
 #include "../main/mysql.pwn"
 #include "../main/sscanf.pwn"
-
+/*
 #include "./route/core.pwn"
 #include "./route/function.pwn"
-#include "./route/callback.pwn"
+#include "./route/callback.pwn"*/
 
 #include "./server_management/server.pwn"
 // core
 #include "./admin/core.pwn"
 #include "./inventory/core.pwn"
-#include "./bank/core.pwn"
 #include "./economy/core.pwn"
 #include "./admin/admin_developer/core.pwn"
-#include "./faction/core.pwn"
 #include "./weapon/core.pwn"
 //#include "./vehicle/core.pwn"
 
-#include "./player_interface/player_textdraw.pwn"
+#include "./core/interface.pwn"
 #include "./ptask_function/ptask_function_stats.pwn"
-
-#include "./ucp_character/function.pwn"
 #include "../main/func.pwn"
 #include "../main/dialog.pwn"
 #include "../main/timer.pwn"
@@ -88,19 +82,6 @@ forward OnPlayerDisconnectEx(playerid, reason);
 /* Gamemode Start! */
 #include "./ucp_system/function.pwn"
 #include "./ucp_system/timer.pwn"
-
-#include "./dynamic_job/function.pwn"
-#include "./dynamic_job/command.pwn"
-
-#include "./bank/mysql.pwn"
-
-#include "./faction/function.pwn"
-#include "./faction/general.pwn"
-#include "./faction/cmd.pwn"
-#include "./faction/dialog.pwn"
-
-#include "./faction/vehicle/function.pwn"
-#include "./faction/vehicle/command.pwn"
 
 #include "./command/list.pwn"
 
@@ -116,20 +97,20 @@ forward OnPlayerDisconnectEx(playerid, reason);
 #include "./admin/hidden_command.pwn"
 
 #include "./server/salary.pwn"
+#include "./core/dynamic.pwn"
 
-#include "./bank/function.pwn"
+#include "./vehicle/function.pwn"
+#include "./vehicle/object.pwn"
+#include "./vehicle/weapon.pwn"
+#include "./vehicle/cmd.pwn"
 
-#include "./bank/core.pwn"
-#include "./bank/function.pwn"
-#include "./bank/command.pwn"
-#include "./bank/callback.pwn"
 
 // vehicle private
 //#include "./vehicle/function.pwn"
 
 #include "./inventory/function.pwn"
 #include "./inventory/callback.pwn"
-
+#include "./weapon/faction.pwn"
 #include "./weapon/cmd.pwn"
 main()
 {
@@ -145,6 +126,8 @@ public OnGameModeInit()
 	#endif
 
     print("[OnGameModeInit] Initialising 'Main'...");
+	mysql_tquery(sqlcon, "SELECT * FROM `factions`", "Faction_Load", "");
+	mysql_tquery(sqlcon, "SELECT * FROM `factionvehicle`", "FactionVehicle_Load", "");
     OnGameModeInit_Setup();
     #if defined main_OnGameModeInit
         return main_OnGameModeInit();
@@ -219,14 +202,14 @@ static SetCameraData(playerid)
     switch(random(1))
     {
         case 0:
-        {         
-            InterpolateCameraPos(playerid, 1402.380126, -1216.866333, 350.959869, 1660.696655, -1303.045410, 74.042839, 7000);
-            InterpolateCameraLookAt(playerid, 1404.336425, -1219.865234, 347.469909, 1657.485961, -1304.525756, 77.578369, 7000);
+        {
+            InterpolateCameraPos(playerid, 1964.020629, -1746.168457, 21.459442, 1970.416503, -1819.768920, 22.540792, 8000);
+            InterpolateCameraLookAt(playerid, 1960.333129, -1749.514892, 21.008031, 1966.392456, -1816.848754, 22.012056, 8000);
         }
         case 1:
         {
-            InterpolateCameraPos(playerid, 1402.380126, -1216.866333, 350.959869, 1660.696655, -1303.045410, 74.042839, 7000);
-            InterpolateCameraLookAt(playerid, 1404.336425, -1219.865234, 347.469909, 1657.485961, -1304.525756, 77.578369, 7000);
+            InterpolateCameraPos(playerid, 1964.020629, -1746.168457, 21.459442, 1970.416503, -1819.768920, 22.540792, 8000);
+            InterpolateCameraLookAt(playerid, 1960.333129, -1749.514892, 21.008031, 1966.392456, -1816.848754, 22.012056, 8000);
         }
     }
     return 1;
@@ -290,43 +273,6 @@ public OnPlayerSpawn(playerid)
 
         SetPlayerInterior(playerid, PlayerData[playerid][pInterior]);
         SetPlayerVirtualWorld(playerid, PlayerData[playerid][pWorld]);
-            if(PlayerData[playerid][pInjured])
-            {
-                SavePlayerWeapon(playerid);
-
-                SetPlayerPosEx(playerid, PlayerData[playerid][pPos][0], PlayerData[playerid][pPos][1], PlayerData[playerid][pPos][2]);
-
-                InjuredTag(playerid, true);
-
-                if(PlayerData[playerid][pDead] <= 20)
-                {
-                    PlayerDeath[playerid] = 1;
-                    InjuredTag(playerid, false, true);
-                }
-
-                TextDrawShowForPlayer(playerid, gServerTextdraws[0]);
-                TextDrawSetString(gServerTextdraws[0], "You_are_injured!_~r~/call_911_~w~or_~r~/giveup");
-
-                SendClientMessage(playerid, X11_TOMATO_1, "WARNING:"WHITE" Anda terluka dan membutuhkan pertolongan medis [ Pengembangan ]");
-                SendClientMessage(playerid, X11_GREY_60, "USAGE:"WHITE" (( /giveup untuk spawn. Tunggu 5 menit agar bisa melakukannya. ))");
-
-                PlayerData[playerid][pGiveupTime] = (5 * 60);
-
-                ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
-                ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
-
-                SetArmour(playerid, GetArmour(playerid));
-                SetHealth(playerid, GetHealth(playerid));
-            }
-            else
-            {
-                SetArmour(playerid, GetArmour(playerid));
-                SetHealth(playerid, GetHealth(playerid));
-
-                /*if(IsPlayerDuty(playerid))  RefreshFactionWeapon(playerid);
-                else */RefreshWeapon(playerid);
-            }
-        }
     }
 	return 1;
 }
@@ -368,7 +314,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 {
-    GPS_SetPlayerCheckpoint(playerid, fX, fY, fZ);
+
     return 1;
 }
 public OnModelSelectionResponse(playerid, extraid, index, modelid, response)

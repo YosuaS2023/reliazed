@@ -8,6 +8,45 @@ DestroyPlayer3DText(playerid)
     return 1;
 }
 
+ResetEditing(playerid)
+{
+    switch(PlayerData[playerid][pEditingMode])
+    {/*
+        case FURNITURE: {
+            if(PlayerData[playerid][pEditFurniture] != -1) {
+                Furniture_Update(PlayerData[playerid][pEditFurniture]);
+                PlayerData[playerid][pEditFurniture] = -1;
+            }
+        }
+        case OBJECTTEXT: {
+            if(PlayerData[playerid][pEditTextObject] != -1) {
+                ObjectText_Refresh(PlayerData[playerid][pEditTextObject]);
+                PlayerData[playerid][pEditTextObject] = -1;
+            }
+        }*/
+        case VEHICLE:
+        {
+            if(PlayerData[playerid][pEditVehicleObject] != -1 && PlayerData[playerid][pEditVehicleObjectSlot] != -1){
+                Vehicle_AttachObject(PlayerData[playerid][pEditVehicleObject], PlayerData[playerid][pEditVehicleObjectSlot]);
+                Vehicle_ObjectUpdate(PlayerData[playerid][pEditVehicleObject], PlayerData[playerid][pEditVehicleObjectSlot]);
+                
+                PlayerData[playerid][pEditVehicleObject] = -1;
+                PlayerData[playerid][pEditVehicleObjectSlot] = -1;
+            }
+        }/*
+        case ROADBLOCK:
+        {
+            if(PlayerData[playerid][pEditRoadblock] != -1)
+            {
+                Barricade_Sync(PlayerData[playerid][pEditRoadblock]);
+                PlayerData[playerid][pEditRoadblock] = -1;
+            }
+        }*/
+    }
+    PlayerData[playerid][pEditingMode] = NOTHING;
+    return 1;
+}
+
 ResetStatistics(playerid) // mereset statistik pemain saat disconnect
 {
     PlayerData[playerid][pID] = -1;
@@ -15,6 +54,9 @@ ResetStatistics(playerid) // mereset statistik pemain saat disconnect
     PlayerData[playerid][pSkin] = 98;
     PlayerData[playerid][pMoney] = 500;
     PlayerData[playerid][pHealth] = 100;
+    PlayerData[playerid][pEditVehicleObject] = -1;
+    PlayerData[playerid][pEditVehicleObjectSlot] = -1;
+    PlayerData[playerid][pGasPump] = 0;
     PlayerData[playerid][pArmorStatus] = 0;
 	PlayerData[playerid][pLogged] = 0;
 	PlayerData[playerid][pScore] = 0;
@@ -33,6 +75,7 @@ ResetStatistics(playerid) // mereset statistik pemain saat disconnect
 	PlayerData[playerid][pFactionOffer] = INVALID_PLAYER_ID;
 	PlayerData[playerid][pFactionOffered] = -1;
 
+    PlayerData[playerid][pHouse] = -1;
 	PlayerData[playerid][pStory] = 0;
     PlayerData[playerid][pInjured] = 0;
     PlayerData[playerid][pInjuredTag] = Text3D:INVALID_STREAMER_ID;

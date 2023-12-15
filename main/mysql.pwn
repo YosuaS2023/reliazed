@@ -109,6 +109,10 @@ SQL_SaveCharacter(playerid)
     UpdateCharacterInt(playerid, "pExp", PlayerData[playerid][pExp]);
     UpdateCharacterInt(playerid, "pScore", PlayerData[playerid][pScore]);
     UpdateCharacterInt(playerid, "pPaycheck", PlayerData[playerid][pPaycheck]);
+    UpdateCharacterInt(playerid, "Injured", PlayerData[playerid][pInjured]);
+    UpdateCharacterInt(playerid, "InjuredTime", PlayerData[playerid][pGiveupTime]);
+    UpdateCharacterFloat(playerid, "Dead", PlayerData[playerid][pDead]);
+
     return 1;
 }
 
@@ -160,29 +164,3 @@ MySqlCloseConnection()
     return 1;
 }
 
-cache_get_field_content(row, const field_name[], destination[], max_len = sizeof(destination))
-{
-    cache_get_value_name(row, field_name, destination, max_len);
-}
-
-cache_get_data(&rows, &fields)
-{
-    cache_get_row_count(rows);
-    cache_get_field_count(fields);
-}
-
-cache_get_field_int(row, const field_name[])
-{
-    new val;
-    cache_get_value_name_int(row, field_name, val);
-    return val;
-}
-
-stock Float:cache_get_field_float(row, const field_name[])
-{
-    new
-        str[16];
-
-    cache_get_field_content(row, field_name, str, sizeof(str));
-    return floatstr(str);
-}

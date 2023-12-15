@@ -62,7 +62,7 @@ FUNC::OnQueryFinished(extraid, threadid, race_check)
                 {
                     cache_get_field_content(0, "Alias", PlayerData[extraid][pAlias], 25);
                 }
-
+                PlayerData[extraid][pGasPump] = cache_get_field_int(0, "GasPump");
                 PlayerData[extraid][pSkin] = cache_get_field_int(0, "Skin");
                 PlayerData[extraid][pPos][0] = cache_get_field_float(0, "PosX");
                 PlayerData[extraid][pPos][1] = cache_get_field_float(0, "PosY");
@@ -95,8 +95,10 @@ FUNC::OnQueryFinished(extraid, threadid, race_check)
 
                 PlayerData[extraid][pJob] = cache_get_field_int(0, "Job");
                 PlayerData[extraid][pInjured] = cache_get_field_int(0, "Injured");
+                PlayerData[extraid][pGiveupTime] = cache_get_field_int(0, "InjuredTime");
+                PlayerData[extraid][pDead] = cache_get_field_float(0, "Dead");
                 mysql_tquery(sqlcon, sprintf("SELECT * FROM `damages` WHERE `IDs` = '%d' ORDER BY `time` DESC LIMIT %d", PlayerData[extraid][pID], MAX_DAMAGE), "OnQueryFinished", "dd", extraid, THREAD_LOAD_DAMAGES);
-                mysql_tquery(sqlcon, sprintf("SELECT * FROM `characters_inventory` WHERE `ID` = '%d'", PlayerData[extraid][pID]), "OnQueryFinished", "dd", extraid, THREAD_LOAD_INVENTORY);
+                mysql_tquery(sqlcon, sprintf("SELECT * FROM `inventory` WHERE `ID` = '%d'", PlayerData[extraid][pID]), "OnQueryFinished", "dd", extraid, THREAD_LOAD_INVENTORY);
                 if(!PlayerData[extraid][pCreated])
                 {
                     new string[200], header[50];

@@ -32,3 +32,16 @@ GetDuration(time)
 
     return str;
 }
+
+ConvertTimestamp(Timestamp:timestamp, bool:date = true)
+{
+    new output[256];
+
+    if(date) TimeFormat(timestamp + Timestamp:UTC_07, "%a %d %b %Y, %T", output);
+    else TimeFormat(timestamp + Timestamp:UTC_07, "%T", output);
+
+    return output;
+}
+
+RGBAToARGB(rgba)
+    return rgba >>> 8 | rgba << 24;

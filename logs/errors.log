@@ -1,28 +1,12 @@
-[07:23:22] [plugins/mysql] mysql_tquery: invalid connection handle '0'
-[07:23:22] [plugins/mysql] mysql_format: destination size '512' is too small
-[07:23:22] [plugins/mysql] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
-[07:23:22] [plugins/mysql] orm_insert: invalid orm id '0'
-[07:23:50] [plugins/mysql] cache_get_value_name_int: field 'Developer' not found
-[07:24:01] [plugins/mysql] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '5' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
-[07:24:01] [plugins/mysql] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '5'": Table 'reliazed.characters_inventory' doesn't exist
-[07:24:23] [plugins/mysql] cache_get_value_name_int: field 'Developer' not found
-[07:24:31] [plugins/mysql] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
-[07:24:31] [plugins/mysql] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '1'": Table 'reliazed.characters_inventory' doesn't exist
-[07:24:42] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='3', `amount`='0.00', `amountkevlar`='17.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
-[07:25:05] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='2', `amount`='18.00', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
-[07:25:14] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='6', `amount`='22.00', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
-[07:25:17] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='23', `bodypart`='5', `amount`='19.00', `amountkevlar`='0.00', `IDs`='5'": Table 'reliazed.damages' doesn't exist
-[07:26:14] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='3', `amount`='0.00', `amountkevlar`='19.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
-[07:26:14] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='2', `amount`='0.00', `amountkevlar`='19.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
-[07:26:19] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='4', `amount`='0.00', `amountkevlar`='15.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
-[07:26:19] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='1', `amount`='0.00', `amountkevlar`='19.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
-[07:26:20] [plugins/mysql] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='22', `bodypart`='5', `amount`='0.00', `amountkevlar`='18.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
-[07:28:48] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '3', `amount`= '19.00', `amountkevlar`= '19.00', `time`= '1702308374' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
-[07:28:48] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '2', `amount`= '0.00', `amountkevlar`= '19.00', `time`= '1702308374' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
-[07:28:48] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '4', `amount`= '0.00', `amountkevlar`= '15.00', `time`= '1702308379' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
-[07:28:48] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '1', `amount`= '0.00', `amountkevlar`= '36.00', `time`= '1702308395' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
-[07:28:48] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '22', `bodypart`= '5', `amount`= '0.00', `amountkevlar`= '35.00', `time`= '1702308393' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
-[07:29:52] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '3', `amount`= '168.00', `amountkevlar`= '168.00', `time`= '1702308310' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
-[07:29:52] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '2', `amount`= '73.00', `amountkevlar`= '73.00', `time`= '1702308307' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
-[07:29:52] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '6', `amount`= '64.00', `amountkevlar`= '64.00', `time`= '1702308315' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
-[07:29:52] [plugins/mysql] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '5', `amount`= '19.00', `amountkevlar`= '19.00', `time`= '1702308317' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
+[09:24:10] [plugins/mysql] mysql_tquery: invalid connection handle '0'
+[09:24:10] [plugins/mysql] mysql_tquery: invalid connection handle '0'
+[09:24:10] [plugins/mysql] mysql_tquery: invalid connection handle '0'
+[09:24:10] [plugins/mysql] mysql_tquery: invalid connection handle '0'
+[09:24:10] [plugins/mysql] mysql_tquery: invalid connection handle '0'
+[09:24:10] [plugins/mysql] mysql_format: destination size '512' is too small
+[09:24:10] [plugins/mysql] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:24:10] [plugins/mysql] orm_insert: invalid orm id '0'
+[09:24:28] [plugins/mysql] cache_get_value_name_int: field 'Developer' not found
+[09:24:37] [plugins/mysql] cache_get_value_name: field 'Dead' not found
+[09:24:37] [plugins/mysql] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[09:24:37] [plugins/mysql] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist

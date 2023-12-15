@@ -164,9 +164,6 @@ SetPlayerInjured(playerid)
 
     InjuredTag(playerid, true);
 
-    TextDrawShowForPlayer(playerid, gServerTextdraws[0]);
-    TextDrawSetString(gServerTextdraws[0], "You_are_injured!_~r~/call_911_~w~or_~r~/giveup");
-
     if(IsPlayerInAnyVehicle(playerid))
     {
         new Float:x, Float:y, Float:z, vehicleid = GetPlayerVehicleID(playerid);
@@ -176,16 +173,20 @@ SetPlayerInjured(playerid)
             SetPlayerPos(playerid, x, y, z+0.5);
             ApplyAnimation(playerid, "PED", "CAR_DEAD_LHS",   4.0, 0, 0, 0, 1, 0, 1);
             ApplyAnimation(playerid, "PED", "CAR_DEAD_LHS",   4.0, 0, 0, 0, 1, 0, 1);
+            TogglePlayerControllable(playerid, false);  
         }
         else
         {
             ApplyAnimation(playerid, "PED", "CAR_DEAD_LHS",   4.0, 0, 0, 0, 1, 0, 1);
             ApplyAnimation(playerid, "PED", "CAR_DEAD_LHS",   4.0, 0, 0, 0, 1, 0, 1);
+            TogglePlayerControllable(playerid, false);
         }
         SetEngineStatus(vehicleid, false);
+        TogglePlayerControllable(playerid, false);
     }
     else
     {
+        TogglePlayerControllable(playerid, false);
         ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
         ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
     }
@@ -205,23 +206,10 @@ SetPlayerInjured(playerid)
             SendAdminMessage(X11_TOMATO_1, "AdmWarn: %s has killed %s by driver shooting.", ReturnName(killerid, 0), ReturnName(playerid, 0));
     }
 
-    if(playerUseRope[playerid] == 1)
-    {
-        for(new destr2=0;destr2<=ropelength;destr2++)
-        {
-            DestroyObject(r0pes[playerid][destr2]);
-        }
-        playerUseRope[playerid] = 0;
-        playerVehicleRope[playerid] = 0;
-        ClearAnimations(playerid);
-        TogglePlayerControllable(playerid,0);
-        TogglePlayerControllable(playerid,1);
-        DisablePlayerCheckpoint(playerid);
-    }
 
     foreach(new i : Player)
     {
-        if(AccountData[i][pAdmin] > 0)
+        if(AccountData[i][uAdmin] > 0)
         {
             SendDeathMessageToPlayer(i, killerid, playerid, reason);
         }
@@ -380,4 +368,56 @@ hook OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
         PlayerData[playerid][pKillerReason] = weaponid;
     }
     return 1;
+}
+
+hook OnPlayerLogin(playerid)
+{
+       if(PlayerData[playerid][pInjured] == 1)
+        {
+            SavePlayerWeapon(playerid);
+
+            SetPlayerPosEx(playerid, PlayerData[playerid][pPos][0], PlayerData[playerid][pPos][1], PlayerData[playerid][pPos][2]);
+
+            InjuredTag(playerid, true);
+
+            if(PlayerData[playerid][pDead] <= 20)
+            {
+                PlayerDeath[playerid] = 1;
+                InjuredTag(playerid, false, true);
+            }
+
+            SendClientMessage(playerid, X11_TOMATO_1, "WARNING:"WHITE" Anda terluka dan membutuhkan pertolongan medis (/call 911 > medics).");
+            SendClientMessage(playerid, X11_GREY_60, "USAGE:"WHITE" (( /giveup untuk spawn ke rumah sakit. Tunggu 5 menit agar bisa melakukannya. ))");
+
+            PlayerData[playerid][pGiveupTime] = (5 * 60);
+
+            ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
+
+            SetArmour(playerid, GetArmour(playerid));
+            SetHealth(playerid, GetHealth(playerid));
+        }
+        else
+        {
+            SetArmour(playerid, GetArmour(playerid));
+            SetHealth(playerid, GetHealth(playerid));
+
+            /*if(IsPlayerDuty(playerid))  RefreshFactionWeapon(playerid);
+            else*/ 
+            RefreshWeapon(playerid);
+        }
+        return 1;
+}
+
+CMD:test(playerid)
+{
+    
+            ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
+            return 1;
+}
+CMD:tt(playerid)
+{
+    
+            ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
+            ApplyAnimation(playerid, "WUZI", "CS_DEAD_GUY",   4.0, 0, 0, 0, 1, 0, 1);
+            return 1;
 }

@@ -1293,3 +1293,97 @@ OLEAUT32.dll	A: 0x760E0000 - 0x7617C000	(C:\Windows\System32\OLEAUT32.dll)
 pawn-memory.DLL	A: 0x72150000 - 0x7215A000	(C:\reliazed\plugins\pawn-memory.DLL)
 MSVCP110.dll	A: 0x70B00000 - 0x70B85000	(C:\Windows\SYSTEM32\MSVCP110.dll)
 MSVCR110.dll	A: 0x70A20000 - 0x70AF6000	(C:\Windows\SYSTEM32\MSVCR110.dll)
+
+--------------------------
+SA-MP Server: 0.3.7-R2
+
+Exception At Address: 0x7737A7B4 Module: (ntdll.dll)
+
+Registers:
+EAX: 0x0019F828	EBX: 0x00000000	ECX: 0x00000000	EDX: 0x00000000
+ESI: 0x0019F898	EDI: 0x0019FF64	EBP: 0x0019F880	ESP: 0x0019F7F8
+EFLAGS: 0x00000202
+
+Stack:
++0000: 0x0336FBA8   0x021294F4   0x0019F898   0x00000208
++0010: 0x0019F8E8   0x0019FF64   0x00000000   0x0019C000
++0020: 0x001A0000   0x00000000   0x00000000   0x00000000
++0030: 0xC0000025   0x00000001   0x0019F898   0x7737A7B4
++0040: 0x00000000   0x0019F870   0x772F5BB8   0x773F7740
++0050: 0x0019F8C0   0x0019FB44   0x0019FB60   0x0019F8C0
++0060: 0x0019FB44   0x0019FB60   0xFFA4E530   0x0019FAD4
++0070: 0x773173C8   0x00751384   0x0019F8A0   0x00000001
++0080: 0x0019FBB8   0xA1F1A161   0x0019FDAC   0x77346186
++0090: 0x0019F898   0x0019F8E8   0x0019F898   0x0019F8E8
++00A0: 0xE06D7363   0x00000001   0x00000000   0x76806ED2
++00B0: 0x00000003   0x19930520   0x0019FE04   0x0336FBA8
++00C0: 0x00570B44   0x00570B40   0x0019FD94   0x7731749E
++00D0: 0x00000000   0x00000000   0x00000027   0x00000026
++00E0: 0x00000000   0x0019FDB4   0x771CA638   0x00750000
++00F0: 0x0001007F   0x00000000   0x00000000   0x00000000
++0100: 0x00000000   0x00000000   0x00000000   0x0000027F
++0110: 0x00000320   0x0000FFFF   0x00000000   0x00000000
++0120: 0x00000000   0x00000000   0x00000000   0x00000000
++0130: 0x00000000   0x00000000   0x00000000   0x00000000
+
+--------------------------
+
+Loaded Modules:
+samp-server.exe	A: 0x00400000 - 0x00519000	(C:\reliazed\samp-server.exe)
+ntdll.dll	A: 0x772D0000 - 0x77478000	(C:\Windows\SYSTEM32\ntdll.dll)
+KERNEL32.DLL	A: 0x76B00000 - 0x76BF0000	(C:\Windows\System32\KERNEL32.DLL)
+KERNELBASE.dll	A: 0x766D0000 - 0x76913000	(C:\Windows\System32\KERNELBASE.dll)
+SHELL32.dll	A: 0x75500000 - 0x75AD8000	(C:\Windows\System32\SHELL32.dll)
+msvcp_win.dll	A: 0x77120000 - 0x7719E000	(C:\Windows\System32\msvcp_win.dll)
+ucrtbase.dll	A: 0x771A0000 - 0x772B3000	(C:\Windows\System32\ucrtbase.dll)
+USER32.dll	A: 0x75B80000 - 0x75D29000	(C:\Windows\System32\USER32.dll)
+win32u.dll	A: 0x765C0000 - 0x765DA000	(C:\Windows\System32\win32u.dll)
+GDI32.dll	A: 0x76F90000 - 0x76FB3000	(C:\Windows\System32\GDI32.dll)
+gdi32full.dll	A: 0x76BF0000 - 0x76CCF000	(C:\Windows\System32\gdi32full.dll)
+WSOCK32.dll	A: 0x73340000 - 0x73348000	(C:\Windows\SYSTEM32\WSOCK32.dll)
+msvcrt.dll	A: 0x76D60000 - 0x76E22000	(C:\Windows\System32\msvcrt.dll)
+WS2_32.dll	A: 0x765E0000 - 0x76645000	(C:\Windows\System32\WS2_32.dll)
+RPCRT4.dll	A: 0x76E30000 - 0x76EEB000	(C:\Windows\System32\RPCRT4.dll)
+WINMM.dll	A: 0x73310000 - 0x73338000	(C:\Windows\SYSTEM32\WINMM.dll)
+IMM32.DLL	A: 0x76D30000 - 0x76D55000	(C:\Windows\System32\IMM32.DLL)
+MSVCP120.dll	A: 0x72C30000 - 0x72CA1000	(C:\Windows\SYSTEM32\MSVCP120.dll)
+MSVCR120.dll	A: 0x72370000 - 0x7245E000	(C:\Windows\SYSTEM32\MSVCR120.dll)
+sscanf.DLL	A: 0x10000000 - 0x1000E000	(C:\reliazed\plugins\sscanf.DLL)
+VCRUNTIME140.dll	A: 0x73220000 - 0x73235000	(C:\Windows\SYSTEM32\VCRUNTIME140.dll)
+pawnraknet.DLL	A: 0x71AC0000 - 0x71B36000	(C:\reliazed\plugins\pawnraknet.DLL)
+pawnplus.DLL	A: 0x02730000 - 0x0299B000	(C:\reliazed\plugins\pawnplus.DLL)
+MSVCP140.dll	A: 0x73240000 - 0x732AD000	(C:\Windows\SYSTEM32\MSVCP140.dll)
+advapi32.dll	A: 0x76650000 - 0x766CC000	(C:\Windows\System32\advapi32.dll)
+sechost.dll	A: 0x77080000 - 0x770FB000	(C:\Windows\System32\sechost.dll)
+CRYPTBASE.DLL	A: 0x72F00000 - 0x72F0B000	(C:\Windows\SYSTEM32\CRYPTBASE.DLL)
+bcryptPrimitives.dll	A: 0x76920000 - 0x76982000	(C:\Windows\System32\bcryptPrimitives.dll)
+GPS.DLL	A: 0x71AA0000 - 0x71AB6000	(C:\reliazed\plugins\GPS.DLL)
+streamer.DLL	A: 0x71A30000 - 0x71A97000	(C:\reliazed\plugins\streamer.DLL)
+mysql.DLL	A: 0x719E0000 - 0x71A2E000	(C:\reliazed\plugins\mysql.DLL)
+log-core.dll	A: 0x719C0000 - 0x719DA000	(C:\reliazed\log-core.dll)
+libmariadb.dll	A: 0x718F0000 - 0x719BD000	(C:\reliazed\libmariadb.dll)
+SHLWAPI.dll	A: 0x76FC0000 - 0x7700C000	(C:\Windows\System32\SHLWAPI.dll)
+CRYPT32.dll	A: 0x751C0000 - 0x752C3000	(C:\Windows\System32\CRYPT32.dll)
+Secur32.dll	A: 0x72B20000 - 0x72B2A000	(C:\Windows\SYSTEM32\Secur32.dll)
+SSPICLI.DLL	A: 0x72AF0000 - 0x72B15000	(C:\Windows\SYSTEM32\SSPICLI.DLL)
+kernel.appcore.dll	A: 0x74CA0000 - 0x74CB2000	(C:\Windows\SYSTEM32\kernel.appcore.dll)
+napinsp.dll	A: 0x72EE0000 - 0x72EF2000	(C:\Windows\system32\napinsp.dll)
+mswsock.dll	A: 0x72E80000 - 0x72ED1000	(C:\Windows\System32\mswsock.dll)
+DNSAPI.dll	A: 0x72DD0000 - 0x72E74000	(C:\Windows\SYSTEM32\DNSAPI.dll)
+IPHLPAPI.DLL	A: 0x74C10000 - 0x74C34000	(C:\Windows\SYSTEM32\IPHLPAPI.DLL)
+NSI.dll	A: 0x76F80000 - 0x76F87000	(C:\Windows\System32\NSI.dll)
+winrnr.dll	A: 0x72DC0000 - 0x72DCE000	(C:\Windows\System32\winrnr.dll)
+wshbth.dll	A: 0x72D80000 - 0x72D91000	(C:\Windows\system32\wshbth.dll)
+rasadhlp.dll	A: 0x72D70000 - 0x72D78000	(C:\Windows\System32\rasadhlp.dll)
+pawncmd.DLL	A: 0x71860000 - 0x718E9000	(C:\reliazed\plugins\pawncmd.DLL)
+chrono.DLL	A: 0x71830000 - 0x71859000	(C:\reliazed\plugins\chrono.DLL)
+json.DLL	A: 0x70230000 - 0x70405000	(C:\reliazed\plugins\json.DLL)
+USERENV.dll	A: 0x71800000 - 0x71827000	(C:\Windows\SYSTEM32\USERENV.dll)
+bcrypt.dll	A: 0x717E0000 - 0x717F9000	(C:\Windows\SYSTEM32\bcrypt.dll)
+sky.DLL	A: 0x71760000 - 0x717DD000	(C:\reliazed\plugins\sky.DLL)
+ysf.DLL	A: 0x032D0000 - 0x0337B000	(C:\reliazed\plugins\ysf.DLL)
+combase.dll	A: 0x75E50000 - 0x760D8000	(C:\Windows\System32\combase.dll)
+OLEAUT32.dll	A: 0x760E0000 - 0x7617C000	(C:\Windows\System32\OLEAUT32.dll)
+pawn-memory.DLL	A: 0x71750000 - 0x7175A000	(C:\reliazed\plugins\pawn-memory.DLL)
+MSVCP110.dll	A: 0x716B0000 - 0x71735000	(C:\Windows\SYSTEM32\MSVCP110.dll)
+MSVCR110.dll	A: 0x70150000 - 0x70226000	(C:\Windows\SYSTEM32\MSVCR110.dll)

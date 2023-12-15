@@ -135,8 +135,8 @@ public OnLoadPlayerWeapons(playerid)
 
 hook OnPlayerLogin(playerid)
 {
-	/*if(IsPlayerDuty(playerid)) RefreshFactionWeapon(playerid);
-    else */mysql_tquery(sqlcon, sprintf("SELECT * FROM `weapon_players` WHERE `userid` = '%d';", GetPlayerSQLID(playerid)), "OnLoadPlayerWeapons", "d", playerid);
+	if(IsPlayerDuty(playerid)) RefreshFactionWeapon(playerid);
+    else mysql_tquery(sqlcon, sprintf("SELECT * FROM `weapon_players` WHERE `userid` = '%d';", GetPlayerSQLID(playerid)), "OnLoadPlayerWeapons", "d", playerid);
 }
 
 hook OnPlayerDisconnect(playerid, reason) 

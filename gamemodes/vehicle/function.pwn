@@ -2053,7 +2053,7 @@ Dialog:BuyInsurance(playerid, response, listitem, inputtext[])
 		if(Vehicle_IsExists(vehicleid))
 		{
 			if(GetMoney(playerid) < Vehicle_InsurancePrice(Model_GetCategory(VehicleData[vehicleid][vehModel])))
-				return SendErrorMessage(playerid, "Kamu butuh (%s) untuk menambah asuransi kendaraan.", FormatNumber(Vehicle_InsurancePrice(Model_GetCategory(VehicleData[vehicleid][vehModel]))));
+				return SendErrorMessage(playerid, "Kamu butuh (%s) untuk menambah asuransi kendaraan.", FormatMoney(Vehicle_InsurancePrice(Model_GetCategory(VehicleData[vehicleid][vehModel]))));
 
 			if(VehicleData[vehicleid][vehInsurance] >= 3)
 				return SendErrorMessage(playerid, "Kendaraan ini sudah mencapai batas maksimal asuransi.");
@@ -2202,24 +2202,24 @@ Dialog:RefuelVehicle(playerid, response, listitem, inputtext[])
         new vehicle_index,
         	pump_index = PlayerData[playerid][pGasPump],
         	biz_index = PumpData[pump_index][pumpBusiness],
-        	payment = (strval(inputtext) * BusinessData[biz_index][bizPrices][5]);
+        	payment = (strval(inputtext) * BusinessData[biz_index][bizProduct][5]);
 
         if(!(0 < strval(inputtext) <= 125))
-        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): inputan dibatasi hanya 0 sampai 125!\n\nToko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", FormatNumber(BusinessData[biz_index][bizPrices][5]));
+        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): inputan dibatasi hanya 0 sampai 125!\n\nToko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", FormatMoney(BusinessData[biz_index][bizProduct][5]));
 
         if(PumpData[pump_index][pumpFuel] < strval(inputtext))
-        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): kapasitas pompa bahan bakar tidak mencukupi, hanya tersisa "YELLOW"%d!\n\n"WHITE"Toko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", PumpData[pump_index][pumpFuel], FormatNumber(BusinessData[biz_index][bizPrices][5]));
+        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): kapasitas pompa bahan bakar tidak mencukupi, hanya tersisa "YELLOW"%d!\n\n"WHITE"Toko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", PumpData[pump_index][pumpFuel], FormatMoney(BusinessData[biz_index][bizProduct][5]));
 
     	if(GetMoney(playerid) < payment)
-    		return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): uang tidak cukup mengisi sebanyak itu "GREEN"(%s)!\n\n"WHITE"Toko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", FormatNumber(payment), FormatNumber(BusinessData[biz_index][bizPrices][5]));
+    		return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): uang tidak cukup mengisi sebanyak itu "GREEN"(%s)!\n\n"WHITE"Toko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", FormatMoney(payment), FormatMoney(BusinessData[biz_index][bizProduct][5]));
 
 		if((vehicle_index = Vehicle_ReturnID(GetPlayerVehicleID(playerid))) != RETURN_INVALID_VEHICLE_ID)
 		{
 			if(VehicleData[vehicle_index][vehGasUpgrade] != 2 && (VehicleData[vehicle_index][vehFuel] + strval(inputtext)) > 100)
-	        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): jumlah yang kamu masukkan terlalu banyak, masukkan "YELLOW"(%.0f)"WHITE"!\n\nToko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", (100 - VehicleData[vehicle_index][vehFuel]), FormatNumber(BusinessData[biz_index][bizPrices][5]));
+	        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): jumlah yang kamu masukkan terlalu banyak, masukkan "YELLOW"(%.0f)"WHITE"!\n\nToko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", (100 - VehicleData[vehicle_index][vehFuel]), FormatMoney(BusinessData[biz_index][bizProduct][5]));
 			
 			if(VehicleData[vehicle_index][vehGasUpgrade] == 2 && (VehicleData[vehicle_index][vehFuel] + strval(inputtext)) > 125)
-	        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): jumlah yang kamu masukkan terlalu banyak, masukkan "YELLOW"(%.0f)"WHITE"!\n\nToko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", (125 - VehicleData[vehicle_index][vehFuel]), FormatNumber(BusinessData[biz_index][bizPrices][5]));
+	        	return Dialog_Show(playerid, RefuelVehicle, DIALOG_STYLE_INPUT, "Refuel Vehicle", ""WHITE"(error): jumlah yang kamu masukkan terlalu banyak, masukkan "YELLOW"(%.0f)"WHITE"!\n\nToko ini menjual "GREEN"%s"YELLOW"/liter "WHITE"nya\n\nBerapa persen literan yang mau kamu beli?", "Beli", "Gagalkan", (125 - VehicleData[vehicle_index][vehFuel]), FormatMoney(BusinessData[biz_index][bizProduct][5]));
 
 
 	        VehicleData[vehicle_index][vehFuel] += float(strval(inputtext));
@@ -2238,7 +2238,7 @@ Dialog:RefuelVehicle(playerid, response, listitem, inputtext[])
 	        Pump_Sync(pump_index);
 	        Pump_Save(pump_index, false);
 	        GiveMoney(playerid, -payment, ECONOMY_ADD_SUPPLY, "bought vehicle gas");
-	        SendServerMessage(playerid, "Sukses mengisi bahan bakar sebanyak "YELLOW"%d liter "WHITE" dengan bayaran "GREEN"%s.", strval(inputtext), FormatNumber(payment));
+	        SendServerMessage(playerid, "Sukses mengisi bahan bakar sebanyak "YELLOW"%d liter "WHITE" dengan bayaran "GREEN"%s.", strval(inputtext), FormatMoney(payment));
 		}
     }
     return 1;
@@ -2257,7 +2257,7 @@ Dialog:ClaimImpound(playerid, response, listitem, inputtext[])
 			return SendErrorMessage(playerid, "Kendaraan ini belum waktunya dilepas (%s)!", ConvertTimestamp(Timestamp:claim_time));
 
 		if(GetMoney(playerid) < claim_price)
-			return SendErrorMessage(playerid, "Uang tidak cukup, kamu butuh %s!", FormatNumber(claim_price));
+			return SendErrorMessage(playerid, "Uang tidak cukup, kamu butuh %s!", FormatMoney(claim_price));
 
 		mysql_tquery(sqlcon, sprintf("UPDATE server_vehicles SET state=%d,impoundtime=0,impoundprice=0,interior=0,world=0 WHERE `id`='%d';", VEHICLE_STATE_SPAWNED, id));
 		mysql_tquery(sqlcon, sprintf("SELECT * FROM `server_vehicles` WHERE `id`='%d';", id), "VehicleLoaded", "d", playerid);
@@ -2412,7 +2412,7 @@ Dialog:VehicleTrunkOption(playerid, response, listitem, inputtext[])
 
 		}
 	}
-	else cmd_vehicle(playerid, "trunk");
+	else callcmd::vehicle(playerid, "trunk");
 
 	return 1;
 }
@@ -2500,13 +2500,13 @@ Dialog:VehicleOperation(playerid, response, listitem, inputtext[])
 	{
 		switch(listitem)
 		{
-			case 0: cmd_v(playerid, "engine");
-			case 1: cmd_v(playerid, "lock");
-			case 2: cmd_v(playerid, "lights");
-			case 3: cmd_v(playerid, "hood");
-			case 4: cmd_v(playerid, "trunk");
-			case 5: cmd_v(playerid, "speedometer");
-			case 6: cmd_togneon(playerid, "");
+			case 0: callcmd::v(playerid, "engine");
+			case 1: callcmd::v(playerid, "lock");
+			case 2: callcmd::v(playerid, "lights");
+			case 3: callcmd::v(playerid, "hood");
+			case 4: callcmd::v(playerid, "trunk");
+			case 5: callcmd::v(playerid, "speedometer");
+			case 6: callcmd::togneon(playerid, "");
 		}
 	}
 	return 1;

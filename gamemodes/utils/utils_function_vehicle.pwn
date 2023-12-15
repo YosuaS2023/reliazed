@@ -12,22 +12,191 @@ GetVehicleModelByName(const name[])
 	}
 	return 0;
 }
+GetVehicleNameByVehicle(vehicleid)
+{
+    new
+        model = GetVehicleModel(vehicleid),
+        name[32] = "None";
+
+    if(model < 400 || model > 611)
+        return name;
+
+    format(name, sizeof(name), g_arrVehicleNames[model - 400]);
+    return name;
+}
+GetVehicleNameByModel(model)
+{
+    new
+        name[32] = "None";
+
+    if(model < 400 || model > 611)
+        return name;
+
+    format(name, sizeof(name), g_arrVehicleNames[model - 400]);
+    return name;
+}
 // Set Vehicle
+GetEngineStatus(vehicleid)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+
+    if(engine != 1)
+        return 0;
+
+    return 1;
+}
+
+GetHoodStatus(vehicleid)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+
+    if(bonnet != 1)
+        return 0;
+
+    return 1;
+}
+
+GetTrunkStatus(vehicleid)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+
+    if(boot != 1)
+        return 0;
+
+    return 1;
+}
+
+stock GetAlarmStatus(vehicleid)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+
+    if(alarm != 1)
+        return 0;
+
+    return 1;
+}
+
+GetDoorStatus(vehicleid)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+
+    if(doors != 1)
+        return 0;
+
+    return 1;
+}
+
+GetLightStatus(vehicleid)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+
+    if(lights != 1)
+        return 0;
+
+    return 1;
+}
+
+SetLightStatus(vehicleid, status)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+    return SetVehicleParamsEx(vehicleid, engine, status, alarm, doors, bonnet, boot, objective);
+}
+
+SetTrunkStatus(vehicleid, status)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+    return SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, status, objective);
+}
+
+SetHoodStatus(vehicleid, status)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+    return SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, status, boot, objective);
+}
+
+SetDoorStatus(vehicleid, status)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+    return SetVehicleParamsEx(vehicleid, engine, lights, alarm, status, bonnet, boot, objective);
+}
+
+stock SetAlarmStatus(vehicleid, status)
+{
+    static engine, lights, alarm, doors, bonnet, boot, objective;
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+    return SetVehicleParamsEx(vehicleid, engine, lights, status, doors, bonnet, boot, objective);
+}
+
+stock IsPoweredVehicle(vehicleid)
+{
+    new
+        model = GetVehicleModel(vehicleid);
+
+    if (400 <= model <= 611)
+    {
+        static const g_EngineInfo[] = {
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1,
+            1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0
+        };
+
+        return g_EngineInfo[model - 400];
+    }
+    return 0;
+}
 SetEngineStatus(vehicleid, status)
 {
     static engine, lights, alarm, doors, bonnet, boot, objective;
     GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
     return SetVehicleParamsEx(vehicleid, status, lights, alarm, doors, bonnet, boot, objective);
 }
-// vehicle type
-IsSportBike(vehicleid)
+
+IsVehicleInRangeOfPoint(vehicleid, Float:range, Float:x, Float:y, Float:z)
 {
-	new Sport[] = { 581, 461, 521, 463, 522, 523 };
-	for(new i = 0; i < sizeof(Sport); i++) {
-	    if(GetVehicleModel(vehicleid) == Sport[i]) return 1;
-	}
-	return 0;
+    if(GetVehicleDistanceFromPoint(vehicleid, x, y, z) <= range) {
+        return 1;
+    }
+    return 0;
 }
+// vehicle type
+
+IsNewsVehicle(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 488, 582: return 1;
+    }
+    return 0;
+}
+IsATruck(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 456, 455: return 1;
+    }
+    return 0;
+}
+IsABigTruck(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid))
+    {
+        case 403, 514, 515: return 1;
+    }
+    return 0;
+}
+
 IsSportCar(vehicleid)
 {
 	new Sport[] = { 502, 409, 587, 602, 589, 555, 503, 504, 494, 541, 411, 477, 562, 506, 451, 565, 429, 560, 603, 559, 402, 561, 558, 415, 480 };
@@ -36,12 +205,314 @@ IsSportCar(vehicleid)
 	}
 	return 0;
 }
+
+IsNormalCar(vehicleid)
+{
+	new Normal[] = { 605, 604, 418, 600, 596, 597, 598, 583, 585, 568, 580, 545, 546, 547, 549, 550, 551, 552, 554, 533, 540, 
+    542, 543, 531, 529, 526, 527, 516, 517, 518, 507, 500, 496, 536, 534, 567, 535, 412, 566, 575, 576, 445, 419, 401, 410,
+    426, 436, 400, 421, 404, 413, 416, 420, 422, 424, 427, 434, 438, 439, 440, 442, 457, 459, 466, 467, 474, 475, 478, 
+    479, 480, 482, 483, 492, 405 };
+    
+	for(new i = 0; i < sizeof(Normal); i++) {
+	    if(GetVehicleModel(vehicleid) == Normal[i]) return 1;
+	}
+	return 0;
+}
+IsNormalTruck(vehicleid)
+{
+	new Normal[] = { 428, 609, 601, 599, 588, 582, 579, 528, 525, 508, 505, 414, 423, 470, 489, 490, 491, 495, 498, 499 };
+	for(new i = 0; i < sizeof(Normal); i++) {
+	    if(GetVehicleModel(vehicleid) == Normal[i]) return 1;
+	}
+	return 0;
+}
+
+IsBigTruck(vehicleid)
+{
+	new Normal[] = { 432, 406, 578, 573, 557, 556, 532, 544, 524, 514, 515, 403, 407, 408, 431, 433, 437, 443, 444, 456, 486 };
+	for(new i = 0; i < sizeof(Normal); i++) {
+	    if(GetVehicleModel(vehicleid) == Normal[i]) return 1;
+	}
+	return 0;
+}
+IsSportBike(vehicleid)
+{
+	new Sport[] = { 581, 461, 521, 463, 522, 523 };
+	for(new i = 0; i < sizeof(Sport); i++) {
+	    if(GetVehicleModel(vehicleid) == Sport[i]) return 1;
+	}
+	return 0;
+}
+IsACruiser(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 523, 427, 490, 528, 596..599, 601: return 1;
+    }
+    return 0;
+}
+IsSportBikeModel(modelid)
+{
+	new Sport[] = { 581, 461, 521, 463, 522, 523 };
+	for(new i = 0; i < sizeof(Sport); i++) {
+	    if(modelid == Sport[i]) return 1;
+	}
+	return 0;
+}
+IsNewsVehicleModel(modelid)
+{
+    switch (modelid) {
+        case 488, 582: return 1;
+    }
+    return 0;
+}
+IsACruiserModel(modelid)
+{
+    switch (modelid) {
+        case 523, 427, 490, 528, 596..599, 601: return 1;
+    }
+    return 0;
+}
+
+IsSportCarModel(modelid)
+{
+	new Sport[] = { 502, 409, 587, 602, 589, 555, 503, 504, 494, 541, 411, 477, 562, 506, 451, 565, 429, 560, 603, 559, 402, 561, 558, 415, 480 };
+	for(new i = 0; i < sizeof(Sport); i++) {
+	    if(modelid == Sport[i]) return 1;
+	}
+	return 0;
+}
+
+IsNormalCarModel(modelid)
+{
+	new Normal[] = { 605, 604, 418, 600, 596, 597, 598, 583, 585, 568, 580, 545, 546, 547, 549, 550, 551, 552, 554, 533, 540, 
+    542, 543, 529, 526, 527, 516, 517, 518, 507, 500, 496, 536, 534, 567, 535, 412, 566, 575, 576, 445, 419, 401, 410,
+    426, 436, 400, 421, 404, 413, 416, 424, 427, 434, 438, 439, 440, 442, 457, 459, 466, 467, 474, 475, 478, 
+    479, 480, 482, 483, 492, 405 };
+    
+	for(new i = 0; i < sizeof(Normal); i++) {
+	    if(modelid == Normal[i]) return 1;
+	}
+	return 0;
+}
+IsABikeModel(modelid)
+{
+    switch (modelid) {
+        case 448, 461..463, 468, 521..523, 581, 586, 481, 509, 510: return 1;
+    }
+    return 0;
+}
+
+IsABicycleModel(modelid)
+{
+    switch (modelid) {
+        case 481, 509, 510: return 1;
+    }
+    return 0;
+}
+IsVehicleHasTireNotTruck(modelid)
+{
+    return
+        IsABikeModel(modelid) ||
+        IsABicycleModel(modelid) ||
+        IsSportBikeModel(modelid) ||
+        IsNewsVehicleModel(modelid) ||
+        IsSportCarModel(modelid) ||
+        IsNormalCarModel(modelid) ||
+        IsACruiserModel(modelid)
+    ;
+}
+IsDoorVehicle(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 400..424, 426..429, 431..440, 442..445, 451, 455, 456, 458, 459, 466, 467, 470, 474, 475:
+            return 1;
+
+        case 477..480, 482, 483, 486, 489, 490..492, 494..496, 498..500, 502..508, 514..518, 524..529, 533..536:
+            return 1;
+
+        case 540..547, 549..552, 554..562, 565..568, 573, 575, 576, 578..580, 582, 585, 587..589, 596..605, 609:
+            return 1;
+    }
+    return 0;
+}
+
+
+IsSpeedoVehicle(vehicleid)
+{
+    if(!IsEngineVehicle(vehicleid))
+        return 0;
+
+    switch(GetVehicleModel(vehicleid)) {
+        case 509..510, 481: return 0;
+    }
+
+    return 1;
+}
+
+IsLoadableVehicle(vehicleid)
+{
+    new modelid = GetVehicleModel(vehicleid);
+
+    if(GetVehicleTrailer(vehicleid))
+        modelid = GetVehicleModel(GetVehicleTrailer(vehicleid));
+
+    switch (modelid) {
+        case 609, 403, 414, 456, 498, 499, 514, 515, 435, 591: return 1;
+    }
+    return 0;
+}
+
+GetMaxCrates(vehicleid)
+{
+    new crates;
+
+    switch (GetVehicleModel(vehicleid)) {
+        case 498, 609: crates = 10;
+        case 414: crates = 8;
+        case 456, 499: crates = 6;
+        case 435, 591: crates = 15;
+    }
+    return crates;
+}
+/*
+IsCrateInUse(crateid)
+{
+    if(CrateData[crateid][crateVehicle] != INVALID_VEHICLE_ID && IsValidVehicle(CrateData[crateid][crateVehicle])) {
+        return 1;
+    }
+    foreach (new i : Player) if(PlayerData[i][pCarryCrate] == crateid && GetPlayerSpecialAction(i) == SPECIAL_ACTION_CARRY) {
+        return 1;
+    }
+    return 0;
+}
+
+GetVehicleCrates(vehicleid)
+{
+    if(!IsValidVehicle(vehicleid) || !IsLoadableVehicle(vehicleid))
+        return 0;
+
+    new crates;
+
+    for (new i = 0; i != MAX_CRATES; i ++) if(CrateData[i][crateExists] && CrateData[i][crateVehicle] == vehicleid) {
+        crates++;
+    }
+    return crates;
+}*/
+
+IsABoat(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 430, 446, 452, 453, 454, 472, 473, 484, 493, 595: return 1; //452, 453, 454, 472, 473, 484, 493, 595, 430, 446
+    }
+    return 0;
+}
+
 IsABike(vehicleid)
 {
     switch (GetVehicleModel(vehicleid)) {
         case 448, 461..463, 468, 521..523, 581, 586: return 1;
     }
     return 0;
+}
+
+IsABicycle(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 481, 509, 510: return 1;
+    }
+    return 0;
+}
+
+IsAPlane(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 460, 464, 476, 511, 512, 513, 519, 520, 553, 577, 592, 593: return 1;
+    }
+    return 0;
+}
+
+IsAHelicopter(vehicleid)
+{
+    switch (GetVehicleModel(vehicleid)) {
+        case 417, 425, 447, 465, 469, 487, 488, 497, 501, 548, 563: return 1;
+    }
+    return 0;
+}
+
+IsVehicleDrivingBackwards(vehicleid) // By Joker
+{
+    new
+        Float:Float[3]
+    ;
+    if(GetVehicleVelocity(vehicleid, Float[1], Float[2], Float[0]))
+    {
+        GetVehicleZAngle(vehicleid, Float[0]);
+        if(Float[0] < 90)
+        {
+            if(Float[1] > 0 && Float[2] < 0) return true;
+        }
+        else if(Float[0] < 180)
+        {
+            if(Float[1] > 0 && Float[2] > 0) return true;
+        }
+        else if(Float[0] < 270)
+        {
+            if(Float[1] < 0 && Float[2] > 0) return true;
+        }
+        else if(Float[1] < 0 && Float[2] < 0) return true;
+    }
+    return false;
+}
+
+IsEngineVehicle(vehicleid)
+{
+    static const g_aEngineStatus[] = {
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1,
+        1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0
+    };
+    new modelid = GetVehicleModel(vehicleid);
+
+    if(modelid < 400 || modelid > 611)
+        return 0;
+
+    return (g_aEngineStatus[modelid - 400]);
+}
+
+IsFourWheelVehicle(vehicleid)
+{
+    return
+        !IsABoat(vehicleid) &&
+        !IsABike(vehicleid) &&
+        !IsABicycle(vehicleid) &&
+        !IsAPlane(vehicleid) &&
+        !IsAHelicopter(vehicleid) &&
+        !IsSportBike(vehicleid)
+    ;
+}
+
+IsVehicleHasTire(vehicleid)
+{
+    return
+        IsABike(vehicleid) ||
+        IsSportBike(vehicleid) ||
+        IsNewsVehicle(vehicleid) ||
+        IsATruck(vehicleid) ||
+        IsSportCar(vehicleid) ||
+        IsNormalCar(vehicleid) ||
+        IsNormalTruck(vehicleid) ||
+        IsBigTruck(vehicleid) ||
+        IsACruiser(vehicleid) ||
+        IsDoorVehicle(vehicleid)
+    ;
 }
 
 IsModValid(vehicleid, componentid)
@@ -317,4 +788,14 @@ hook OnGameModeInit()
     // printf("Vehicle Mod Compability -> modelid: %d | model_name: %s | compatible mods: %d mods", 400 + model, GetVehicleNameByModel(400 + model), Iter_Count(g_Iter_VVM[model]));
   }
   return 1;
+}
+
+//
+
+Float:GetVehicleSpeed(vehicleid, bool:kmh = true, Float:velx = 0.0, Float:vely = 0.0, Float:velz = 0.0)
+{
+    if( velx == 0.0 && vely == 0.0 && velz == 0.0)
+        GetVehicleVelocity(vehicleid, velx, vely, velz);
+
+    return float(floatround((floatsqroot(((velx * velx) + (vely * vely)) + (velz * velz)) * (kmh ? (136.666667) : (85.4166672))), floatround_round));
 }

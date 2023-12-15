@@ -47407,3 +47407,420 @@
 [07:29:52] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '2', `amount`= '73.00', `amountkevlar`= '73.00', `time`= '1702308307' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
 [07:29:52] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '6', `amount`= '64.00', `amountkevlar`= '64.00', `time`= '1702308315' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
 [07:29:52] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '23', `bodypart`= '5', `amount`= '19.00', `amountkevlar`= '19.00', `time`= '1702308317' WHERE ID = '0' AND IDs = '5'": Table 'reliazed.damages' doesn't exist
+[08:55:40] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:55:40] [WARNING] mysql_connect_file: no password specified
+[08:55:43] [WARNING] mysql_connect: no password specified
+[08:55:43] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:55:43] [ERROR] mysql_format: destination size '512' is too small
+[08:55:43] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:55:44] [ERROR] orm_insert: invalid orm id '0'
+[08:56:07] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:56:13] [ERROR] cache_get_value_name_int: field 'Injured' not found
+[08:56:13] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:56:13] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '1'": Table 'reliazed.characters_inventory' doesn't exist
+[09:00:04] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[09:00:13] [ERROR] cache_get_value_name_int: field 'Injured' not found
+[09:00:13] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[09:00:13] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '1'": Table 'reliazed.characters_inventory' doesn't exist
+[09:39:02] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:39:02] [WARNING] mysql_connect_file: no password specified
+[09:39:02] [WARNING] mysql_connect: no password specified
+[09:39:02] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:39:02] [ERROR] mysql_format: destination size '512' is too small
+[09:39:02] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:39:02] [ERROR] orm_insert: invalid orm id '0'
+[09:39:27] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[09:39:46] [ERROR] cache_get_value_name: field 'Dead' not found
+[09:39:47] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[09:39:47] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '1'": Table 'reliazed.characters_inventory' doesn't exist
+[09:41:03] [ERROR] cache_get_value_name: field 'Dead' not found
+[09:41:03] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '6' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[09:41:03] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '6'": Table 'reliazed.characters_inventory' doesn't exist
+[09:42:36] [ERROR] error #1146 while executing query "INSERT INTO `damages` SET `weapon`='0', `bodypart`='0', `amount`='1.32', `amountkevlar`='0.00', `IDs`='1'": Table 'reliazed.damages' doesn't exist
+[09:43:04] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:43:04] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '0', `bodypart`= '0', `amount`= '8.91', `amountkevlar`= '0.00', `time`= '1702316574' WHERE ID = '0' AND IDs = '1'": Table 'reliazed.damages' doesn't exist
+[09:43:04] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:43:04] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:43:30] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[09:43:35] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '0', `bodypart`= '0', `amount`= '8.91', `amountkevlar`= '0.00', `time`= '1702316574' WHERE ID = '0' AND IDs = '-1'": Table 'reliazed.damages' doesn't exist
+[09:44:17] [ERROR] error #1146 while executing query "UPDATE `damages` SET `weapon`= '0', `bodypart`= '0', `amount`= '8.91', `amountkevlar`= '0.00', `time`= '1702316574' WHERE ID = '0' AND IDs = '-1'": Table 'reliazed.damages' doesn't exist
+[09:46:43] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:46:43] [WARNING] mysql_connect_file: no password specified
+[09:46:43] [WARNING] mysql_connect: no password specified
+[09:46:43] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:46:43] [ERROR] mysql_format: destination size '512' is too small
+[09:46:43] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:46:43] [ERROR] orm_insert: invalid orm id '0'
+[09:47:06] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:47:06] [WARNING] mysql_connect_file: no password specified
+[09:47:06] [WARNING] mysql_connect: no password specified
+[09:47:06] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:47:06] [ERROR] mysql_format: destination size '512' is too small
+[09:47:06] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:47:06] [ERROR] orm_insert: invalid orm id '0'
+[09:47:45] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:47:45] [WARNING] mysql_connect_file: no password specified
+[09:47:45] [WARNING] mysql_connect: no password specified
+[09:47:45] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:47:45] [ERROR] mysql_format: destination size '512' is too small
+[09:47:45] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:47:45] [ERROR] orm_insert: invalid orm id '0'
+[09:48:44] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:48:44] [WARNING] mysql_connect_file: no password specified
+[09:48:44] [WARNING] mysql_connect: no password specified
+[09:48:44] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:48:44] [ERROR] mysql_format: destination size '512' is too small
+[09:48:44] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:48:44] [ERROR] orm_insert: invalid orm id '0'
+[09:49:14] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[09:49:24] [ERROR] cache_get_value_name: field 'Dead' not found
+[09:49:24] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[09:49:24] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '1'": Table 'reliazed.characters_inventory' doesn't exist
+[09:50:59] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '71.3600' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:50:59] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '71.3600' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:50:59] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '71.3600' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:07:09] [ERROR] mysql_tquery: invalid connection handle '0'
+[10:07:09] [WARNING] mysql_connect_file: no password specified
+[10:07:09] [WARNING] mysql_connect: no password specified
+[10:07:09] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[10:07:09] [ERROR] mysql_format: destination size '512' is too small
+[10:07:09] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[10:07:09] [ERROR] orm_insert: invalid orm id '0'
+[10:07:48] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[10:07:54] [ERROR] cache_get_value_name: field 'Dead' not found
+[10:07:54] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[10:07:54] [ERROR] error #1146 while executing query "SELECT * FROM `characters_inventory` WHERE `ID` = '1'": Table 'reliazed.characters_inventory' doesn't exist
+[10:13:19] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:13:19] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:13:19] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:36:54] [ERROR] mysql_tquery: invalid connection handle '0'
+[10:36:54] [ERROR] mysql_tquery: invalid connection handle '0'
+[10:36:54] [ERROR] mysql_tquery: invalid connection handle '0'
+[10:36:54] [WARNING] mysql_connect_file: no password specified
+[10:37:00] [WARNING] mysql_connect: no password specified
+[10:37:00] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[10:37:00] [ERROR] mysql_format: destination size '512' is too small
+[10:37:00] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[10:37:01] [ERROR] orm_insert: invalid orm id '0'
+[10:37:14] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[10:37:23] [ERROR] cache_get_value_name: field 'Dead' not found
+[10:37:23] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[10:37:23] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[10:41:31] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:41:31] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:41:31] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:43:11] [ERROR] mysql_tquery: invalid connection handle '0'
+[10:43:11] [ERROR] mysql_tquery: invalid connection handle '0'
+[10:43:11] [ERROR] mysql_tquery: invalid connection handle '0'
+[10:43:11] [WARNING] mysql_connect_file: no password specified
+[10:43:11] [WARNING] mysql_connect: no password specified
+[10:43:11] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[10:43:11] [ERROR] mysql_format: destination size '512' is too small
+[10:43:11] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[10:43:11] [ERROR] orm_insert: invalid orm id '0'
+[10:43:31] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[10:43:39] [ERROR] cache_get_value_name: field 'Dead' not found
+[10:43:39] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[10:43:39] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[10:49:41] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:49:41] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[10:49:41] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[01:11:45] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:11:45] [ERROR] mysql_query: invalid connection handle '0'
+[01:11:45] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:11:45] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:11:45] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:11:45] [WARNING] mysql_connect_file: no password specified
+[01:11:45] [WARNING] mysql_connect: no password specified
+[01:11:45] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[01:11:45] [ERROR] mysql_format: destination size '512' is too small
+[01:11:45] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[01:11:45] [ERROR] orm_insert: invalid orm id '0'
+[01:12:19] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:19] [ERROR] mysql_query: invalid connection handle '0'
+[01:12:19] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:19] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:19] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:19] [WARNING] mysql_connect_file: no password specified
+[01:12:19] [WARNING] mysql_connect: no password specified
+[01:12:19] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[01:12:19] [ERROR] mysql_format: destination size '512' is too small
+[01:12:19] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[01:12:19] [ERROR] orm_insert: invalid orm id '0'
+[01:12:44] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:44] [ERROR] mysql_query: invalid connection handle '0'
+[01:12:44] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:44] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:44] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:12:44] [WARNING] mysql_connect_file: no password specified
+[01:12:44] [WARNING] mysql_connect: no password specified
+[01:12:44] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[01:12:44] [ERROR] mysql_format: destination size '512' is too small
+[01:12:44] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[01:12:44] [ERROR] orm_insert: invalid orm id '0'
+[01:14:57] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:14:57] [ERROR] mysql_query: invalid connection handle '0'
+[01:14:57] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:14:57] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:14:57] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:14:57] [WARNING] mysql_connect_file: no password specified
+[01:14:57] [WARNING] mysql_connect: no password specified
+[01:14:57] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[01:14:57] [ERROR] mysql_format: destination size '512' is too small
+[01:14:57] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[01:14:57] [ERROR] orm_insert: invalid orm id '0'
+[01:15:34] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[01:15:42] [ERROR] cache_get_value_name: field 'Dead' not found
+[01:15:42] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[01:15:42] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[01:17:43] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:17:43] [ERROR] mysql_query: invalid connection handle '0'
+[01:17:43] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:17:43] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:17:43] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:17:43] [WARNING] mysql_connect_file: no password specified
+[01:17:43] [WARNING] mysql_connect: no password specified
+[01:17:43] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[01:17:43] [ERROR] mysql_format: destination size '512' is too small
+[01:17:43] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[01:17:43] [ERROR] orm_insert: invalid orm id '0'
+[01:22:38] [ERROR] mysql_query: invalid connection handle '0'
+[01:22:38] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:22:38] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:22:38] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:22:38] [ERROR] mysql_tquery: invalid connection handle '0'
+[01:22:38] [WARNING] mysql_connect_file: no password specified
+[01:22:38] [WARNING] mysql_connect: no password specified
+[01:22:38] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[01:22:38] [ERROR] mysql_format: destination size '512' is too small
+[01:22:38] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[01:22:38] [ERROR] orm_insert: invalid orm id '0'
+[01:23:21] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[01:23:28] [ERROR] cache_get_value_name: field 'Dead' not found
+[01:23:28] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[01:23:28] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:09:59] [ERROR] mysql_query: invalid connection handle '0'
+[08:09:59] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:09:59] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:09:59] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:09:59] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:09:59] [WARNING] mysql_connect_file: no password specified
+[08:09:59] [WARNING] mysql_connect: no password specified
+[08:09:59] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:09:59] [ERROR] mysql_format: destination size '512' is too small
+[08:09:59] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:09:59] [ERROR] orm_insert: invalid orm id '0'
+[08:10:41] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:10:49] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:10:49] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:10:49] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:13:40] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:13:40] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:13:40] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:14:08] [ERROR] mysql_query: invalid connection handle '0'
+[08:14:08] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:14:08] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:14:08] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:14:08] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:14:08] [WARNING] mysql_connect_file: no password specified
+[08:14:08] [WARNING] mysql_connect: no password specified
+[08:14:08] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:14:08] [ERROR] mysql_format: destination size '512' is too small
+[08:14:08] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:14:08] [ERROR] orm_insert: invalid orm id '0'
+[08:14:31] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:14:35] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:14:35] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:14:35] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:17:40] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:17:40] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:17:40] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:18:32] [ERROR] mysql_query: invalid connection handle '0'
+[08:18:32] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:32] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:32] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:32] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:32] [WARNING] mysql_connect_file: no password specified
+[08:18:32] [WARNING] mysql_connect: no password specified
+[08:18:32] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:18:32] [ERROR] mysql_format: destination size '512' is too small
+[08:18:32] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:18:32] [ERROR] orm_insert: invalid orm id '0'
+[08:18:39] [ERROR] mysql_query: invalid connection handle '0'
+[08:18:39] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:39] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:39] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:39] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:18:39] [WARNING] mysql_connect_file: no password specified
+[08:18:39] [WARNING] mysql_connect: no password specified
+[08:18:39] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:18:39] [ERROR] mysql_format: destination size '512' is too small
+[08:18:39] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:18:39] [ERROR] orm_insert: invalid orm id '0'
+[08:18:54] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:19:07] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:19:07] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:19:07] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:20:50] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:20:50] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:20:50] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:20:50] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:20:50] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:20:50] [WARNING] mysql_connect_file: no password specified
+[08:20:50] [WARNING] mysql_connect: no password specified
+[08:20:50] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:20:50] [ERROR] mysql_format: destination size '512' is too small
+[08:20:50] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:20:50] [ERROR] orm_insert: invalid orm id '0'
+[08:21:12] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:21:18] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:21:18] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:21:18] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:25:18] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:25:18] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:25:18] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:25:18] [WARNING] mysql_connect_file: no password specified
+[08:25:18] [WARNING] mysql_connect: no password specified
+[08:25:18] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:25:18] [ERROR] mysql_format: destination size '512' is too small
+[08:25:18] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:25:18] [ERROR] orm_insert: invalid orm id '0'
+[08:25:33] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:25:40] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:25:40] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:25:40] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:25:46] [ERROR] error #1146 while executing query "SELECT * FROM `handler_updatenote`": Table 'reliazed.handler_updatenote' doesn't exist
+[08:25:58] [ERROR] error #1146 while executing query "INSERT INTO `handler_updatenote` (`AddedBy`, `Text`, `Status`, `DateAdded`) VALUES ('Suzy_Kyori', 'Kontol', '1', '12 December 2023, 08:25:58')": Table 'reliazed.handler_updatenote' doesn't exist
+[08:26:05] [ERROR] error #1146 while executing query "SELECT * FROM `handler_updatenote`": Table 'reliazed.handler_updatenote' doesn't exist
+[08:29:33] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:29:33] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:29:33] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:30:03] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:03] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:03] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:03] [WARNING] mysql_connect_file: no password specified
+[08:30:03] [WARNING] mysql_connect: no password specified
+[08:30:03] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:30:03] [ERROR] mysql_format: destination size '512' is too small
+[08:30:03] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:30:03] [ERROR] orm_insert: invalid orm id '0'
+[08:34:18] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:34:18] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:34:18] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:34:18] [WARNING] mysql_connect_file: no password specified
+[08:34:18] [WARNING] mysql_connect: no password specified
+[08:34:18] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:34:18] [ERROR] mysql_format: destination size '512' is too small
+[08:34:18] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:34:18] [ERROR] orm_insert: invalid orm id '0'
+[08:34:37] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:34:44] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:34:44] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:34:44] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:35:18] [ERROR] error #1054 while executing query "INSERT INTO `handler_command` (`AddedBy`, `Command`, `Type`, `DateAdded`) VALUES ('Suzy_Kyori', 'Commans tes', '0', '12 December 2023, 08:35:18')": Unknown column 'Command' in 'field list'
+[08:39:35] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:39:35] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:39:35] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:39:35] [WARNING] mysql_connect_file: no password specified
+[08:39:35] [WARNING] mysql_connect: no password specified
+[08:39:35] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:39:35] [ERROR] mysql_format: destination size '512' is too small
+[08:39:35] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:39:35] [ERROR] orm_insert: invalid orm id '0'
+[08:39:50] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:40:04] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:40:04] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:40:04] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:40:20] [ERROR] error #1054 while executing query "INSERT INTO `handler_command` (`AddedBy`, `Command`, `Type`, `DateAdded`) VALUES ('Suzy_Kyori', 'j', '1', '12 December 2023, 08:40:20')": Unknown column 'Command' in 'field list'
+[08:43:35] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:43:35] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:43:35] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:47:38] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:47:38] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:47:38] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:47:38] [WARNING] mysql_connect_file: no password specified
+[08:47:38] [WARNING] mysql_connect: no password specified
+[08:47:38] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:47:38] [ERROR] mysql_format: destination size '512' is too small
+[08:47:38] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:47:38] [ERROR] orm_insert: invalid orm id '0'
+[08:47:54] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:48:03] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:48:03] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:48:03] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:49:27] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:49:27] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:49:27] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:49:27] [WARNING] mysql_connect_file: no password specified
+[08:49:27] [WARNING] mysql_connect: no password specified
+[08:49:27] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:49:27] [ERROR] mysql_format: destination size '512' is too small
+[08:49:27] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:49:27] [ERROR] orm_insert: invalid orm id '0'
+[08:50:06] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:50:12] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:50:12] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:50:12] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:53:37] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:53:37] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:53:37] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:22:07] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:22:07] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:22:07] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:22:07] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:22:07] [WARNING] mysql_connect_file: no password specified
+[09:22:07] [WARNING] mysql_connect: no password specified
+[09:22:07] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:22:07] [ERROR] mysql_format: destination size '512' is too small
+[09:22:07] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:22:07] [ERROR] orm_insert: invalid orm id '0'
+[09:22:25] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[09:22:36] [ERROR] cache_get_value_name: field 'Dead' not found
+[09:22:36] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[09:22:36] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[09:24:05] [ERROR] error #1054 while executing query "INSERT INTO `handler_command` (`AddedBy`, `Command`, `Type`, `DateAdded`) VALUES ('Suzy_Kyori', 'jk', '1', '12 December 2023, 09:24:05')": Unknown column 'Command' in 'field list'
+[09:27:07] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:27:07] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:27:07] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:30:52] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:52] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:52] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:52] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:52] [ERROR] mysql_tquery: invalid connection handle '0'
+[08:30:52] [WARNING] mysql_connect_file: no password specified
+[08:30:52] [WARNING] mysql_connect: no password specified
+[08:30:52] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[08:30:52] [ERROR] mysql_format: destination size '512' is too small
+[08:30:52] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[08:30:52] [ERROR] orm_insert: invalid orm id '0'
+[08:31:24] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:31:32] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:31:32] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:31:32] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:33:20] [ERROR] error #1054 while executing query "INSERT INTO `handler_command` (`AddedBy`, `Command`, `Type`, `DateAdded`) VALUES ('Suzy_Kyori', '/salary', '0', '13 December 2023, 08:33:20')": Unknown column 'Command' in 'field list'
+[08:33:25] [ERROR] error #1054 while executing query "INSERT INTO `handler_command` (`AddedBy`, `Command`, `Type`, `DateAdded`) VALUES ('Suzy_Kyori', 'jasw', '0', '13 December 2023, 08:33:25')": Unknown column 'Command' in 'field list'
+[08:36:32] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:36:32] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:36:32] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:37:21] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[08:37:26] [ERROR] cache_get_value_name: field 'Dead' not found
+[08:37:26] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[08:37:26] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist
+[08:40:32] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:40:32] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[08:40:32] [ERROR] error #1054 while executing query "UPDATE `ucp_characters` SET `Dead` = '0.0000' WHERE `ID`='1';": Unknown column 'Dead' in 'field list'
+[09:24:10] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:24:10] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:24:10] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:24:10] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:24:10] [ERROR] mysql_tquery: invalid connection handle '0'
+[09:24:10] [WARNING] mysql_connect_file: no password specified
+[09:24:10] [WARNING] mysql_connect: no password specified
+[09:24:10] [WARNING] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'reliazed'
+[09:24:10] [ERROR] mysql_format: destination size '512' is too small
+[09:24:10] [ERROR] error #1064 while executing query "CREATE TABLE IF NOT EXISTS `bank_logs` (        `ID` int(11) NOT NULL auto_increment,        `AccountID` int(11) NOT NULL,        `ToAccountID` int(11) NOT NULL default '-1',        `Type` smallint(1) NOT NULL,        `Player` varchar(24) NOT NULL,        `Amount` int(11) NOT NULL,        `Date` int(11) NOT NULL,": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[09:24:10] [ERROR] orm_insert: invalid orm id '0'
+[09:24:28] [ERROR] cache_get_value_name_int: field 'Developer' not found
+[09:24:37] [ERROR] cache_get_value_name: field 'Dead' not found
+[09:24:37] [ERROR] error #1146 while executing query "SELECT * FROM `damages` WHERE `IDs` = '1' ORDER BY `time` DESC LIMIT 55": Table 'reliazed.damages' doesn't exist
+[09:24:37] [ERROR] error #1146 while executing query "SELECT * FROM `inventory` WHERE `ID` = '1'": Table 'reliazed.inventory' doesn't exist

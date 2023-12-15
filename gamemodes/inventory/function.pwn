@@ -234,7 +234,7 @@ stock OpenInventory(playerid)
 			format(str, sizeof(str), "%s{FFFFFF}%s\t%d\n", str, string, amounts[i]);
 		}
 	}
-	Dialog_Show(playerid, invemtory, DIALOG_STYLE_TABLIST_HEADERS, "Inventory Data", str, "Select", "Close");
+	Dialog_Show(playerid, inventory, DIALOG_STYLE_TABLIST_HEADERS, "Inventory Data", str, "Select", "Close");
 	return 1;
 }
 

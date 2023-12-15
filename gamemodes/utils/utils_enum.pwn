@@ -8,6 +8,18 @@ enum damageData {
     damageTime
 };
 
+enum
+{
+    INVALID_AREA_INDEX = 0,
+    ATM_AREA_INDEX,
+    PLANT_AREA_INDEX,
+    SPEED_AREA_INDEX,
+    BARRICADE_AREA_INDEX,
+    FIRE_AREA_INDEX,
+    VENDING_AREA_INDEX,
+    DRUGLAB_AREA_INDEX
+};
+
 enum e_MotdData {
 	motdPlayer[70],
 	motdAdmin[70]
@@ -63,6 +75,8 @@ enum e_player_data
 	Float:pPos[4],
 	pCreated,
 	pStory,
+    pHouse,
+    pStar,
     pInjured,
     Text3D:pInjuredTag,
     pInjuredTime,
@@ -98,6 +112,9 @@ enum e_player_data
 	Timer:pFreezeTimer,
 	pSpawnPoint,
 	pScore,
+    pEditingMode,
+    pEditVehicleObject,
+    pEditVehicleObjectSlot,
 	pAlias,
 	pRegisterDate,
 	pMinute,
@@ -121,6 +138,7 @@ enum e_player_data
 	pFactionOffer,
 	pFactionOffered,
     pFactionSkin,
+    pGasPump,
 	Timer:pPtask_Stats
 };
 
@@ -334,3 +352,434 @@ enum e_InventoryItems
 	e_InventoryItem[32],
 	e_InventoryModel
 };
+
+enum enum_listCommands
+{
+    listCommandName[30],
+    listCommandType
+};
+
+enum    _:E_BANK_DIALOG
+{
+    DIALOG_BANK_MENU_NOLOGIN = 12450,
+    DIALOG_BANK_MENU,
+    DIALOG_BANK_CREATE_ACCOUNT,
+    DIALOG_BANK_ACCOUNTS,
+    DIALOG_BANK_LOGIN_ID,
+    DIALOG_BANK_LOGIN_PASS,
+    DIALOG_BANK_DEPOSIT,
+    DIALOG_BANK_WITHDRAW,
+    DIALOG_BANK_TRANSFER_1,
+    DIALOG_BANK_TRANSFER_2,
+    DIALOG_BANK_PASSWORD,
+    DIALOG_BANK_REMOVE,
+    DIALOG_BANK_LOGS,
+    DIALOG_BANK_LOG_PAGE
+}
+ 
+enum    _:E_BANK_LOGTYPE
+{
+    TYPE_NONE,
+    TYPE_LOGIN,
+    TYPE_DEPOSIT,
+    TYPE_WITHDRAW,
+    TYPE_TRANSFER,
+    TYPE_PASSCHANGE
+}
+ 
+#if defined ROBBABLE_ATMS
+enum    _:E_ATMDATA
+{
+    IDString[8],
+    refID
+}
+#endif
+ 
+enum    E_BANKER
+{
+    // saved
+    Skin,
+    Float: bankerX,
+    Float: bankerY,
+    Float: bankerZ,
+    Float: bankerA,
+    // temp
+    bankerActorID,
+    #if defined BANKER_USE_MAPICON
+    bankerIconID,
+    #endif
+    Text3D: bankerLabel
+}
+ 
+enum    E_ATM
+{
+    // saved
+    Float: atmX,
+    Float: atmY,
+    Float: atmZ,
+    Float: atmRX,
+    Float: atmRY,
+    Float: atmRZ,
+    // temp
+    atmObjID,
+    
+    #if defined ATM_USE_MAPICON
+    atmIconID,
+    #endif
+    
+    #if defined ROBBABLE_ATMS
+    Float: atmHealth,
+    atmRegen,
+    atmTimer,
+    atmPickup,
+    #endif
+    
+    Text3D: atmLabel
+}
+
+enum
+{
+	FACTION_POLICE = 1,
+	FACTION_NEWS,
+	FACTION_MEDIC,
+	FACTION_GOV,
+	FACTION_FAMILY
+
+};
+
+enum factionData 
+{
+	factionID,
+	factionExists,
+	factionName[32],
+	factionColor,
+	factionType,
+	factionRanks,
+	Float:factionLockerPos[3],
+	factionLockerInt,
+	factionLockerWorld,
+	factionSkins[8],
+	factionWeapons[10],
+	factionAmmo[10],
+	factionDurability[10],
+	factionSalary[15],
+	STREAMER_TAG_3D_TEXT_LABEL:factionText3D,
+	STREAMER_TAG_PICKUP:factionPickup,
+	Float:SpawnX,
+	Float:SpawnY,
+	Float:SpawnZ,
+	SpawnInterior,
+	SpawnVW
+};
+
+// vehicle
+enum E_P_VEHICLE_KEYS
+{
+	playerID, //Untuk menampung ID SQL Player
+	vehicleID, //Untuk menampung ID SQL Vehicle
+	vehicleKeyExists, // Untuk menampung kosong atau tidak
+	vehicleModel // untuk menampung model kendaraan
+};
+
+enum E_PUMP_DATA
+{
+    pumpID,
+    pumpBusiness,
+    Float:pumpPos[4],
+    pumpFuel,
+
+    pumpObject,
+    Text3D:pumpText3D
+};
+
+enum 
+{
+	TYPE_FASTFOOD = 1,
+	TYPE_247,
+	TYPE_CLOTHES,
+	TYPE_ELECTRO
+};
+
+enum e_biz_data
+{
+	bizID,
+	bizName[32],
+	bizOwner,
+	bizOwnerName[MAX_PLAYER_NAME],
+	bool:bizExists,
+	Float:bizInt[3],
+	Float:bizExt[3],
+	Float:bizDeliver[3],
+	bizWorld,
+	bizInterior,
+	bizVault,
+	bizPrices,
+	bizLocked,
+	bizFuel,
+	bizProduct[7],
+	bizType,
+	bizStock,
+	bizCargo,
+	bizDiesel,
+	bool:bizReq,
+	Float:bizFuelPos[3],
+	STREAMER_TAG_PICKUP:bizFuelPickup,
+	STREAMER_TAG_3D_TEXT_LABEL:bizFuelText,
+	STREAMER_TAG_PICKUP:bizDeliverPickup,
+	STREAMER_TAG_3D_TEXT_LABEL:bizDeliverText,
+	STREAMER_TAG_PICKUP:bizPickup,
+	STREAMER_TAG_3D_TEXT_LABEL:bizText,
+	STREAMER_TAG_CP:bizCP,
+	STREAMER_TAG_MAP_ICON:bizIcon,
+};
+
+enum E_VEHICLE_OBJECT {
+    vehObjectID,
+    vehObjectVehicleIndex,
+    vehObjectType,
+    vehObjectModel,
+    vehObjectColor,
+
+    vehObjectText[32],
+    vehObjectFont[24],
+    vehObjectFontSize,
+    vehObjectFontColor,
+
+    vehObject,
+    
+    bool:vehObjectExists,
+
+    Float:vehObjectPosX,
+    Float:vehObjectPosY,
+    Float:vehObjectPosZ,
+    Float:vehObjectPosRX,
+    Float:vehObjectPosRY,
+    Float:vehObjectPosRZ
+};
+
+enum bodyEnums {
+    Model,
+    Name[37]
+};
+
+enum E_SPEED_DATA
+{
+	speedID,
+	speedMax,
+
+	speedDetail[128],
+	Float:speedPos[4],
+
+	speedArea,
+	speedObject,
+	Text3D:speedLabel
+};
+
+enum
+{
+	VEHICLE_TYPE_NONE = 0,
+	VEHICLE_TYPE_PLAYER,
+	VEHICLE_TYPE_FACTION,
+	VEHICLE_TYPE_SIDEJOB,
+	VEHICLE_TYPE_RENTAL,
+	VEHICLE_TYPE_DRIVING_SCHOOL
+};
+
+enum
+{
+	VEHICLE_STATE_NONE = 0,
+	VEHICLE_STATE_SPAWNED,
+	VEHICLE_STATE_DEAD,
+	VEHICLE_STATE_INSURANCE,
+	VEHICLE_STATE_IMPOUND,
+	VEHICLE_STATE_PARKED,
+	VEHICLE_STATE_HOUSEPARKED,
+	VEHICLE_STATE_APARTPARKED
+};
+
+enum
+{
+	VEHICLE_SAVE_ALL = 0,
+	VEHICLE_SAVE_POSITION,
+	VEHICLE_SAVE_COLOR,
+	VEHICLE_SAVE_MISC,
+	VEHICLE_SAVE_DAMAGES,
+	VEHICLE_SAVE_COMPONENT
+};
+
+enum
+{
+	VEHICLE_SIDEJOB_NONE = 0,
+	VEHICLE_SIDEJOB_BUS,
+	VEHICLE_SIDEJOB_SWEEPER,
+	VEHICLE_SIDEJOB_TRASHMASTER,
+	VEHICLE_SIDEJOB_MONEYTRANS,
+	VEHICLE_SIDEJOB_BOXVILLE
+};
+
+enum e_TRUNK_FLAGS
+{
+	e_TRUNK_NOTHING = 0,
+	e_TRUNK_WEAPON,
+	e_TRUNK_INVENTORY
+};
+
+enum E_VEHICLE_DATA
+{
+		// Info
+		vehIndex,
+		vehPlate[32],
+		vehModel,
+		vehExtraID,
+
+		// World
+		vehVirtual,
+		vehInterior,
+Float:	vehPosX,
+Float:	vehPosY,
+Float:	vehPosZ,
+Float:	vehPosRZ,
+
+		// Color
+		vehColor1,
+		vehColor2,
+		vehPaintjob,
+
+		// Damaged
+		vehPanel,
+		vehDoor,
+		vehLight,
+		vehTires,
+Float:	vehHealth,
+
+		// Additions
+		vehType,
+		vehState,
+Float:	vehFuel,
+Float:	vehLastCoords[3],
+	
+		// Trunk Storage
+		e_TRUNK_FLAGS:vehTrunkType[MAX_VEHICLE_STORAGE],
+
+		// Trunk Storage - Weapon
+		vehAmmo[MAX_VEHICLE_STORAGE],
+		vehWeapon[MAX_VEHICLE_STORAGE],
+		vehDurability[MAX_VEHICLE_STORAGE],
+		vehSerial[MAX_VEHICLE_STORAGE],
+
+		// Other
+		vehSiren,
+		vehMod[MAX_VEHICLE_MOD_SECTIONS],
+		vehLumber,
+		vehRentTime,
+		vehKillerID,
+		vehVehicleID,
+		vehInsurance,
+
+		// Vehicle Upgrade
+		vehEngineUpgrade,
+		vehBodyUpgrade,
+		Float:vehBodyRepair,
+		vehGasUpgrade,
+		vehTurbo,
+
+		// Vehicle Component Preview
+		vehModSectionPreview,
+		vehModCompPreview,
+
+		// Vehicle Neon
+		vehNeonL, //Neon kiri
+		vehNeonR,  //Neon kanan
+		vehNeonColor,
+		vehTogNeon,
+
+		//Truck Haul
+		vehComponent,
+		vehWoods,
+
+		//vehicle Interior ((RV))
+		vehInteriorVW,
+
+		vehURL[128],
+		vehAudio,
+
+		vehParking,
+		vehHouseParking,
+
+		vehDoorStatus,
+		vehEngineStatus,
+
+		vehHandBrake,
+
+		vehLockTire,
+		Text3D:vehLockTireText,
+
+		// Mileage
+		Float:accumulatedMileage, // Mileage yang terakumulasi.
+		Float:currentMileage,		  // Mileage saat ini
+		Float:durabilityMileage,   // Ketahanan kendaraan di nilai mileage tertentu.
+		
+		Timer:vehLockTireTimer,
+		Timer:vehHandbrakeTimer
+		
+};
+
+enum E_VEHICLE_STORAGE_DATA {
+	vehInvIndex,
+    vehInvName[32],
+    vehInvModel,
+    vehInvQuantity
+};
+
+enum E_GUN_RACK
+{
+	weaponModel,
+	weaponAmmo,
+	weaponExists
+};
+
+enum
+{
+    NOTHING = 0,
+    VEHICLE
+};
+
+enum houseData {
+    houseID,
+    houseExists,
+    houseOwner,
+    housePrice,
+    houseOwnerName[32],
+    houseAddress[32],
+    Float:housePos[4],
+    Float:houseInt[4],
+    houseInterior,
+    houseExterior,
+    houseExteriorVW,
+    houseLocked,
+    houseMoney,
+    Text3D:houseText3D,
+    housePickup,
+    houseCheckpoint,
+    houseLights,
+    houseWeaponSlot[5],
+    houseWeapons[5],
+    houseAmmo[5],
+    houseDurability[5],
+    houseSerial[5],
+    houseLastVisited,
+    furniture[MAX_HOUSE_FURNITURE],
+
+    //House Parking Spawn
+    houseParkingSlot,
+    houseParkingSlotUsed,
+    //Float:houseParkingPos[4]
+    housePacket,
+    houseSeal
+};
+
+enum    _:E_HOUSE_TYPE {
+    TYPE_SMALL = 0,
+    TYPE_MEDIUM,
+    TYPE_LARGE
+}

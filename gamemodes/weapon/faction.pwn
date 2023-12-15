@@ -21,8 +21,8 @@ GiveFactionWeapon(playerid, weaponid, ammo)
 	new query[255];
 
 	GivePlayerWeapon(playerid, weaponid, ammo);
-	mysql_format(g_iHandle, query, sizeof(query), "INSERT INTO `weapon_factions` VALUES ('%d', '%d', '%d', '%d') ON DUPLICATE KEY UPDATE ammo = %d, weaponid = %d", GetPlayerSQLID(playerid), weaponid, ammo, g_aWeaponSlots[weaponid], ammo, weaponid);
-	mysql_tquery(g_iHandle, query);
+	mysql_format(sqlcon, query, sizeof(query), "INSERT INTO `weapon_factions` VALUES ('%d', '%d', '%d', '%d') ON DUPLICATE KEY UPDATE ammo = %d, weaponid = %d", GetPlayerSQLID(playerid), weaponid, ammo, g_aWeaponSlots[weaponid], ammo, weaponid);
+	mysql_tquery(sqlcon, query);
 	return 1;
 }
 
@@ -40,8 +40,8 @@ SaveFactionWeapon(playerid)
 			continue;
 		new query[255];
 
-		mysql_format(g_iHandle, query, sizeof(query), "INSERT INTO weapon_factions VALUES ('%d', '%d', '%d', '%d') ON DUPLICATE KEY UPDATE ammo = %d", GetPlayerSQLID(playerid), weaponid, ammo, i, ammo);
-		mysql_tquery(g_iHandle, query);
+		mysql_format(sqlcon, query, sizeof(query), "INSERT INTO weapon_factions VALUES ('%d', '%d', '%d', '%d') ON DUPLICATE KEY UPDATE ammo = %d", GetPlayerSQLID(playerid), weaponid, ammo, i, ammo);
+		mysql_tquery(sqlcon, query);
 	}
 	return 1;
 }
@@ -52,7 +52,7 @@ ResetFactionWeapon(playerid)
 		return 0;
 
 	ResetPlayerWeapons(playerid);
-	mysql_tquery(g_iHandle, sprintf("DELETE FROM weapon_factions WHERE `userid` = '%d'", GetPlayerSQLID(playerid)));
+	mysql_tquery(sqlcon, sprintf("DELETE FROM weapon_factions WHERE `userid` = '%d'", GetPlayerSQLID(playerid)));
 	return 1;
 }
 
@@ -63,7 +63,7 @@ RefreshFactionWeapon(playerid)
 
 	ResetPlayerWeapons(playerid);
 
-	mysql_tquery(g_iHandle, sprintf("SELECT * FROM `weapon_factions` WHERE `userid` = '%d';", GetPlayerSQLID(playerid)), "OnLoadPlayerFacWeapons", "d", playerid);
+	mysql_tquery(sqlcon, sprintf("SELECT * FROM `weapon_factions` WHERE `userid` = '%d';", GetPlayerSQLID(playerid)), "OnLoadPlayerFacWeapons", "d", playerid);
 	return 1;
 }
 

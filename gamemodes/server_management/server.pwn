@@ -1,4 +1,4 @@
-
+#include <YSI\y_hooks>
 
 new MAX_FACTION;
 hook OnGameModeInitEx()
